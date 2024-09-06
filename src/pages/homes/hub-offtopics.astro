@@ -1,0 +1,40 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Off-topics Hub',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="A student hub"
+    title="IT Off-topics"
+    ,
+    subtitle="We are excited to announce that we will soon be launching the IT Off-Topics student website! "
+    actions={[
+      { variant: 'primary', text: 'Visit if available!', href: '/home', icon: 'tabler:square-rounded-arrow-right' },
+    ]}
+    image={{
+      src: 'https://cdn.pixabay.com/photo/2018/04/15/19/23/neural-network-3322580_960_720.png',
+      alt: 'Pre-launch Landing Page',
+    }}
+  />
+
+  <CallToAction
+    title="Coming soon"
+    subtitle="We are currently hard at work building this platform, and we can't wait to share it with you. Stay tuned for more updates"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Visit if its available!',
+        href: '/home',
+        icon: 'tabler:download',
+      },
+    ]}
+  />
+</Layout>

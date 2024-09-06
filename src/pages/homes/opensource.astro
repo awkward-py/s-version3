@@ -1,0 +1,246 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+const metadata = {
+  title: 'Open-source',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Open Source"
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Source code',
+        href: 'https://open-source-off-topics.vercel.app/Off-topics%20open%20source.zip',
+        icon: 'tabler:download',
+      },
+      {
+        target: '_blank',
+        text: 'Add Contribute',
+        href: 'https://docs.google.com/forms/d/e/1FAIpQLScfeytqKx0kk2R4VfemcASD9fgsDC-0K8DFXaEMMLj7OFNC0w/viewform',
+        icon: 'tabler:upload',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Off-topics<span class="text-accent dark:text-white highlight"> Open Source</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Whether you have new ideas, content suggestions, or technical improvements, your input is valuable to us.
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="About us"
+    subtitle="Off-topics Open Source is a collaborative initiative aimed at encouraging contributions from the community. Whether you have innovative ideas, suggestions for content, or technical enhancements, your input is highly valued and essential for the continuous improvement of our platform."
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Achievements and track the progress we've made"
+    subtitle="These numbers show our hard work and progress on the project."
+    stats={[
+      { title: 'Total Commits', amount: '129.8K' },
+      { title: 'Issues Resolved', amount: '32.1K' },
+      { title: 'Project Milestones', amount: '65/100' },
+      { title: 'Lines of Code', amount: '48.4K' },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="How you can get involved"
+    subtitle="By joining our open source project, you help make Off-topics better and keep it useful for everyone."
+    items={[
+      {
+        title: 'Share Ideas',
+        description:
+          'If you have fresh concepts or features you think would enhance the Off-topics experience, we’d love to hear them. Your suggestions can spark new developments and innovations.',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Content Contributions',
+        description:
+          ' Help us keep our content relevant and up-to-date. Contributions of articles, tutorials, or other educational materials are welcome and appreciated.',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Technical Improvements',
+        description:
+          'If you’re a developer, consider contributing code to improve the platform’s functionality, fix bugs, or enhance performance. Your technical expertise can make a significant impact.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="How to Contribute to IT Off-Topics"
+    subtitle="Follow these detailed steps to make your contribution:"
+    columns={3}
+    items={[
+      {
+        title: 'Step 1: Download Files',
+        description:
+          'To get started, visit the Off-Topics Open-source website. Locate the section for downloading files related to the project. Download the necessary files that you intend to work on. These files include code, documentation, or other resources relevant to the IT Off-Topics platform.',
+        icon: 'tabler:arrow-right',
+      },
+      {
+        title: 'Step 2: Add Features and Updates',
+        description:
+          ' It also includes refining current features to ensure they are more efficient, user-friendly, and aligned with the latest standards. Additionally, you may address and fix any bugs or issues to improve the platform stability and performance.',
+        icon: 'tabler:arrow-right',
+      },
+      {
+        title: 'Step 3: Compress and Upload',
+        description:
+          'Once you have completed your modifications, the next step is to compress the updated files. Create a .zip folder containing all the modified files and ensure it is well-organized. After compressing the files, upload the .zip folder back to the Off-Topics Open-source website. This step is essential for submitting your changes for review.',
+        icon: 'tabler:arrow-right',
+      },
+      {
+        title: 'Step 4: Review and Merge',
+        description:
+          'After submission, your contribution will be reviewed by the Off-topics. They will assess the value and impact of your changes, ensuring they meet the platform’s standards and integrate well with the existing system. If your contribution is deemed valuable and aligns with the project’s goals, it will be merged into the main IT Off-Topics website.',
+        icon: 'tabler:arrow-right',
+      },
+      {
+        title: 'Successful Contribution',
+        description:
+          'Upon successful integration, your contributions will become a part of the IT Off-Topics platform, benefiting all users. You may receive acknowledgment for your contribution, and any feedback provided can help you in future submissions.',
+        icon: 'tabler:arrow-right',
+      },
+      {
+        description: 'If your contribution is successful, a blue tick will automatically display next to your name.',
+        icon: 'tabler:arrow-right',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <!-- <FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'What are landing page templates?',
+        description:
+          'Landing page templates are pre-designed web page layouts that are specifically created to serve as a foundation for building effective landing pages. These templates are designed to capture the attention of visitors and guide them towards a specific action or goal, such as signing up for a newsletter, making a purchase, or downloading a resource.',
+      },
+      {
+        title: 'Why should I use a template?',
+        description:
+          'Some of the advantages are that they provide a ready-to-use structure,  saving you significant time. Are designed with user-friendliness in mind and provide a cost-effective alternative, saving you money while still delivering a quality result.',
+      },
+      {
+        title: 'Can I preview templates before buying?',
+        description:
+          'Yes, the templates allow you to preview them before making a purchase. There is a "Demo" button associated with each template.',
+      },
+      {
+        title: 'Do I need technical skills to use a template?',
+        description:
+          'Advanced technical skills are not required to use a template, but having a basic understanding of web navigation and familiarity with using online tools can still be beneficial. If you have more specific customization needs, you might need to consult guides or reach out to customer support for assistance.',
+      },
+      {
+        title: 'Can I use the template on multiple websites?',
+        description:
+          'No, the template comes with a single-use license, meaning you can use the template on one website or project only. Using the template on additional websites would require purchasing additional licenses.',
+      },
+      {
+        title: 'What if I need help with customization?',
+        description:
+          "The templates provides a comprehensive step-by-step guide that walk you through the customization process. If you still have doubts, you can reach out to our customer support team. They can answer your questions, provide guidance on customization, and address any issues you're facing.",
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs> -->
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Let us know how we can help"
+    subtitle="We’re here to help and answer any question you might have."
+    columns={4}
+    items={[
+      {
+        title: 'Phone',
+        icon: 'tabler:phone',
+        callToAction: {
+          target: '_blank',
+        },
+      },
+      {
+        title: 'Email',
+        icon: 'tabler:mail',
+        callToAction: {
+          target: '_blank',
+        },
+      },
+      {
+        title: 'Chat with sales',
+        icon: 'tabler:message-circle',
+        callToAction: {
+          target: '_blank',
+        },
+      },
+      {
+        title: 'Chat with support',
+        icon: 'tabler:message-circle',
+        callToAction: {
+          target: '_blank',
+        },
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        target: '_blank',
+        text: 'Get source code',
+        href: 'https://open-source-off-topics.vercel.app/Off-topics%20open%20source.zip',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">Let's contribute to IT Off-Topics!</Fragment>
+
+    <Fragment slot="subtitle"> Your ideas and efforts help us improve and grow together. </Fragment>
+  </CallToAction>
+</Layout>
