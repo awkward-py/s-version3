@@ -1,8 +1,8 @@
 ---
 publishDate: 2023-08-09T00:00:00Z
-title: Comprehensive Guide and Creation Manual of IT Off-topics
+title: Comprehensive Guide and Creation Manual
 excerpt: The Student Hub IT Off-Topics platform is a valuable resource for students and educators in the IT field.
-image: https://open-source-off-topics.vercel.app/assets/images/banner.jpg
+image: https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 tags:
   - off-topics
   - students
