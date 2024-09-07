@@ -29,7 +29,7 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
     sitemap({
-      hostname: 'https://yourwebsite.com',  // Replace with your actual domain
+      hostname: 'https://off-topics.vercel.app/',  
     }),
     mdx(),
     icon({
