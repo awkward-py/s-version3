@@ -3,7 +3,7 @@ publishDate: 2024-03-12T00:00:00Z
 author: Pankaj Rawat
 title: Who qualifies for and how can I earn the Checkmark or Blue Tick
 excerpt: Earn your Blue Tick (Verified Badge) and stand out in the IT Off-Topics community!
-image: https://cdn.pixabay.com/photo/2015/08/09/11/36/hook-881444_1280.jpg
+image: https://plus.unsplash.com/premium_photo-1684341008385-31d2eb4f3afe?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 category: Updates
 tags:
   - blue tick
