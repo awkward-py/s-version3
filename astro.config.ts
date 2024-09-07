@@ -28,7 +28,9 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap(),
+    sitemap({
+      hostname: 'https://yourwebsite.com',  // Replace with your actual domain
+    }),
     mdx(),
     icon({
       include: {
@@ -72,7 +74,7 @@ export default defineConfig({
   ],
 
   image: {
-    domains: ['cdn.pixabay.com'],
+    domains: ['unsplash.com'],
   },
 
   markdown: {
