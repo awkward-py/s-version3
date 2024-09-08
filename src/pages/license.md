@@ -4,17 +4,17 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 ---
 
-### 1. Introduction
+### Introduction
 
 This License Agreement ("Agreement") is a legal document between you ("User") and IT Off-Topics ("Platform"), located at `offtopics.in`, outlining the terms under which you may access and use the Platform. The Platform is operated by the owners of the `offtopics.in` domain, hosted by Vercel, with domain services provided by Hostinger.
 
 By accessing or using the Platform, you agree to be bound by the terms and conditions of this Agreement. If you do not agree, you should not access or use the Platform.
 
-### 2. License Grant
+### License Grant
 
 IT Off-Topics grants you a limited, non-exclusive, non-transferable, revocable license to access and use the Platform for educational, informational, and community engagement purposes. You may use the Platform in accordance with the terms of this Agreement and any applicable laws.
 
-### 3. Restrictions
+### Restrictions
 
 You may not:
 - Use the Platform for any unlawful or harmful activity.
@@ -23,11 +23,11 @@ You may not:
 - Sell, distribute, or commercially exploit the Platform or its content without authorization.
 - Interfere with the operation or security of the Platform.
 
-### 4. Intellectual Property
+### Intellectual Property
 
 All content, trademarks, service marks, logos, and proprietary information available on the Platform are the property of IT Off-Topics or its licensors. You may not use any of these materials without the written consent of the Platform.
 
-### 5. User-Generated Content
+### User-Generated Content
 
 By submitting any content (including but not limited to posts, comments, and media) to the Platform, you grant IT Off-Topics a worldwide, non-exclusive, royalty-free, transferable license to use, reproduce, modify, publish, and distribute such content for the purposes of operating, promoting, and improving the Platform.
 
@@ -36,31 +36,31 @@ You agree not to post any material that:
 - Infringes on any third-party rights, including intellectual property rights.
 - Contains harmful, abusive, or offensive content.
 
-### 6. Disclaimer of Warranties
+### Disclaimer of Warranties
 
 The Platform is provided "as is" without any warranties, express or implied. IT Off-Topics does not guarantee the accuracy, reliability, or completeness of any information or content on the Platform. Use of the Platform is at your own risk.
 
-### 7. Limitation of Liability
+### Limitation of Liability
 
 To the maximum extent permitted by law, IT Off-Topics shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of your use of the Platform.
 
-### 8. Termination
+### Termination
 
 IT Off-Topics reserves the right to terminate or suspend your access to the Platform at its sole discretion, without prior notice, for any reason, including violations of this Agreement.
 
-### 9. Changes to the Agreement
+### Changes to the Agreement
 
 IT Off-Topics reserves the right to modify or update this Agreement at any time. Your continued use of the Platform after any changes to the Agreement will constitute your acceptance of such changes.
 
-### 10. Governing Law
+### Governing Law
 
 This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which IT Off-Topics operates.
 
-### 11. Contact Information
+### Contact Information
 
 For any questions or concerns regarding this License Agreement, you can contact us at:
 
-**IT Off-Topics Support Team**  
+**IT Off-Topics Support**  
 Email: support@offtopics.in
 
 ---
