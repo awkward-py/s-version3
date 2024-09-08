@@ -65,8 +65,6 @@ Email: support@offtopics.in
 
 ---
 
-## Platform Information
-
 | **Details**                | **Information**                                           |
 |----------------------------|-----------------------------------------------------------|
 | **Platform Name**           | IT Off-Topics                                             |
