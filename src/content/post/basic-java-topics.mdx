@@ -12,292 +12,1370 @@ tags:
   - study
 
 ---
+## Overview of Java
+
+Java is a high-level, object-oriented programming language widely used for building platform-independent applications. It is known for its versatility, security, and performance. Java’s motto "Write Once, Run Anywhere" (WORA) ensures compatibility across different platforms, making it a top choice for enterprise-level development.
 
 ## Table of Contents
-
-1. [Introduction to Java](#introduction-to-java)
-2. [Data Types and Variables](#data-types-and-variables)
-3. [Control Flow Statements](#control-flow-statements)
-4. [Object-Oriented Programming (OOP)](#object-oriented-programming-oop)
-5. [Exception Handling](#exception-handling)
-6. [Java Collections Framework](#java-collections-framework)
-7. [Multithreading in Java](#multithreading-in-java)
-8. [File Handling](#file-handling)
-9. [Practice Questions](#practice-questions)
-10. [External Resources](#external-resources)
+1. Overview of Java
+2. Introduction to Java
+3. History of Java
+4. Java vs C++ vs Python
+5. How to Download and Install Java?
+6. Setting Up the Environment in Java
+7. How to Download and Install Eclipse on Windows?
+8. Java Development Kit (JDK)
+9. JVM and its Architecture
+10. JDK Vs JRE Vs JVM
+11. Just In Time Compiler
+12. JIT Vs JVM
+13. Byte Code Vs Machine Code
+14. Basics of Java
+15. Java Basic Syntax
+16. First Java Program (Hello World)
+17. Datatypes in Java
+18. Primitive Vs Non-Primitive Datatypes
+19. Java Identifiers
+20. Operators in Java
+21. Java Variables
+22. Java Keywords
+23. Scope of Variables
+24. Wrapper Classes in Java
+25. Input/Output in Java
+26. How to take Input from users in Java
+27. Scanner class in Java
+28. BufferedReader class in Java
+29. Scanner vs BufferedReader in Java
+30. Ways to Read Input from Console in Java
+31. Print Output in Java
+32. print() Vs println() in Java
+33. Formatted Outputs in Java
+34. Flow Control in Java
+35. Decision making in Java
+36. If Statement in Java
+37. If-Else Statement in java
+38. If-Else-If Ladder in Java
+39. Loops in Java
+40. For Loop
+41. While Loop
+42. Do While Loop
+43. For Each Loop
+44. Continue Statement in Java
+45. Break Statement in Java
+46. Return Statement in Java
+47. Arrays in Java
+48. Strings in Java
+49. OOPS in Java
+50. Classes in Java
+51. Interfaces in Java
+52. Methods in Java
+53. Packages in Java
+54. Collection Framework in Java
+55. Memory Allocation in Java
+56. Exception Handling in Java
+57. Multithreading in Java
+58. Synchronization in Java
+59. File Handling in Java
+60. Java Regex
+61. Java IO
+62. Java Networking
+63. Java SE 8 Features
+64. Java Date & Time
+65. Java JDBC
+66. Java Miscellaneous
+67. Java 17 New Features
+68. Core Java Interview Questions
+69. Java Multiple Choice Questions
 
 ---
 
-## 1. Introduction to Java
+## 1. **Introduction to Java**
+Java is a class-based, object-oriented programming language designed to have as few implementation dependencies as possible. It allows developers to build applications that can run on any platform that supports Java without needing to recompile the code.
 
-### What is Java?
+---
 
-**Java** is a high-level, object-oriented programming language developed by Sun Microsystems in 1995. It is platform-independent, which means that Java programs can run on any device with a Java Virtual Machine (JVM). Java follows the **Write Once, Run Anywhere (WORA)** principle.
+## 2. **History of Java**
+Java was developed by James Gosling at Sun Microsystems (later acquired by Oracle) and released in 1995. Initially created as a language for interactive television, it soon evolved into a general-purpose programming language. The official release of Java ushered in a new era of portability and cross-platform development.
 
-- **Key Features**:
-  - **Platform Independence**: Java code is compiled into bytecode, which can run on any platform.
-  - **Object-Oriented**: Java uses the object-oriented paradigm, which helps in better code organization.
-  - **Secure**: Java provides built-in security features like runtime checking and bytecode verification.
-  - **Multithreaded**: Java allows multiple threads to run simultaneously, making applications faster.
+---
 
-### Example: A Simple Java Program
+## 3. **Java vs C++ vs Python**
+- **Java**: Known for its WORA principle, object-oriented design, and robust security features.
+- **C++**: Offers better control over system resources but lacks Java’s platform independence.
+- **Python**: A dynamically typed language with a simple syntax but slower performance compared to Java.
+
+---
+
+## 4. **How to Download and Install Java?**
+1. Visit the [official Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+2. Choose the appropriate version of Java for your operating system.
+3. Download and install the JDK (Java Development Kit).
+4. Follow the on-screen instructions for installation.
+
+---
+
+## 5. **Setting Up the Environment in Java**
+- After installing the JDK, set up environment variables:
+  1. Go to System Properties → Advanced → Environment Variables.
+  2. Add a new system variable named `JAVA_HOME` with the JDK installation path.
+  3. Edit the `Path` variable and add the path to the `bin` folder inside your JDK installation.
+
+---
+
+## 6. **How to Download and Install Eclipse on Windows?**
+1. Visit the [official Eclipse website](https://www.eclipse.org/downloads/).
+2. Download the latest version for your system.
+3. Extract and run the installer.
+4. Choose the Eclipse IDE for Java Developers package.
+5. Complete the installation process and launch Eclipse.
+
+---
+
+## 7. **Java Development Kit (JDK)**
+The JDK includes development tools such as the compiler (`javac`), the Java runtime (`java`), and various other utilities necessary to develop and run Java applications.
+
+---
+
+## 8. **JVM and Its Architecture**
+The Java Virtual Machine (JVM) is the core of Java's cross-platform capabilities. It provides the environment for executing Java bytecode and manages system resources such as memory.
+
+### JVM Components:
+- **ClassLoader**: Loads class files.
+- **Runtime Data Area**: Divided into Heap, Stack, Method Area, etc.
+- **Execution Engine**: Executes the bytecode.
+- **Native Interface**: Allows interaction with native applications.
+
+---
+
+## 9. **JDK Vs JRE Vs JVM**
+- **JDK (Java Development Kit)**: Includes JRE and development tools.
+- **JRE (Java Runtime Environment)**: Contains the JVM and class libraries for running applications.
+- **JVM (Java Virtual Machine)**: Executes bytecode.
+
+---
+
+## 10. **Just In Time Compiler**
+The Just In Time (JIT) Compiler is part of the JVM that improves performance by compiling bytecode into native machine code at runtime.
+
+---
+
+## 11. **JIT Vs JVM**
+- **JVM** interprets bytecode into machine-specific instructions.
+- **JIT** compiles frequently executed bytecode into native code for efficiency.
+
+---
+
+## 12. **Byte Code Vs Machine Code**
+- **Bytecode** is a platform-independent intermediate code.
+- **Machine Code** is the platform-specific instructions executed by the CPU.
+
+---
+
+## 13. **Basics of Java**
+Java is a high-level, object-oriented programming language that emphasizes code readability, simplicity, and maintainability. Understanding the basic syntax and constructs of Java is essential for effective programming.
+
+---
+
+## 14. **Java Basic Syntax**
+Java syntax is largely influenced by C++, with a focus on simplicity and readability. Key elements include:
+
+- **Classes and Methods**: The basic building blocks of Java programs.
+- **Statements**: End with a semicolon (`;`).
+- **Blocks**: Enclosed in curly braces `{}`.
+- **Comments**: Single-line (`//`) and multi-line (`/*...*/`).
+
+---
+
+## 15. **First Java Program (Hello World)**
+A basic Java program that outputs "Hello, World!" to the console is used to verify that the Java environment is set up correctly.
 
 ```java
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello, IT Off-topics!");
+        System.out.println("Hello, World!");
     }
 }
 ```
 
-**Explanation**:
-- `public class HelloWorld`: Defines a class named `HelloWorld`.
-- `public static void main(String[] args)`: This is the entry point of every Java program.
-- `System.out.println("Hello, IT Off-topics!");`: Prints the message to the console.
+### Explanation:
+- **public class HelloWorld**: Defines a public class named `HelloWorld`.
+- **public static void main(String[] args)**: The main method, which is the entry point of the program.
+- **System.out.println()**: Prints text to the console.
 
 ---
 
-## 2. Data Types and Variables
+## 16. **Datatypes in Java**
+Java has two categories of datatypes:
 
-### What are Data Types?
-
-Data types define the type of data that a variable can hold in Java. They are categorized into two main types:
-- **Primitive Data Types**: These are predefined in Java (e.g., `int`, `char`, `float`, `boolean`).
-- **Non-Primitive Data Types**: These include classes, arrays, and interfaces.
-
-### Primitive Data Types:
-
-| Data Type | Size (bits) | Example         |
-|-----------|-------------|-----------------|
-| `int`     | 32          | `int x = 5;`    |
-| `float`   | 32          | `float y = 5.5f;`|
-| `char`    | 16          | `char z = 'A';` |
-| `boolean` | 1           | `boolean isTrue = true;`|
-
-### Variables in Java
-
-Variables are containers that store data values. You must declare the data type of the variable before using it.
-
-```java
-int age = 20; // Declaring an integer variable 'age'
-float price = 19.99f; // Declaring a float variable 'price'
-```
+- **Primitive Datatypes**: Basic types such as `int`, `float`, `char`, and `boolean`.
+- **Non-Primitive Datatypes**: Also known as reference types, including `String`, arrays, and objects.
 
 ---
 
-## 3. Control Flow Statements
-
-Control flow statements are used to dictate the flow of program execution. There are three main types:
-
-### a. If-Else Statements
-
-```java
-int num = 10;
-if (num > 5) {
-    System.out.println("Number is greater than 5");
-} else {
-    System.out.println("Number is less than or equal to 5");
-}
-```
-
-- **Explanation**: 
-  - The `if` statement checks if the condition (`num > 5`) is true. If it is, the first block executes, otherwise the `else` block executes.
-
-### b. Switch Statements
-
-```java
-int day = 2;
-switch(day) {
-    case 1:
-        System.out.println("Monday");
-        break;
-    case 2:
-        System.out.println("Tuesday");
-        break;
-    default:
-        System.out.println("Invalid day");
-}
-```
-
-- **Explanation**: 
-  - The `switch` statement allows multi-way branching. Depending on the value of `day`, the corresponding case will execute.
+## 17. **Primitive Vs Non-Primitive Datatypes**
+- **Primitive Datatypes**: Include `int`, `char`, `float`, `double`, `boolean`, `byte`, `short`, `long`.
+  - **Characteristics**: Stored directly in memory, not objects, and have a fixed size.
+- **Non-Primitive Datatypes**: Include `String`, `Arrays`, `Classes`, `Interfaces`.
+  - **Characteristics**: Stored as references to objects, can be of varying size, and can contain methods.
 
 ---
 
-## 4. Object-Oriented Programming (OOP)
+## 18. **Java Identifiers**
+Identifiers are names given to variables, methods, classes, and other elements in Java. Rules for identifiers:
+- Must start with a letter, underscore (`_`), or dollar sign (`$`).
+- Can be followed by letters, digits, underscores, or dollar signs.
+- Cannot be a reserved keyword.
 
-OOP is a programming paradigm based on the concept of **objects**. In Java, it is fundamental and consists of four main principles:
+---
 
-### a. Encapsulation
+## 19. **Operators in Java**
+Java operators are symbols that perform operations on variables and values. Key operators include:
 
-Encapsulation is the mechanism of hiding data and restricting direct access to it. It is achieved using private variables and public getter and setter methods.
+- **Arithmetic Operators**: `+`, `-`, `*`, `/`, `%`
+- **Relational Operators**: `==`, `!=`, `>`, `<`, `>=`, `<=`
+- **Logical Operators**: `&&`, `||`, `!`
+- **Unary Operators**: `+`, `-`, `++`, `--`
+- **Assignment Operators**: `=`, `+=`, `-=`, `*=`, `/=`, `%=` 
+- **Bitwise Operators**: `&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`
 
+---
+
+## 20. **Java Variables**
+Variables are containers for storing data values. In Java, a variable must be declared with a datatype before it can be used.
+
+### Types of Variables:
+- **Local Variables**: Declared within a method or block.
+- **Instance Variables**: Declared within a class but outside any method.
+- **Static Variables**: Declared with the `static` keyword and shared among all instances of a class.
+
+---
+
+## 21. **Java Keywords**
+Keywords are reserved words in Java that have special meaning in the language. Examples include:
+- **`class`**: Defines a class.
+- **`public`**: Access modifier.
+- **`static`**: Defines class-level variables and methods.
+- **`void`**: Specifies that a method does not return a value.
+
+---
+
+## 22. **Scope of Variables**
+The scope of a variable refers to the part of the program where the variable can be accessed. Java defines scope in terms of:
+
+- **Local Scope**: Within a method or block.
+- **Instance Scope**: Within an object of a class.
+- **Global Scope**: Across the entire class (static variables).
+
+---
+
+## 23. **Wrapper Classes in Java**
+Wrapper classes in Java are used to convert primitive types into objects. Each primitive type has a corresponding wrapper class:
+- **`Integer`**: For `int`
+- **`Double`**: For `double`
+- **`Character`**: For `char`
+- **`Boolean`**: For `boolean`
+
+---
+
+## 24. **Input/Output in Java**
+Java provides various methods for handling input and output operations.
+
+### Taking Input:
+- **Scanner Class**: Used for parsing primitive types and strings.
+  ```java
+  Scanner sc = new Scanner(System.in);
+  int num = sc.nextInt();
+  ```
+- **BufferedReader Class**: Reads text from a character-based input stream.
+  ```java
+  BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+  String str = br.readLine();
+  ```
+
+### Printing Output:
+- **`print()`**: Outputs text without a newline.
+- **`println()`**: Outputs text with a newline.
+
+### Formatted Output:
+- **`System.out.printf()`**: Allows formatted output.
+  ```java
+  System.out.printf("Name: %s, Age: %d", name, age);
+  ```
+
+---
+
+## 25. **Flow Control in Java**
+Flow control statements manage the flow of execution in Java programs.
+
+### Decision Making:
+- **If Statement**: Executes a block of code if the condition is true.
+  ```java
+  if (condition) {
+      // code
+  }
+  ```
+- **If-Else Statement**: Executes one block of code if the condition is true, another if false.
+  ```java
+  if (condition) {
+      // code
+  } else {
+      // code
+  }
+  ```
+- **If-Else-If Ladder**: Multiple conditions checked sequentially.
+  ```java
+  if (condition1) {
+      // code
+  } else if (condition2) {
+      // code
+  } else {
+      // code
+  }
+  ```
+
+### Loops:
+- **For Loop**: Iterates a block of code a specified number of times.
+  ```java
+  for (int i = 0; i < 10; i++) {
+      // code
+  }
+  ```
+- **While Loop**: Iterates as long as a condition is true.
+  ```java
+  while (condition) {
+      // code
+  }
+  ```
+- **Do-While Loop**: Executes the block of code at least once before checking the condition.
+  ```java
+  do {
+      // code
+  } while (condition);
+  ```
+- **For Each Loop**: Iterates over collections or arrays.
+  ```java
+  for (Type item : collection) {
+      // code
+  }
+  ```
+
+### Continue and Break Statements:
+- **Continue Statement**: Skips the current iteration and proceeds with the next iteration.
+  ```java
+  continue;
+  ```
+- **Break Statement**: Exits from the current loop or switch statement.
+  ```java
+  break;
+  ```
+
+---
+
+## 26. **Arrays in Java**
+Arrays are used to store multiple values of the same type in a single variable.
+
+### Introduction:
+- **Declaration and Initialization**:
+  ```java
+  int[] arr = new int[5];
+  arr[0] = 10;
+  ```
+
+### Multi-Dimensional Arrays:
+- **2D Arrays**:
+  ```java
+  int[][] matrix = new int[3][3];
+  ```
+
+### Jagged Arrays:
+- Arrays of arrays where each row can have different lengths.
+  ```java
+  int[][] jaggedArray = new int[3][];
+  jaggedArray[0] = new int[2];
+  jaggedArray[1] = new int[3];
+  ```
+
+### Final Arrays:
+- An array declared with the `final` keyword cannot be resized.
+  ```java
+  final int[] arr = {1, 2, 3};
+  ```
+
+### Reflect Arrays:
+- **java.util.Arrays Class**: Provides utility methods for array operations.
+  ```java
+  Arrays.sort(arr);
+  ```
+
+---
+
+## 27. **Strings in Java**
+Strings in Java are objects that represent sequences of characters.
+
+### Introduction:
+- **String Class**: Provides various methods to manipulate strings.
+  ```java
+  String str = "Hello";
+  ```
+
+### Why Strings Are Immutable:
+- Strings cannot be changed once created. Modifications create new String objects.
+
+### StringBuffer and StringBuilder:
+- **StringBuffer**: Mutable, thread-safe.
+- **StringBuilder**: Mutable, not thread-safe.
+
+### StringTokenizer and StringJoiner:
+- **StringTokenizer**: Used to break strings into tokens.
+  ```java
+  StringTokenizer st = new StringTokenizer("Hello World");
+  ```
+- **StringJoiner**: Allows joining strings with a delimiter.
+  ```java
+  StringJoiner sj = new StringJoiner(", ");
+  sj.add("Hello").add("World");
+  ```
+
+---
+
+## 28. **OOPS in Java**
+Object-Oriented Programming (OOP) principles include encapsulation, inheritance, polymorphism, and abstraction.
+
+### Concepts:
+- **Classes and Objects**: Blueprints for creating objects and defining their properties and behaviors.
+- **Inheritance**: Mechanism where one class inherits the attributes and methods of
+
+ another class.
+- **Polymorphism**: Ability to perform a single action in different forms.
+- **Encapsulation**: Bundling of data and methods into a single unit (class).
+- **Abstraction**: Hiding the complex implementation details and showing only the necessary features.
+
+---
+
+## 29. **Classes in Java**
+A class is a blueprint from which individual objects are created.
+
+### Syntax:
 ```java
-class Student {
-    private String name; // private variable
+public class MyClass {
+    // Fields
+    int x;
     
-    public void setName(String name) {
-        this.name = name; // public method to set name
-    }
-    
-    public String getName() {
-        return name; // public method to get name
+    // Methods
+    void display() {
+        System.out.println(x);
     }
 }
 ```
 
-- **Explanation**: 
-  - `private` keyword restricts access to the variable.
-  - Getter and setter methods allow controlled access.
-
-### b. Inheritance
-
-Inheritance allows a class to acquire properties and methods from another class.
-
+### Creating Objects:
 ```java
-class Animal {
-    void sound() {
-        System.out.println("Animal makes a sound");
-    }
-}
+MyClass obj = new MyClass();
+obj.x = 10;
+obj.display();
+```
 
-class Dog extends Animal {
-    void sound() {
-        System.out.println("Dog barks");
+---
+
+## 30. **Interfaces in Java**
+Interfaces define a contract that classes must follow. They can have abstract methods and default methods.
+
+### Syntax:
+```java
+public interface MyInterface {
+    void method1();
+    default void method2() {
+        System.out.println("Default method");
     }
 }
 ```
 
-- **Explanation**:
-  - `Dog` inherits the `Animal` class and overrides the `sound()` method.
-
-### c. Polymorphism
-
-Polymorphism allows one interface to be used for a general class of actions. The specific action is determined by the exact nature of the situation.
-
+### Implementing Interfaces:
 ```java
-Animal a = new Dog(); // Parent class reference can hold a child class object
-a.sound(); // Outputs "Dog barks"
-```
-
-### d. Abstraction
-
-Abstraction is the process of hiding implementation details and exposing only the functionality.
-
-```java
-abstract class Shape {
-    abstract void draw(); // abstract method
-}
-
-class Circle extends Shape {
-    void draw() {
-        System.out.println("Drawing Circle");
+public class MyClass implements MyInterface {
+    @Override
+    public void method1() {
+        System.out.println("Method1 implementation");
     }
 }
 ```
 
 ---
 
-## 5. Exception Handling
+## 31. **Methods in Java**
+Methods are blocks of code that perform a specific task. They can return values or be void.
 
-### What is Exception Handling?
+### Syntax:
+```java
+public returnType methodName(parameters) {
+    // body
+}
+```
 
-Exception handling in Java is a mechanism to handle runtime errors, ensuring the flow of the program is not disrupted.
+### Method Overloading:
+- Multiple methods with the same name but different parameters.
+  ```java
+  public void display(int num) {}
+  public void display(String str) {}
+  ```
 
-### Types of Exceptions:
-1. **Checked Exceptions**: These are checked at compile time (e.g., `IOException`).
-2. **Unchecked Exceptions**: These occur at runtime (e.g., `ArithmeticException`).
+### Method Overriding:
+- Subclass provides a specific implementation of a method that is already defined in its superclass.
+  ```java
+  @Override
+  public void methodName() {
+      // implementation
+  }
+  ```
 
-### Try-Catch Block Example
+---
 
+## 32. **Packages in Java**
+Packages group related classes and interfaces together.
+
+### Creating a Package:
+```java
+package com.example;
+public class MyClass {}
+```
+
+### Importing a Package:
+```java
+import com.example.MyClass;
+```
+
+---
+
+## 33. **Collection Framework in Java**
+The Collection Framework provides a set of classes and interfaces for storing and manipulating groups of objects.
+
+### Core Interfaces:
+- **List**: Ordered collection, e.g., `ArrayList`, `LinkedList`.
+- **Set**: Collection with no duplicates, e.g., `HashSet`, `TreeSet`.
+- **Map**: Collection of key-value pairs, e.g., `HashMap`, `TreeMap`.
+
+### Iterating Through Collections:
+```java
+for (String item : collection) {
+    // process item
+}
+```
+
+---
+
+## 34. **Memory Allocation in Java**
+Java manages memory through the JVM using heap and stack memory.
+
+### Heap Memory:
+- Used for dynamic memory allocation of objects and arrays.
+
+### Stack Memory:
+- Used for method calls and local variables.
+
+### Garbage Collection:
+- Automatic process of reclaiming memory by destroying objects that are no longer in use.
+
+---
+
+## 35. **Exception Handling in Java**
+Exception handling in Java allows programs to handle runtime errors and maintain normal program flow.
+
+### Try-Catch Block:
 ```java
 try {
-    int result = 10 / 0; // This will cause ArithmeticException
-} catch (ArithmeticException e) {
-    System.out.println("Cannot divide by zero.");
+    // code that may throw an exception
+} catch (ExceptionType e) {
+    // code to handle the exception
 }
 ```
 
-- **Explanation**: The `try` block contains the code that may throw an exception. The `catch` block handles the exception.
-
----
-
-## 6. Java Collections Framework
-
-The **Java Collections Framework** provides data structures like lists, sets, and maps to store and manipulate objects efficiently.
-
-### Example: ArrayList
-
+### Finally Block:
+- Executes regardless of whether an exception was thrown or not.
 ```java
-import java.util.ArrayList;
-
-ArrayList<String> list = new ArrayList<>();
-list.add("Java");
-list.add("Python");
-System.out.println(list); // Outputs: [Java, Python]
+finally {
+    // code that will always execute
+}
 ```
 
----
-
-## 7. Multithreading in Java
-
-Multithreading allows concurrent execution of two or more parts of a program to maximize CPU usage.
-
-### Creating a Thread by Extending Thread Class
-
+### Custom Exceptions:
+- Create your own exception by extending `Exception` class.
 ```java
-class MyThread extends Thread {
-    public void run() {
-        System.out.println("Thread is running.");
+public class MyException extends Exception {
+    public MyException(String message) {
+        super(message);
     }
 }
-
-MyThread t = new MyThread();
-t.start(); // Starts the thread
 ```
 
 ---
 
-## 8. File Handling
+## 36. **Multithreading in Java**
+Multithreading allows concurrent execution of two or more threads for better resource utilization.
 
-File handling in Java allows us to read from and write to files.
+### Creating Threads:
+- **Extending Thread Class**:
+  ```java
+  public class MyThread extends Thread {
+      public void run() {
+          // code to be executed by thread
+      }
+  }
+  ```
+- **Implementing Runnable Interface**:
+  ```java
+  public class MyRunnable implements Runnable {
+      public void run() {
+          // code to be executed by thread
+      }
+  }
+  ```
 
-### Reading a File
+### Managing Threads:
+- **Thread Lifecycle**: New, Runnable, Blocked, Waiting, Timed Waiting, and Terminated.
+- **Thread Methods**: `start()`, `sleep()`, `join()`, `yield()`.
 
+---
+
+## 37. **Synchronization in Java**
+Synchronization ensures that only one thread accesses a resource at a time to avoid inconsistencies.
+
+### Synchronized Methods:
 ```java
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+public synchronized void myMethod() {
+    // synchronized code
+}
+```
 
-try {
-    File file = new File("filename.txt");
-    Scanner reader = new Scanner(file);
-    while (reader.hasNextLine()) {
-        String data = reader.nextLine();
-        System.out.println(data);
+### Synchronized Blocks:
+```java
+public void myMethod() {
+    synchronized (lockObject) {
+        // synchronized code
     }
-    reader.close();
-} catch (FileNotFoundException e) {
-    System.out.println("An error occurred.");
 }
 ```
 
 ---
 
-## 9. Practice Questions
+## 38. **File Handling in Java**
+Java provides classes and methods for reading from and writing to files.
 
-1. Write a program to check if a number is prime.
-2. Create a class `Vehicle` with a method `drive`. Create a subclass `Car` that extends `Vehicle` and overrides the `drive` method.
-3. Write a program to create a thread by implementing the `Runnable` interface.
-4. Create a program to handle file input/output exceptions.
+### File Reading:
+- **FileReader Class**:
+  ```java
+  FileReader fr = new FileReader("file.txt");
+  int ch;
+  while ((ch = fr.read()) != -1) {
+      System.out.print((char) ch);
+  }
+  fr.close();
+  ```
+- **BufferedReader Class**:
+  ```java
+  BufferedReader br = new BufferedReader(new FileReader("file.txt"));
+  String line;
+  while ((line = br.readLine()) != null) {
+      System.out.println(line);
+  }
+  br.close();
+  ```
+
+### File Writing:
+- **FileWriter Class**:
+  ```java
+  FileWriter fw = new FileWriter("file.txt");
+  fw.write("Hello, World!");
+  fw.close();
+  ```
 
 ---
 
-## 10. External Resources
+## 39. **Java Regex**
+Regular expressions (Regex) are used for pattern matching and text manipulation.
 
-- [Java Official Documentation](https://docs.oracle.com/javase/tutorial/)
-- [GeeksforGeeks Java Tutorials](https://www.geeksforgeeks.org/java/)
-- [Java Multithreading Tutorial](https://www.javatpoint.com/multithreading-in-java)
+### Basic Patterns:
+- **`^`**: Start of a string.
+- **`$`**: End of a string.
+- **`.`**: Any character.
+- **`*`**: Zero or more occurrences.
+- **`+`**: One or more occurrences.
+
+### Example:
+```java
+import java.util.regex.*;
+Pattern p = Pattern.compile("^[a-zA-Z0-9_]*$");
+Matcher m = p.matcher("valid_input123");
+if (m.matches()) {
+    System.out.println("Valid Input");
+}
+```
+
+---
+
+## 40. **Java IO**
+Java IO (Input/Output) is a library used for handling input and output operations.
+
+### Key Classes:
+- **File**: Represents a file or directory.
+- **FileInputStream** and **FileOutputStream**: For reading and writing bytes.
+- **FileReader** and **FileWriter**: For reading and writing characters.
+
+### Example:
+```java
+File file = new File("example.txt");
+FileWriter writer = new FileWriter(file);
+writer.write("Hello, Java IO!");
+writer.close();
+```
+
+---
+
+## 41. **Java Networking**
+Java provides libraries for network communication, such as sockets and URLs.
+
+### Sockets:
+- **Client-Side**:
+  ```java
+  Socket socket = new Socket("localhost", 8080);
+  PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
+  out.println("Hello Server!");
+  socket.close();
+  ```
+- **Server-Side**:
+  ```java
+  ServerSocket serverSocket = new ServerSocket(8080);
+  Socket clientSocket = serverSocket.accept();
+  BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+  System.out.println(in.readLine());
+  serverSocket.close();
+  ```
+
+### URL Handling:
+```java
+URL url = new URL("http://www.example.com");
+HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+String inputLine;
+while ((inputLine = in.readLine()) != null) {
+    System.out.println(inputLine);
+}
+in.close();
+```
+
+---
+
+## 42. **Java SE 8 Features**
+Java SE 8 introduced several new features enhancing the language.
+
+### Key Features:
+- **Lambda Expressions**: Provide a clear and concise way to represent one method interface using an expression.
+  ```java
+  (a, b) -> a + b
+  ```
+- **Streams API**: Allows functional-style operations on collections.
+  ```java
+  List<String> list = Arrays.asList("a1", "a2", "b1", "c2");
+  list.stream().filter(s -> s.startsWith("c")).forEach(System.out::println);
+  ```
+- **Default Methods**: Methods in interfaces with default implementations.
+  ```java
+  interface MyInterface {
+      default void myMethod() {
+          System.out.println("Default Method");
+      }
+  }
+  ```
+
+---
+
+## 43. **Java Date & Time**
+Java provides classes to handle date and time operations.
+
+### Key Classes:
+- **LocalDate**: Represents a date without time.
+  ```java
+  LocalDate date = LocalDate.now();
+  ```
+- **LocalTime**: Represents a time without date.
+  ```java
+  LocalTime time = LocalTime.now();
+  ```
+- **LocalDateTime**: Represents both date and time.
+  ```java
+  LocalDateTime dateTime = LocalDateTime.now();
+  ```
+- **DateTimeFormatter**: Formats and parses date and time.
+  ```java
+  DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+  String formattedDateTime = dateTime.format(formatter);
+  ```
+
+---
+
+## 44. **Java JDBC**
+Java Database Connectivity (JDBC) provides methods to interact with databases.
+
+### Basic Operations:
+- **Establish
+
+ing a Connection**:
+  ```java
+  Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/dbname", "user", "password");
+  ```
+- **Executing Queries**:
+  ```java
+  Statement stmt = connection.createStatement();
+  ResultSet rs = stmt.executeQuery("SELECT * FROM users");
+  while (rs.next()) {
+      System.out.println(rs.getString("username"));
+  }
+  ```
+- **Closing Connections**:
+  ```java
+  rs.close();
+  stmt.close();
+  connection.close();
+  ```
+
+---
+
+## 45. **Java Reflection**
+Java Reflection provides a way to inspect and manipulate classes and objects at runtime.
+
+### Example:
+- **Inspecting Class Information**:
+  ```java
+  Class<?> clazz = Class.forName("java.util.ArrayList");
+  System.out.println("Class Name: " + clazz.getName());
+  ```
+- **Creating Instances Dynamically**:
+  ```java
+  Object obj = clazz.newInstance();
+  ```
+
+---
+
+## 46. **Java Annotations**
+Annotations provide metadata about code and can be used for various purposes such as code analysis, documentation, and runtime processing.
+
+### Defining Annotations:
+```java
+public @interface MyAnnotation {
+    String value();
+}
+```
+
+### Using Annotations:
+```java
+@MyAnnotation(value = "example")
+public class MyClass {}
+```
+
+### Accessing Annotations:
+```java
+MyAnnotation annotation = MyClass.class.getAnnotation(MyAnnotation.class);
+System.out.println(annotation.value());
+```
+
+---
+
+## 47. **Java Generics**
+Generics enable you to define classes, interfaces, and methods with type parameters.
+
+### Syntax:
+- **Generic Class**:
+  ```java
+  public class MyGenericClass<T> {
+      private T value;
+      public void setValue(T value) {
+          this.value = value;
+      }
+      public T getValue() {
+          return value;
+      }
+  }
+  ```
+
+- **Using Generics**:
+  ```java
+  MyGenericClass<String> stringInstance = new MyGenericClass<>();
+  stringInstance.setValue("Hello");
+  System.out.println(stringInstance.getValue());
+  ```
+
+---
+
+## 48. **Java Enums**
+Enums represent a fixed set of constants. They are useful for defining a collection of related values.
+
+### Syntax:
+```java
+public enum Day {
+    SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+}
+```
+
+### Using Enums:
+```java
+Day today = Day.MONDAY;
+if (today == Day.MONDAY) {
+    System.out.println("Start of the work week");
+}
+```
+
+---
+
+## 49. **Java Swing**
+Swing is a GUI toolkit for Java that provides a set of 'lightweight' (all-Java language) components.
+
+### Creating a Simple Window:
+```java
+import javax.swing.JFrame;
+import javax.swing.JButton;
+
+public class MySwingApp {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("My Swing App");
+        JButton button = new JButton("Click Me");
+        frame.add(button);
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+}
+```
+
+---
+
+## 50. **JavaFX**
+JavaFX is another GUI framework for creating modern desktop applications.
+
+### Basic Example:
+```java
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
+
+public class MyJavaFXApp extends Application {
+    @Override
+    public void start(Stage primaryStage) {
+        Button btn = new Button("Click Me");
+        StackPane root = new StackPane();
+        root.getChildren().add(btn);
+        Scene scene = new Scene(root, 300, 250);
+        primaryStage.setTitle("JavaFX Application");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+}
+```
+
+---
+
+
+ Here’s an in-depth explanation of each topic related to Java, designed to provide a comprehensive understanding for exam preparation.
+
+---
+
+## **1. Introduction to Java**
+
+### **Overview**
+Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible. It was developed by Sun Microsystems in 1995 and is now owned by Oracle Corporation.
+
+### **Key Features**
+- **Platform Independence**: Java programs are compiled into bytecode, which can be executed on any platform with a Java Virtual Machine (JVM).
+- **Object-Oriented**: Java is designed around the concept of objects and classes.
+- **Simple and Familiar**: Java’s syntax is similar to C++ but simpler, with fewer low-level programming constructs.
+- **Secure**: Java provides a secure execution environment through its robust security model.
+- **Robust**: Java emphasizes early error checking and runtime checking.
+
+---
+
+## **2. Java Setup**
+
+### **How to Download and Install Java**
+1. **Download**: Visit the [Oracle Java SE Downloads](https://www.oracle.com/java/technologies/javase-downloads.html) page and download the appropriate JDK version for your operating system.
+2. **Install**: Run the installer and follow the installation wizard.
+3. **Set Up Environment Variables**:
+   - **On Windows**: Set `JAVA_HOME` to the JDK installation path and update the `PATH` variable to include `JAVA_HOME/bin`.
+   - **On macOS/Linux**: Update `.bash_profile` or `.bashrc` with `export JAVA_HOME=/path/to/jdk` and `export PATH=$JAVA_HOME/bin:$PATH`.
+
+### **Verify Installation**
+Run `java -version` and `javac -version` in the terminal or command prompt to verify that Java is installed correctly.
+
+---
+
+## **3. Basic Syntax**
+
+### **Structure of a Java Program**
+- **Class Declaration**: Every Java application must have at least one class.
+- **Main Method**: The entry point for any Java application is the `main` method: `public static void main(String[] args)`.
+
+### **Syntax Rules**
+- **Statements**: End with a semicolon (`;`).
+- **Blocks**: Enclosed in curly braces (`{}`). 
+- **Indentation**: Not required but recommended for readability.
+
+---
+
+## **4. Data Types**
+
+### **Primitive Data Types**
+- **byte**: 8-bit integer, range from -128 to 127.
+- **short**: 16-bit integer, range from -32,768 to 32,767.
+- **int**: 32-bit integer, range from -2^31 to 2^31-1.
+- **long**: 64-bit integer, range from -2^63 to 2^63-1.
+- **float**: Single-precision 32-bit IEEE 754 floating point.
+- **double**: Double-precision 64-bit IEEE 754 floating point.
+- **char**: 16-bit Unicode character.
+- **boolean**: Represents true or false.
+
+### **Non-Primitive Data Types**
+- **Strings**: Sequence of characters.
+- **Arrays**: Collection of elements of the same type.
+- **Classes**: Blueprints for objects.
+
+---
+
+## **5. Variables**
+
+### **Declaration and Initialization**
+- **Syntax**: `<data_type> <variable_name> = <value>;`
+- **Example**: `int age = 25;`
+
+### **Variable Scope**
+- **Local Variables**: Declared inside methods or blocks.
+- **Instance Variables**: Declared inside a class but outside methods.
+- **Static Variables**: Declared with the `static` keyword; shared among all instances of a class.
+
+---
+
+## **6. Operators**
+
+### **Arithmetic Operators**
+- **Examples**: `+`, `-`, `*`, `/`, `%`
+
+### **Relational Operators**
+- **Examples**: `==`, `!=`, `>`, `<`, `>=`, `<=`
+
+### **Logical Operators**
+- **Examples**: `&&`, `||`, `!`
+
+### **Bitwise Operators**
+- **Examples**: `&`, `|`, `^`, `~`, `<<`, `>>`, `>>>`
+
+### **Unary Operators**
+- **Examples**: `+`, `-`, `++`, `--`, `!`
+
+### **Assignment Operators**
+- **Examples**: `=`, `+=`, `-=`, `*=`, `/=`, `%=` 
+
+### **Ternary Operator**
+- **Syntax**: `<condition> ? <true_value> : <false_value>;`
+
+---
+
+## **7. Control Statements**
+
+### **Decision Making**
+- **If Statement**: Executes a block of code if a condition is true.
+- **If-Else Statement**: Executes one block if the condition is true and another if false.
+- **Switch Statement**: Allows multi-way branching based on the value of an expression.
+
+### **Loops**
+- **For Loop**: Iterates a block of code a specified number of times.
+- **While Loop**: Repeats a block of code while a condition is true.
+- **Do-While Loop**: Similar to `while`, but guarantees at least one execution of the loop.
+
+### **Control Flow**
+- **Break Statement**: Exits from the nearest loop or switch statement.
+- **Continue Statement**: Skips the current iteration of a loop and proceeds to the next iteration.
+
+---
+
+## **8. Arrays**
+
+### **Single-Dimensional Arrays**
+- **Declaration**: `int[] arrayName;`
+- **Initialization**: `arrayName = new int[10];`
+
+### **Multi-Dimensional Arrays**
+- **Declaration**: `int[][] arrayName;`
+- **Initialization**: `arrayName = new int[3][4];`
+
+### **Jagged Arrays**
+- **Declaration**: `int[][] jaggedArray = new int[3][];`
+- **Initialization**: `jaggedArray[0] = new int[2];`
+
+### **Array Operations**
+- **Traversing**: Use loops to access elements.
+- **Manipulation**: Sorting, searching, etc.
+
+---
+
+## **9. Strings**
+
+### **String Class**
+- **Immutable**: Once created, the contents of a string cannot be changed.
+- **Common Methods**: `length()`, `charAt()`, `substring()`, `indexOf()`, `concat()`
+
+### **StringBuffer and StringBuilder**
+- **StringBuffer**: Mutable, thread-safe.
+- **StringBuilder**: Mutable, not thread-safe, generally faster than `StringBuffer`.
+
+### **String Manipulation**
+- **Concatenation**: Using `+` operator or `concat()` method.
+- **Comparison**: Using `equals()` and `compareTo()` methods.
+
+---
+
+## **10. OOPS Concepts**
+
+### **Classes and Objects**
+- **Class**: Blueprint for objects. Contains fields and methods.
+- **Object**: Instance of a class.
+
+### **Inheritance**
+- **Concept**: Mechanism where one class inherits the fields and methods of another.
+- **Syntax**: `class Child extends Parent { }`
+
+### **Polymorphism**
+- **Concept**: Ability of a class to provide different implementations of methods based on the object.
+- **Types**: Compile-time (method overloading) and runtime (method overriding).
+
+### **Encapsulation**
+- **Concept**: Bundling the data (variables) and methods that operate on the data into a single unit (class).
+- **Access Modifiers**: `private`, `protected`, `public`
+
+### **Abstraction**
+- **Concept**: Hiding implementation details and showing only functionality to the user.
+- **Abstract Classes and Interfaces**: Used to achieve abstraction.
+
+---
+
+## **11. Interfaces**
+
+### **Definition**
+- **Concept**: A reference type in Java that can contain only constants, method signatures, default methods, static methods, and nested types.
+- **Syntax**: `interface InterfaceName { }`
+
+### **Functional Interface**
+- **Definition**: An interface with exactly one abstract method.
+- **Example**: `@FunctionalInterface` annotation.
+
+### **Marker Interface**
+- **Definition**: An interface with no methods or fields, used to provide metadata to the JVM.
+
+### **Comparator vs. Comparable**
+- **Comparable**: Used to define a natural ordering of objects.
+- **Comparator**: Used to define custom ordering.
+
+---
+
+## **12. Methods**
+
+### **Method Declaration**
+- **Syntax**: `return_type methodName(parameters) { }`
+
+### **Method Overloading**
+- **Concept**: Multiple methods with the same name but different parameters.
+
+### **Method Overriding**
+- **Concept**: Redefining a method in a subclass that is already defined in the parent class.
+
+### **Static vs. Instance Methods**
+- **Static Methods**: Belong to the class, not instances.
+- **Instance Methods**: Belong to individual instances of a class.
+
+---
+
+## **13. Packages**
+
+### **Definition**
+- **Concept**: Namespace for organizing classes and interfaces.
+
+### **Creating a Package**
+- **Syntax**: `package packageName;`
+
+### **Importing Packages**
+- **Syntax**: `import packageName.ClassName;` or `import packageName.*;`
+
+### **Common Packages**
+- **java.util**: Contains utility classes like `ArrayList`, `HashMap`.
+- **java.lang**: Provides fundamental classes like `String`, `Math`.
+- **java.io**: Handles input and output operations.
+
+---
+
+## **14. Collection Framework**
+
+### **Interfaces and Classes**
+- **Collection Interface**: Root interface for all collections.
+- **List Interface**: Ordered collection (e.g., `ArrayList`, `Linked
+
+List`).
+- **Set Interface**: Unordered collection (e.g., `HashSet`, `TreeSet`).
+- **Map Interface**: Collection of key-value pairs (e.g., `HashMap`, `TreeMap`).
+
+### **Common Operations**
+- **Adding Elements**: `add()`, `put()`
+- **Removing Elements**: `remove()`
+- **Iterating**: Using iterators or enhanced for-loops.
+
+---
+
+## **15. Memory Management**
+
+### **Heap vs. Stack**
+- **Heap**: Memory for object storage, managed by the garbage collector.
+- **Stack**: Memory for method calls and local variables.
+
+### **Garbage Collection**
+- **Concept**: Automatic memory management that reclaims memory used by objects no longer referenced.
+- **Types**: Mark-and-sweep, generational garbage collection.
+
+### **Memory Leaks**
+- **Definition**: When objects are not properly garbage collected due to lingering references.
+
+---
+
+## **16. Exception Handling**
+
+### **Types of Exceptions**
+- **Checked Exceptions**: Must be declared in the method signature or handled (e.g., `IOException`).
+- **Unchecked Exceptions**: Runtime exceptions that do not need to be declared or caught (e.g., `NullPointerException`).
+
+### **Try-Catch-Finally**
+- **Try Block**: Contains code that might throw an exception.
+- **Catch Block**: Handles the exception.
+- **Finally Block**: Executes code regardless of whether an exception was thrown.
+
+### **Throw vs. Throws**
+- **Throw**: Used to explicitly throw an exception.
+- **Throws**: Used in method signatures to declare that a method can throw an exception.
+
+---
+
+## **17. Multithreading**
+
+### **Thread Creation**
+- **Using `Thread` Class**: Extend `Thread` and override `run()`.
+- **Using `Runnable` Interface**: Implement `Runnable` and pass it to a `Thread` object.
+
+### **Thread Lifecycle**
+- **States**: New, Runnable, Blocked, Waiting, Timed Waiting, Terminated.
+
+### **Synchronization**
+- **Concept**: Ensuring that multiple threads do not interfere with each other while accessing shared resources.
+- **Keywords**: `synchronized`, `volatile`
+
+### **Concurrency Utilities**
+- **ExecutorService**: For managing thread pools.
+- **Future**: For handling asynchronous tasks.
+
+---
+
+## **18. File Handling**
+
+### **File Operations**
+- **Reading Files**: Using `FileReader`, `BufferedReader`.
+- **Writing Files**: Using `FileWriter`, `BufferedWriter`.
+
+### **File Class**
+- **Concept**: Represents a file or directory path.
+
+### **Exception Handling**
+- **FileNotFoundException**: Occurs when trying to access a file that does not exist.
+- **IOException**: General input/output exception.
+
+---
+
+## **19. Regular Expressions**
+
+### **Syntax and Usage**
+- **Pattern Matching**: Using `Pattern` and `Matcher` classes.
+- **Common Patterns**: `\d` for digits, `\w` for word characters, `.` for any character.
+
+### **Methods**
+- **`Pattern.compile()`**: Compiles the regex into a pattern.
+- **`Matcher.find()`**: Finds matches in the input string.
+
+---
+
+## **20. Java Networking**
+
+### **Socket Programming**
+- **Client-Server Model**: Establish connections between client and server.
+- **Socket Class**: For client-side connections.
+- **ServerSocket Class**: For server-side connections.
+
+### **Protocols**
+- **TCP**: Reliable, connection-oriented.
+- **UDP**: Connectionless, faster but less reliable.
+
+---
+
+## **21. Java SE 8 Features**
+
+### **Lambda Expressions**
+- **Concept**: Anonymous function that can be passed around as a parameter.
+- **Syntax**: `(parameters) -> expression`
+
+### **Streams API**
+- **Concept**: Provides a high-level abstraction for processing sequences of elements.
+- **Common Operations**: `filter()`, `map()`, `reduce()`
+
+### **Date and Time API**
+- **Classes**: `LocalDate`, `LocalTime`, `LocalDateTime`
+
+---
+
+## **22. Java Date & Time**
+
+### **Old Date and Time Classes**
+- **Date**: Represents date and time but is mutable.
+- **Calendar**: Abstract class for date and time manipulation.
+
+### **New Date and Time API (Java 8+)**
+- **LocalDate**: Immutable class for dates.
+- **LocalTime**: Immutable class for time.
+- **LocalDateTime**: Combines date and time.
+
+---
+
+## **23. JDBC (Java Database Connectivity)**
+
+### **Overview**
+- **Concept**: API for connecting and executing queries on a database.
+
+### **JDBC Components**
+- **DriverManager**: Manages a list of database drivers.
+- **Connection**: Interface for database connection.
+- **Statement**: Interface for executing SQL queries.
+- **ResultSet**: Represents the result set of a query.
+
+### **Common Operations**
+- **Connecting**: `DriverManager.getConnection()`
+- **Executing Queries**: Using `Statement` or `PreparedStatement`.
+
+---
+
+## **24. Java Miscellaneous**
+
+### **Reflection**
+- **Concept**: Allows inspection and manipulation of classes, methods, and fields at runtime.
+
+### **JavaFX**
+- **Concept**: Framework for building rich graphical user interfaces.
+
+### **RMI (Remote Method Invocation)**
+- **Concept**: Allows objects to invoke methods on an object located in another JVM.
 
 ---
 
