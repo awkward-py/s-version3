@@ -60,7 +60,6 @@ Unlike other platforms that may gather your information from third parties witho
 
 You have full control over your data:
 - **Access Your Data**: You can request to view the information we have collected about you at any time.
-- **Delete Your Data**: If you no longer wish to be part of our platform, you can request the deletion of your data.
 - **Update Your Information**: If your details change, you can update your profile or request corrections.
 
 ## Why You Can Trust IT Off-Topics
