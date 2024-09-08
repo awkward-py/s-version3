@@ -72,7 +72,7 @@ Email: support@offtopics.in
 | **Domain Provider**         | Hostinger                                                 |
 | **Domain Ownership**        | Yash Joshi                                                |
 | **Hosting Provider**        | Vercel                                                    |
-| **Date of Domain Registration** | 5 Sep 2024                                             |
+| **Date of Domain Registration** | 5 June 2023                                             |
 | **Platform Owners**         | Pankaj Rawat, Yash Joshi       |
 | **Platform Launch Date**    | 22 Dec 2022                                       |
 | **Email**                   | support@offtopics.in                                      |
