@@ -9,9 +9,22 @@ tags:
 
 
 ---
+# Table of Contents
+
+1. [**RATIONAL**](#rational)
+2. [**OBJECTIVES**](#objectives)
+3. [**DETAILED CONTENTS**](#detailed-contents)
+   - [**1. Introduction To Software Engineering (15 Periods)**](#1-introduction-to-software-engineering-15-periods)
+   - [**2. Software Design and Planning (20 Periods)**](#2-software-design-and-planning-20-periods)
+   - [**3. Software Maintenance and Risk Management**](#3-software-maintenance-and-risk-management)
+   - [**4. Software Quality Assurance**](#4-software-quality-assurance)
+   - [**5. Software Testing**](#5-software-testing)
+4. [**REFERENCE BOOK**](#reference-book)
+5. [**SUGGESTED DISTRIBUTION OF MARKS**](#suggested-distribution-of-marks)
+
 ## RATIONAL
 
-Software Engineering deals with reliability and quality assurance of the software under development. It provides a framework for the development of quality software products. The course enables the students to:
+**Software Engineering** deals with reliability and quality assurance of the software under development. It provides a framework for the development of quality software products. The course enables the students to:
 
 - Write specifications for software systems
 - Understand the importance of good software
@@ -46,9 +59,9 @@ On completion of the subject, the students must be able to:
 
 ## DETAILED CONTENTS
 
-## 1. Introduction To Software Engineering (15 Periods)
+### 1. Introduction To Software Engineering (15 Periods)
 
-- Basics of Software Engineering:
+- **Basics of Software Engineering:**
   - Need for Software Engineering
   - Definition
   - Software Characteristics
@@ -76,7 +89,7 @@ On completion of the subject, the students must be able to:
   - Problems in SRS
   - Requirements Gathering
 
-## 2. Software Design and Planning (20 Periods)
+### 2. Software Design and Planning (20 Periods)
 
 - Software Design:
   - Definition of Software Design
@@ -101,7 +114,7 @@ On completion of the subject, the students must be able to:
     - Project Estimation Guidelines
     - Models for Estimation (e.g., COCOMO Model)
 
-## 3. Software Maintenance and Risk Management
+### 3. Software Maintenance and Risk Management
 
 - Software Maintenance:
   - Software as an Evolutionary Entity
@@ -122,7 +135,7 @@ On completion of the subject, the students must be able to:
   - Risk Avoidance
   - Risk Detection
 
-## 4. Software Quality Assurance
+### 4. Software Quality Assurance
 
 - Software Quality Assurance:
   - Verification and Validation
@@ -146,7 +159,7 @@ On completion of the subject, the students must be able to:
     - Reliability Terminologies
     - Reliability Measurement Process
 
-## 5. Software Testing
+### 5. Software Testing
 
 - Software Testing:
   - Introduction to Testing
@@ -170,11 +183,15 @@ On completion of the subject, the students must be able to:
 
 ## REFERENCE BOOK
 
-1. Software Engineering, Ian Sommerville, Pearson Education, Sixth Edition
-2. Fundamentals of Software Engineering, Rajib Mall, PHI Learning Pvt Limited, New Delhi, 28th Printing – August 2011
-3. Software Engineering, Bharat Bhusan Agarwal, Sumit Prakash Tayal, Firewall Media, New Delhi, Second Edition 2008
-4. Software Testing, K. Mustafa and R. A. Khan, Narosa Publishing House, New Delhi, Reprint 2009
-5. Software Quality, R. A. Khan, K. Mustafa and SI, Narosa Publishing House, New Delhi, Reprint 2008
+1. **Software Engineering**, Ian Sommerville, Pearson Education, Sixth Edition
+
+2. **Fundamentals of Software Engineering**, Rajib Mall, PHI Learning Pvt Limited, New Delhi, 28th Printing – August 2011
+
+3. **Software Engineering**, Bharat Bhusan Agarwal, Sumit Prakash Tayal, Firewall Media, New Delhi, Second Edition 2008
+
+4. **Software Testing**, K. Mustafa and R. A. Khan, Narosa Publishing House, New Delhi, Reprint 2009
+
+5. **Software Quality**, R. A. Khan, K. Mustafa and SI, Narosa Publishing House, New Delhi, Reprint 2008
 
 ## SUGGESTED DISTRIBUTION OF MARKS
 
