@@ -94,6 +94,10 @@ export const headerData = {
           text: 'Docs',
           href: getPermalink('docs', 'post'),
         },
+        {
+          text: 'License',
+          href: getPermalink('/license'),
+        },
       ],
     },
     {
