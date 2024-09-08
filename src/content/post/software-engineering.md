@@ -112,7 +112,7 @@ On completion of the subject, the students must be able to:
     - Project Estimation Guidelines
     - Models for Estimation (e.g., COCOMO Model)
 
-### 3. Software Maintenance and Risk Management
+### 3. Software Maintenance and Risk Management (15 Periods)
 
 - **Software Maintenance:**
   - Software as an Evolutionary Entity
@@ -133,7 +133,7 @@ On completion of the subject, the students must be able to:
   - Risk Avoidance
   - Risk Detection
 
-### 4. Software Quality Assurance
+### 4. Software Quality Assurance (15 Periods)
 
 - **Software Quality Assurance:**
   - Verification and Validation
@@ -157,7 +157,7 @@ On completion of the subject, the students must be able to:
     - Reliability Terminologies
     - Reliability Measurement Process
 
-### 5. Software Testing
+### 5. Software Testing (15 Periods)
 
 - **Software Testing:**
   - Introduction to Testing
