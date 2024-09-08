@@ -6,8 +6,6 @@ tags:
   - engineeering
   - syllabus
   - software
-
-
 ---
 # Table of Contents
 
@@ -68,7 +66,7 @@ On completion of the subject, the students must be able to:
   - Software Myths
   - Program versus Software Products
 
-- Software Development Life Cycle Models:
+- **Software Development Life Cycle Models:**
   - Introduction
   - Waterfall Model
   - Prototyping Model
@@ -79,7 +77,7 @@ On completion of the subject, the students must be able to:
   - Advantages and Disadvantages of Models
   - Comparison of Various Models
 
-- Software Requirement Analysis (SRS):
+- **Software Requirement Analysis (SRS):**
   - Value of Good SRS
   - Requirement Process
   - Requirement Specification
@@ -91,7 +89,7 @@ On completion of the subject, the students must be able to:
 
 ### 2. Software Design and Planning (20 Periods)
 
-- Software Design:
+- **Software Design:**
   - Definition of Software Design
   - Objectives of Software Design
   - Process of Software Design
@@ -103,12 +101,12 @@ On completion of the subject, the students must be able to:
   - Interface Design
   - Design of Human-Computer Interface
 
-- Software Planning:
+- **Software Planning:**
   - Software Metrics:
     - Definition
     - Types of Metrics (Product and Project Metrics)
     - Function Point and Feature Point Metrics
-  - Software Project Estimation:
+  - **Software Project Estimation:**
     - Steps for Estimation
     - Reasons for Poor and Inaccurate Estimation
     - Project Estimation Guidelines
@@ -116,7 +114,7 @@ On completion of the subject, the students must be able to:
 
 ### 3. Software Maintenance and Risk Management
 
-- Software Maintenance:
+- **Software Maintenance:**
   - Software as an Evolutionary Entity
   - Software Configuration Management Activities
   - Change Control Process
@@ -127,7 +125,7 @@ On completion of the subject, the students must be able to:
   - Maintenance Cost
   - Factors Affecting Effort
 
-- Risk Management:
+- **Risk Management:**
   - Definition of Risk
   - Basics for Different Types of Software Risks
   - Monitoring of Risks
@@ -137,7 +135,7 @@ On completion of the subject, the students must be able to:
 
 ### 4. Software Quality Assurance
 
-- Software Quality Assurance:
+- **Software Quality Assurance:**
   - Verification and Validation
   - SQA Objectives and Goals
   - SQA Plan
@@ -154,21 +152,21 @@ On completion of the subject, the students must be able to:
     - Uses of ISO
     - Salient Features of ISO 9000 Requirements
   - Introduction to ISO 9126
-  - Software Reliability:
+  - **Software Reliability:**
     - Definition
     - Reliability Terminologies
     - Reliability Measurement Process
 
 ### 5. Software Testing
 
-- Software Testing:
+- **Software Testing:**
   - Introduction to Testing
   - Testing Principles
   - Testing Objectives
   - Test Oracles
   - Basic Terms Used in Testing (Fault, Error, Failure)
   - Test Cases
-  - Black Box and White Box Testing:
+  - **Black Box and White Box Testing:**
     - Advantages and Disadvantages
     - Methods for Black Box Testing Strategies
     - Methods for White Box Testing Strategies
@@ -176,7 +174,7 @@ On completion of the subject, the students must be able to:
   - Integration Testing
   - System Testing
 
-- Testing Strategies:
+- **Testing Strategies:**
   - Static Testing Strategies
   - Formal Technical Reviews
   - Code Reviews
