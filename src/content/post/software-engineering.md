@@ -9,7 +9,7 @@ tags:
 
 
 ---
-# Rationale
+# Rational
 
 Software Engineering deals with the reliability and quality assurance of the software under development. It provides a framework for the development of quality software products. The course enables students to:
 
