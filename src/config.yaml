@@ -1,6 +1,6 @@
 site:
   name: IT Off-topics
-  site: 'https://off-topics.vercel.app/'
+  site: 'https://offtopics.in/'
   base: '/'
   trailingSlash: false
 
