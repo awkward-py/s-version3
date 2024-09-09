@@ -11,7 +11,7 @@ metadata:
   title:
     default: IT Off-topics
     template: '%s — IT Off-topics'
-  description: "\U0001F680 IT Off-Topics is a platform for exploring supplementary IT resources, general discussions, practical tips, and community contributions beyond core technical subjects."
+  description: "\U0001F680 General discussions, practical tips, and community contributions beyond core technical subjects."
   robots:
     index: true
     follow: true
