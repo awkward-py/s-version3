@@ -23,13 +23,6 @@ This makes our process fully legitimate and compliant with all applicable laws a
 - **Academic Data**: Remarks, status, and achievements as a student.
 - **Activity Data**: Participation and contributions to discussions or topics.
 
-## Authenticity and Ethical Data Handling
-
-We uphold the following ethical standards:
-1. **No Fake Profiles**: All data collected is genuine and authenticated.
-2. **Verified Users Only**: We verify each user's data to ensure accuracy and transparency.
-3. **No Unauthorized Data Access**: Access to your data is limited to verified IT Off-Topics administrators only.
-
 ## Data Protection: How We Keep You Safe
 
 Your data is protected through the following measures:
