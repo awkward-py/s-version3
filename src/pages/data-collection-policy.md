@@ -32,7 +32,8 @@ Your data is protected through the following measures:
 
 ### More Secure Than Other Platforms
 
-<span style="color:blue;">Your data is more secure with IT Off-Topics than Instagram.</span> Social media platforms often collect vast amounts of data from various sources for advertising, but we only ask for the data necessary to improve your experience. We **never sell or share your information** with third parties, ensuring greater privacy and security. With **IT Off-Topics**, your data is handled responsibly and transparently.
+<span style="color:pink;"><strong>Your data is more secure with IT Off-Topics than Instagram.</strong></span>
+ Social media platforms often collect vast amounts of data from various sources for advertising, but we only ask for the data necessary to improve your experience. We **never sell or share your information** with third parties, ensuring greater privacy and security. With **IT Off-Topics**, your data is handled responsibly and transparently.
 
 ## How We Use Your Data
 
