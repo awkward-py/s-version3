@@ -30,7 +30,7 @@ Your data is protected through the following measures:
 - **Secure Servers**: We store your data on protected, constantly monitored servers.
 - **Access Control**: Only authorized personnel can access your data, and all actions are tracked for security.
 
-### <span style="color:red;> Your Data on Instagram </span>
+### Your Data on Instagram 
 
 **<span style="color:red;">*Your data is more secure with IT Off-Topics than Instagram*. </span>** Social media platforms often collect vast amounts of data from various sources for advertising, but we only ask for the data necessary to improve your experience. We **never sell or share your information** with third parties, ensuring greater privacy and security. With **IT Off-Topics**, your data is handled responsibly and transparently. 
 
