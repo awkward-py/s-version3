@@ -1236,6 +1236,12 @@ color: var(--davys-gray);
 
 
 
+
+
+
+
+
+
 /*-----------------------------------*\
 #PRODUCT MINIMAL
 \*-----------------------------------*/
@@ -1259,6 +1265,14 @@ overscroll-behavior-inline: contain;
     -ms-scroll-snap-type: inline mandatory;
         scroll-snap-type: inline mandatory;
 }
+
+.product-minimal .showcase-img {
+  width: 70px; 
+  height: 70px; 
+  border-radius: 100px;
+  object-fit: cover;
+}
+
 
 .product-minimal .showcase-container {
 min-width: 100%;
@@ -1332,9 +1346,12 @@ font-weight: var(--weight-700);
 color: var(--salmon-pink);
 }
 
-.product-minimal .price-box del {
-font-size: var(--fs-9);
-color: var(--sonic-silver);
+.product-minimal .price-box-badge {
+font-size: 10px;
+background-color: rgba(7, 196, 7, 0.39);
+border-radius: 5px;
+width: fit-content;
+color: rgb(2, 123, 2);
 }
 
 
@@ -1374,11 +1391,11 @@ scroll-snap-align: start;
 }
 
 .product-featured .showcase-img {
-width: 70%;
-height: 70%;
-border-radius: 50%;
-/* box-shadow: 5px 10px black; */
-border: 5px solid rgb(1 97 239);
+width: 100%;
+height: 100%;
+border-radius: 100%;
+box-shadow: 5px 5px black; 
+border: 10px solid rgb(249 251 251);
 -o-object-fit: cover;
    object-fit: cover;
 }
@@ -1518,6 +1535,51 @@ top: 3px;
 left: 3px;
 height: 4px;
 width: 90.4%;
+background: rgb(1 97 239);
+-webkit-border-radius: 4px;
+        border-radius: 4px;
+}
+
+
+
+
+.product-featured .showcase-status-bar-maya {
+background: var(--cultured);
+position: relative;
+height: 10px;
+-webkit-border-radius: 5px;
+        border-radius: 5px;
+}
+
+.product-featured .showcase-status-bar-maya::before {
+position: absolute;
+content: '';
+top: 3px;
+left: 3px;
+height: 4px;
+width: 80.65%;
+background: rgb(1 97 239);
+-webkit-border-radius: 4px;
+        border-radius: 4px;
+}
+
+
+
+.product-featured .showcase-status-bar-manish {
+background: var(--cultured);
+position: relative;
+height: 10px;
+-webkit-border-radius: 5px;
+        border-radius: 5px;
+}
+
+.product-featured .showcase-status-bar-manish::before {
+position: absolute;
+content: '';
+top: 3px;
+left: 3px;
+height: 4px;
+width: 80.64%;
 background: rgb(1 97 239);
 -webkit-border-radius: 4px;
         border-radius: 4px;
@@ -3252,6 +3314,19 @@ html { font-size: 18px; }
 }
 
 }
+
+
+
+[data-section] {
+  transform: translateY(50px); 
+  opacity: 0; 
+  transition: opacity 0.6s ease, transform 0.6s ease; 
+}
+
+[data-section].active {
+  transform: translateY(0); 
+  opacity: 1; 
+}
  </style>
     
 
@@ -3347,7 +3422,7 @@ html { font-size: 18px; }
 
   <header>
 
-    <div class="header-top">
+    <div class="header-top" data-section>
 
       <div class="container">
 
@@ -3959,7 +4034,7 @@ html { font-size: 18px; }
       - BLOG
     -->
 
-    <div class="blog">
+    <div class="blog" data-section>
 
       <div class="container">
 
@@ -3971,11 +4046,7 @@ html { font-size: 18px; }
               <img src="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/images2/rollcollhub.png?raw=true" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
             </a>
 
-            <div class="blog-content">
-
-            
-
-              
+            <div class="blog-content"> 
 
             </div>
 
@@ -4283,7 +4354,7 @@ html { font-size: 18px; }
       - PRODUCT
     -->
 
-    <div class="product-container">
+    <div class="product-container" data-section>
 
       <div class="container">
 
@@ -4295,7 +4366,7 @@ html { font-size: 18px; }
 
             <div class="product-showcase">
 
-              <h2 class="title">1st year Students</h2>
+              <h2 class="title">1st year Students!</h2>
 
               <div class="showcase-wrapper has-scrollbar">
 
@@ -4304,7 +4375,7 @@ html { font-size: 18px; }
 
 
 
-                  <div class="showcase">
+                  <div class="showcase" data-section>
 
                   
 
@@ -4319,6 +4390,8 @@ html { font-size: 18px; }
                     </div>
 
                   </div>
+
+                
  
                 </div>
 
@@ -4327,18 +4400,357 @@ html { font-size: 18px; }
             </div>
 
 
-            <div class="product-showcase">
+            <div class="product-showcase" data-section>
 
               <h2 class="title">2nd year Students!</h2>
 
               <div class="showcase-wrapper has-scrollbar">
 
+
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/f2d92d24-52ec-41da-b476-1a49242bc283-M9fa5b7kH9DBUb3UwpDVbHyypsWSiAKDaiho9P5B5dZfBFVl7Sn451kuhW7aBOb9YwyrkxuGxlNpXeLTQSBETn5lEPS30OnUL5a/17258690162492106984894142459671.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title"> 	
+                           23009120021 </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Harsh Bhatt  </a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/7a7d3582-41b8-4fec-8b47-58e4642f708c-FbHOkqi4V2JY1VlsevINYVxK7NIXX2MZpFDxqoPBNoCK0GgjIqoSyuvVwKMjNwKpxrp9VmLbKFYvuALJT33y5ICoc99g10noWGa/photo.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title"> 23009120032 </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category"> Paras Kumar</a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/698cfbaf-3d9d-4add-a13b-2d5890166042-9l8yOhGqn1luhEb29yvCYuAjITv7yMQOCF2Gg67iwZzLt4KbU3RZuus9aoaORvSPowbFdcTmk6uH5YClhLH7DGSpWjIT0fbHSXk/IMG_20230909_103529_834.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">	23009120004 
+                           </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category"> Megha Bahukhandi</a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/user.png" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">23009120011  </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category"> Jyoti Rani</a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/2387991b-e8ce-4488-94f6-07d344c52aa1-RJh2rWt60keHKP5D0TBT1rPwwkJtozCTDWbXa8pMpQmm5ZtHegjcreSEK2WvEfk6wdg0KHdmsnflWr2h4aBsWO2SswHndzzilUn/1723550073301.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title"> 2421801148  </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Ratandeep Arora</a>
+
+                      <div class="price-box">
+                        <p class="price">Computer Science Eg.</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/7e7a24a9-a1a1-4d7f-95a0-0840f43001d0-47IRBA2uRpXefOqkZafUYUqYNk69FroHLQJvg9Rf7qhAtakilfy8reGfK5QcALWPIFGwV8EOb9NgzXBBXya0XpJtVkVDdyQxSQJ/17258672698721256877571370291542.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title"> 	
+                          23005009036 </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Ajay </a>
+
+                      <div class="price-box">
+                        <p class="price">Computer Science Eg.</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/449be650-99a3-4c3c-9d6e-c426e7280511-EyMQiJiZS92H1EWZwpSes3ddu0YWPwcdNw7qEwkW4q0DOihxP4xOgoXtDf9fk2n1xuAlXDgcCvusPtFIAgNFhrTWAqvfhLuZ87l/Snapchat-10238990.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title"> 23009120025 </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category"> Saloni Das</a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/f17a2ec8-eb4f-4d6c-91ac-32bf20b2c4f9-3uHQH5rU91D9V9sppRQV6jtaLJUiWW3kOM1NPsVv004HwMI8zD985cwamMshLiUL3RREwpE34c8L9spesZPYLSpjizaH4RhBGdN/jpeg-optimizer_IMG_20231205_161545-removebg-preview.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">	23009050030 
+                           </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Ritik Mahtoliya </a>
+
+                      <div class="price-box">
+                        <p class="price">Computer Science Eg.</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/ab04dc5d-d778-4bde-a880-0a802af6b9f8-rGRArfWo8p2CMfbwdTnF9koh2Qahheh2uwpEKffjeZY7re0My4Eejj0fStSkUdy7BWtd6kVOc5Z3pXtfJhAxb6Vdy1HfQImMoXk/SAVE_20240815_183401.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">23009120019  </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category"> Vinita Sahani</a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/e08cd71d-bd4f-48f0-a0a3-261a403ebc5a-GrAaipsgnqaKyo7wkxBErAzrRwwGtPHnsQyB6VB3eYhhqZuPvEuRfvVMRUh3wE3dzcTr93d8eTHLKbkh0Hno884EC3UPMErQnje/IMG_20231201_114852885.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title"> 23009120022 </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category"> Himanshu Rawat</a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/96dd13b4-1b80-4efd-85de-cd59fdb48dbe-x6aQEvFO68eCEu6dB7sOPZTiu5hlYCdAU3OvwrPSoYjGLacjGfzPW4Bv8YyDG84rMhgBG50TTFVPsmuOJ9c2EQ0fel98vz1cMG1/IMG-20240406-WA0012(1).jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title"> 	
+                          23009120016 </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Rahul Singh Bisht </a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/user.png" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title"> 23009250024 </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Aarti Mehra </a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+            
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/user.png" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">	
+                          23009250021  </h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Jyoti Sanwal </a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+            
+                </div>
+
+
                 <div class="showcase-container">
 
 
 
-
-                  <div class="showcase">
+                  <div class="showcase" data-section>
 
                   
 
@@ -4359,7 +4771,7 @@ html { font-size: 18px; }
               </div>
 
             </div>
-            <div class="product-showcase">
+            <div class="product-showcase" data-section>
 
               <h2 class="title">3rd year Students!</h2>
 
@@ -4368,9 +4780,67 @@ html { font-size: 18px; }
                 <div class="showcase-container">
 
 
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-171517/flowpublicid-mDshDd62R3us/4d85bd60-e406-4350-9070-bfa591a94a19-rbM0vxpuBM9rp8YiCDhzaKicYdo8zEbHrWTQC59sSelrh02cJ0TeIbV1iYZFFI9FVo3seDYWdhNwICMdlBGKJZEWr35hLw5HiGG/deep.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">	
+                          22009120006   <svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="rgb(0, 149, 246)" height="14" role="img" viewBox="0 0 40 40" width="14">
+                            <title>IT-Verified</title>
+                            <path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path>
+                          </svg></h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Deepak Pokhriyal  </a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+                      <div class="price-box-badge">
+                        <p class="badge">Top contributor</p>
+                      </div>
+
+                    </div>
+
+                  </div>
 
 
                   <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="https://raw.githubusercontent.com/awkward-py/Open-Source-Off-Topics/main/assets/images/images2/bharat.jpg" alt="user" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">	
+                          22009120005</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Bharat Singh Rawat  </a>
+
+                      <div class="price-box">
+                        <p class="price">Informaion Technology</p>
+                        
+                      </div>
+                      
+
+                    </div>
+
+                  </div>
+
+
+
+
+
+                  <div class="showcase" data-section>
 
                   
 
@@ -4378,7 +4848,7 @@ html { font-size: 18px; }
 
                     
                       <div class="price-box">
-                        <p class="price1">Data currently unavailable!</p>
+                        <p class="price1">Data will be updated soon.</p>
                         
                       </div>
 
@@ -5287,7 +5757,7 @@ html { font-size: 18px; }
             - PRODUCT FEATURED
           -->
 
-          <div class="product-featured">
+          <div class="product-featured" data-section>
 
             <h2 class="title">Top Achievers of the Year!</h2>
 
@@ -5295,15 +5765,15 @@ html { font-size: 18px; }
 
               <!-- name -->
 
-              <div class="showcase-container">
+              <div class="showcase-container" data-section>
 
-                <div class="showcase">
+                <div class="showcase" >
                   
                   <div class="showcase-banner">
-                    <img src="https://raw.githubusercontent.com/awkward-py/Open-Source-Off-Topics/main/assets/images/images2/bharat.jpg" alt="bharat image" class="showcase-img">
+                    <img src="https://raw.githubusercontent.com/awkward-py/Open-Source-Off-Topics/main/assets/images/images2/bharat.jpg" alt="Bharat IT Off-Topics" class="showcase-img">
                   </div>
 
-                  <div class="showcase-content">
+                  <div class="showcase-content" >
                     
                     
 
@@ -5316,7 +5786,7 @@ html { font-size: 18px; }
                       CGPA
                     </p>
 
-                    <div class="price-box">
+                    <div class="price-box" >
                       <p class="price"> Bharat Singh Rawat</p>
                     </div>
 
@@ -5331,10 +5801,10 @@ html { font-size: 18px; }
                         </p>
                       </div>
 
-                      <div class="showcase-status-bar1"></div>
+                      <div class="showcase-status-bar1" ></div>
                     </div>
 
-                    <div class="countdown-box">
+                    <div class="countdown-box" >
 
                       <p class="countdown-desc">
                         3rd Year IT Student!
@@ -5349,6 +5819,182 @@ html { font-size: 18px; }
                 </div>
 
               </div>
+
+             <!-- next name  -->
+
+
+             
+              <!-- name -->
+
+              <div class="showcase-container" data-section>
+
+                <div class="showcase" >
+                  
+                  <div class="showcase-banner">
+                    <img src="https://raw.githubusercontent.com/awkward-py/off-topics/main/src/assets/images/maya.jpg" alt="Maya IT Off-Topics" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content" >
+                    
+                    
+
+                    <a href="#">
+                      <h3 class="showcase-title">	8.65
+                       </h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      CGPA
+                    </p>
+
+                    <div class="price-box" >
+                      <p class="price"> Maya Rawat</p>
+                    </div>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          CGPA Score: <b>8.65</b>
+                        </p>
+
+                        <p>
+                          Total: <b>10</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar-maya" ></div>
+                    </div>
+
+                    <div class="countdown-box" >
+
+                      <p class="countdown-desc">
+                        3rd Year CSE Student!
+                      </p>
+
+                      
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+             <!-- next name  -->
+
+             
+              <!-- name -->
+
+              <div class="showcase-container" data-section>
+
+                <div class="showcase" >
+                  
+                  <div class="showcase-banner">
+                    <img src="https://github.com/awkward-py/off-topics/blob/main/src/assets/images/manish.jpg?raw=true" alt="Manish IT Off-Topics" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content" >
+                    <a href="#">
+                      <h3 class="showcase-title">	8.64
+                       </h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      CGPA
+                    </p>
+
+                    <div class="price-box" >
+                      <p class="price"> Manish Paliwali</p>
+                    </div>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          CGPA Score: <b>8.64</b>
+                        </p>
+
+                        <p>
+                          Total: <b>10</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar-manish" ></div>
+                    </div>
+
+                    <div class="countdown-box" >
+
+                      <p class="countdown-desc">
+                        2nd Year CSE Student!
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+             <!-- next name  -->
+
+             
+              <!-- name -->
+
+              <!-- <div class="showcase-container" data-section>
+
+                <div class="showcase" >
+                  
+                  <div class="showcase-banner">
+                    <img src="" alt="bharat image" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content" >
+                    
+                    
+
+                    <a href="#">
+                      <h3 class="showcase-title">	9.04 
+                       </h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      CGPA
+                    </p>
+
+                    <div class="price-box" >
+                      <p class="price"> Bharat Singh Rawat</p>
+                    </div>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          CGPA Score: <b>9.04</b>
+                        </p>
+
+                        <p>
+                          Total: <b>10</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar1" ></div>
+                    </div>
+
+                    <div class="countdown-box" >
+
+                      <p class="countdown-desc">
+                        3rd Year IT Student!
+                      </p>
+
+                      
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div> -->
 
              <!-- next name  -->
              
@@ -5387,7 +6033,7 @@ html { font-size: 18px; }
 
     <div>
 
-      <div class="container">
+      <div class="container" data-section>
 
         <div class="testimonials-box">
 
@@ -5395,11 +6041,11 @@ html { font-size: 18px; }
             - TESTIMONIALS
           -->
 
-          <div class="testimonial">
+          <div class="testimonial" data-section>
 
             <h2 class="title">IT Off-Topic's platform</h2>
 
-            <div class="testimonial-card">
+            <div class="testimonial-card" data-section>
 
               <img  src="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/images2/logo.png?raw=true" alt="call-hub" class="testimonial-banner" width="150" height="50">
 
@@ -5408,7 +6054,7 @@ html { font-size: 18px; }
                 <path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path>
               </svg></p>
 
-              <p class="testimonial-title">IT Off-Topics latest project</p>
+              <p class="testimonial-title" data-section>IT Off-Topics latest project</p>
 
               <p class="testimonial-desc">
                 Stay tuned as we roll out this project and bring you more details soon!
@@ -5424,7 +6070,7 @@ html { font-size: 18px; }
             - CTA
           -->
 
-          <div class="cta-container">
+          <div class="cta-container" data-section>
 
             <img src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="summer collection" class="cta-banner">
 
@@ -5448,7 +6094,7 @@ html { font-size: 18px; }
             - SERVICE
           -->
 
-          <div class="service">
+          <div class="service" data-section>
 
             <h2 class="title">What You Will Get Here</h2>
 
@@ -5460,7 +6106,7 @@ html { font-size: 18px; }
            
                 </div>
 
-                <div class="service-content">
+                <div class="service-content" data-section>
 
                   <h3 class="service-title">Student Name</h3>
                   <p class="service-desc">Names of all enrolled students.</p>
@@ -5475,7 +6121,7 @@ html { font-size: 18px; }
                  
                 </div>
               
-                <div class="service-content">
+                <div class="service-content" data-section>
               
                   <h3 class="service-title">Roll Number</h3>
                   <p class="service-desc">Easily access the roll numbers of students.</p>
@@ -5490,7 +6136,7 @@ html { font-size: 18px; }
                 
                 </div>
               
-                <div class="service-content">
+                <div class="service-content" data-section>
               
                   <h3 class="service-title">Top Achievers</h3>
                   <p class="service-desc">Top-performing students of the year.</p>
@@ -5505,7 +6151,7 @@ html { font-size: 18px; }
                  
                 </div>
               
-                <div class="service-content">
+                <div class="service-content" data-section>
               
                   <h3 class="service-title">Top Contributors</h3>
                   <p class="service-desc">those who have made contributions.</p>
@@ -5531,7 +6177,7 @@ html { font-size: 18px; }
       - BLOG
     -->
 
-    <div class="blog">
+    <div class="blog" data-section>
 
       <div class="container">
 
@@ -5543,7 +6189,7 @@ html { font-size: 18px; }
               <img src="https://images.unsplash.com/photo-1636586108931-a8b9b8796ba6?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&h=506" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
             </a>
 
-            <div class="blog-content">
+            <div class="blog-content" >
 
               <a href="#" class="blog-category">Posts</a>
 
@@ -5567,7 +6213,7 @@ html { font-size: 18px; }
                 class="blog-banner" width="300">
             </a>
           
-            <div class="blog-content">
+            <div class="blog-content" >
           
               <a href="#" class="blog-category">Posts</a>
           
@@ -5667,6 +6313,25 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(slideShowcase, slideInterval);
 });
 
+
+
+    const addEventOnElem = function (elem, type, callback) {
+        elem.addEventListener(type, callback);
+    }
+
+    const sections = document.querySelectorAll("[data-section]");
+    const scrollReveal = function () {
+        sections.forEach(section => {
+            if (section.getBoundingClientRect().top < window.innerHeight / 1.6) {
+                section.classList.add("active"); 
+            } else {
+                section.classList.remove("active");
+            }
+        });
+    }
+
+    scrollReveal();
+    addEventOnElem(window, "scroll", scrollReveal);
 
 
   </script>
