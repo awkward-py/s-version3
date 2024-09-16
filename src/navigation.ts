@@ -100,7 +100,7 @@ export const headerData = {
         },
          {
           text: 'Checkmark Policy',
-          href: getPermalink('/checkmark-policy'),
+          href: getPermalink('/Student-Hub-policy'),
         },
       ],
     },
