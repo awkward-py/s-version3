@@ -99,7 +99,7 @@ export const headerData = {
           href: getPermalink('/license'),
         },
          {
-          text: 'Checkmark Policy',
+          text: 'Student-Hub Policy',
           href: getPermalink('/Student-Hub-Policy'),
         },
       ],
