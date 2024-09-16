@@ -34,7 +34,7 @@
 
   <style>
     /*-----------------------------------*\
-  #CUSTOM PROPERTY black
+  #CUSTOM PROPERTY
 \*-----------------------------------*/
 
     :root {
@@ -43,17 +43,17 @@
  * colors
  */
 
-      --spanish-gray: hsl(0, 0%, 100%);
-      --sonic-silver: hsl(0, 0%, 87%);
-      --eerie-black: hsl(0, 0%, 98%);
+      --spanish-gray: hsl(0, 0%, 0%);
+      --sonic-silver: hsl(0, 0%, 47%);
+      --eerie-black: hsl(0, 0%, 13%);
       --salmon-pink: rgb(59, 131, 246);
       --sandy-brown: hsl(29, 90%, 65%);
       --bittersweet: hsl(0, 100%, 70%);
       --ocean-green: hsl(152, 51%, 52%);
-      --davys-gray: hsl(0, 0%, 86%);
-      --cultured: hsla(0, 0%, 93%, 0.308);
-      --white: hsla(0, 0%, 0%, 0.942);
-      --onyx: hsl(0, 1%, 85%);
+      --davys-gray: hsl(0, 0%, 33%);
+      --cultured: hsl(0, 0%, 93%);
+      --white: hsl(180, 25%, 98%);
+      --onyx: hsl(0, 0%, 27%);
 
       /**
  * typography
@@ -94,7 +94,7 @@
 
 
     h1 {
-      color: rgb(228, 225, 225);
+      color: black;
     }
 
 
@@ -290,7 +290,7 @@
       left: 0;
       width: 100%;
       height: 100vh;
-      background: hsla(0, 0%, 96%, 0.5);
+      background: hsla(0, 0%, 0%, 0.5);
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -484,7 +484,7 @@
       bottom: 80px;
       left: 20px;
       right: 20px;
-      background: white;
+      background: var(--white);
       max-width: 300px;
       display: -webkit-box;
       display: -webkit-flex;
@@ -593,19 +593,19 @@
 
     .toast-message {
       font-size: var(--fs-10);
-      color: black;
+      color: var(--sonic-silver);
       margin-bottom: 8px;
     }
 
     .toast-title {
       font-size: var(--fs-7);
       font-weight: var(--weight-500);
-      color: rgb(32, 0, 177);
+      color: var(--onyx);
     }
 
     .toast-meta {
       font-size: var(--fs-10);
-      color: rgba(0, 0, 0, 0.799);
+      color: var(--sonic-silver);
     }
 
 
@@ -1539,7 +1539,7 @@
     .product-featured .showcase-container {
       min-width: 100%;
       padding: 30px;
-      border: 1px solid rgb(255, 255, 255);
+      border: 1px solid rgb(0, 0, 0);
       -webkit-border-radius: var(--border-radius-md);
       border-radius: var(--border-radius-md);
       scroll-snap-align: start;
@@ -1549,8 +1549,8 @@
       width: 100%;
       height: 100%;
       border-radius: 100%;
-      box-shadow: 5px 5px rgb(255, 255, 255);
-      border: 10px solid rgb(0, 0, 0);
+      box-shadow: 5px 5px black;
+      border: 10px solid rgb(249 251 251);
       -o-object-fit: cover;
       object-fit: cover;
     }
@@ -1575,7 +1575,7 @@
 
     .product-featured .showcase-title {
       font-size: 40px;
-      color: rgb(255, 255, 255);
+      color: rgb(1 97 239);
       overflow: hidden;
       white-space: nowrap;
       -o-text-overflow: ellipsis;
@@ -1602,17 +1602,13 @@
     }
 
     .product-featured .price {
-      color: rgb(255, 255, 255);
+      color: rgb(1 97 239);
       font-weight: var(--weight-700);
     }
 
     .product-featured .price1 {
       color: rgb(239, 1, 1);
       font-weight: var(--weight-700);
-    }
-
-    .price1{
-      color: rgb(244, 8, 8);
     }
 
 
@@ -1698,7 +1694,7 @@
       left: 3px;
       height: 4px;
       width: 90.4%;
-      background: rgb(0, 200, 255);
+      background: rgb(1 97 239);
       -webkit-border-radius: 4px;
       border-radius: 4px;
     }
@@ -1721,7 +1717,7 @@
       left: 3px;
       height: 4px;
       width: 80.65%;
-      background: rgb(0, 200, 255);
+      background: rgb(1 97 239);
       -webkit-border-radius: 4px;
       border-radius: 4px;
     }
@@ -1743,7 +1739,7 @@
       left: 3px;
       height: 4px;
       width: 80.64%;
-      background: rgb(0, 200, 255);
+      background: rgb(1 97 239);
       -webkit-border-radius: 4px;
       border-radius: 4px;
     }
@@ -2057,7 +2053,6 @@
       border-radius: var(--border-radius-md);
       overflow: hidden;
       margin-bottom: 25px;
-      
     }
 
     .cta-banner {
@@ -2085,8 +2080,8 @@
     }
 
     .cta-content .discount {
-      background: black;
-      color: white;
+      background: var(--eerie-black);
+      color: var(--white);
       font-size: var(--fs-11);
       font-weight: var(--weight-600);
       text-transform: uppercase;
@@ -2101,21 +2096,21 @@
     }
 
     .cta-title {
-      color: rgba(0, 0, 0, 0.788);
+      color: var(--onyx);
       font-size: var(--fs-5);
       text-transform: capitalize;
       margin-bottom: 5px;
     }
 
     .cta-text {
-      color: darkslategrey;
+      color: var(--sonic-silver);
       font-size: var(--fs-7);
       margin-bottom: 5px;
     }
 
     .cta-btn {
       font-size: var(--fs-9);
-      color: darkslategrey;
+      color: var(--sonic-silver);
       text-transform: uppercase;
       font-weight: var(--weight-700);
       margin: auto;
@@ -2194,10 +2189,8 @@
       font-size: var(--fs-9);
     }
 
-    .service-desc1 {
-      color: rgb(255, 68, 0);
-      font-size: var(--fs-9);
-    }
+
+
 
 
     /*-----------------------------------*\
@@ -2279,7 +2272,7 @@
 \*-----------------------------------*/
 
     footer {
-      background: rgba(69, 68, 68, 0.601);
+      background: white;
       padding: 10px 0;
     }
 
@@ -3739,7 +3732,7 @@
 
 
 .swipe {
-  color: rgba(251, 251, 251, 0.518);
+  color: rgba(0, 0, 0, 0.348);
   font-size: 12px;
   margin-top: 0;
   padding-bottom: 20px;
@@ -3760,7 +3753,7 @@
   <!--
     - MODAL
   -->
-  
+  <!-- 
   <div class="modal" data-modal>
 
     <div class="modal-close-overlay" data-modal-overlay></div>
@@ -3772,7 +3765,7 @@
       </button>
 
       <div class="newsletter-img">
-        <img src="https://plus.unsplash.com/premium_photo-1663012876180-86a7fc80ca86?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="subscribe newsletter" width="400" height="400">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
       </div>
 
       <div class="newsletter">
@@ -3781,17 +3774,17 @@
 
           <div class="newsletter-header">
 
-            <h3 class="newsletter-title">Contribute to IT Off-Topics.</h3>
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
 
             <p class="newsletter-desc">
-              Help us by contributing to the <b>IT Off-topics project.</b>  Your input makes a difference!
-
-
+              Subscribe the <b>IT off-topics</b> to get latest products and discount update.
             </p>
 
           </div>
 
-         <button  class="btn-newsletter">  <a href="https://offtopics.in/homes/opensource">Contribute</a></button>
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
 
         </form>
 
@@ -3801,7 +3794,7 @@
 
   </div>
 
-
+ -->
 
 
 
@@ -3809,7 +3802,7 @@
     - NOTIFICATION TOAST
   -->
 
-  <!-- <div class="notification-toast" data-toast>
+  <div class="notification-toast" data-toast>
 
 
 
@@ -3836,7 +3829,7 @@
 
     </div>
 
-  </div> -->
+  </div>
 
 
   <!--
@@ -7424,7 +7417,7 @@
                 <div class="service-content" data-section>
 
                   <h3 class="service-title">Update Your Profile Information</h3>
-                  <p class="service-desc1">If you are not satisfied with your profile or notice an incorrect name or roll
+                  <p class="service-desc">If you are not satisfied with your profile or notice an incorrect name or roll
                     number, please fill out the form again.</p>
 
                 </div>
