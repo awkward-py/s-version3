@@ -4,8 +4,6 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 ---
 
-# Documentation
-
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [HTML File Overview](#html-file-overview)
