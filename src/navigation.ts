@@ -36,8 +36,8 @@ export const headerData = {
         // },
 
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
+          text: 'QuizWhiz',
+          href: getPermalink('/quizwhiz'),
         },
 
         {
