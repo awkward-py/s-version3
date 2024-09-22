@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://offtopics.in/sitemap.xml
