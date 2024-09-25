@@ -1,0 +1,182 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Details Form',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'Get started',
+          href: '',
+        },
+        {
+          variant: 'primary',
+          text: 'IT Off-topics',
+          href: '#',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+ <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Make your experience better"
+    actions={[
+   { text: 'Read Data Collection Policy', href: '/data-collection-policy' },
+ 
+    ]}
+    image={{
+      src: 'https://cdn.pixabay.com/photo/2015/05/31/15/14/woman-792162_1280.jpg',
+      alt: 'Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      with <span class="text-accent dark:text-white highlight">Off-topics FillOut</span><br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span >
+       Before filling out the form, please read our student  <span class="font-semibold"
+          >data collection policy.</span
+        > </span
+      >
+    </Fragment>
+  </Hero2>
+
+ <div data-fillout-id="mDshDd62R3us" data-fillout-embed-type="slider" data-fillout-button-text="Fill out details form" data-fillout-button-color="#0161ef" data-fillout-button-size="medium" data-fillout-button-float="bottom-left" data-fillout-slider-direction="left" data-fillout-inherit-parameters data-fillout-popup-size="medium"></div><script src="https://server.fillout.com/embed/v1/"></script>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="Why We Need You to Fill Out This Form"
+    subtitle="Collecting your data allows us to create a more personalized and effective experience."
+    columns={2}
+    items={[
+      {
+        title: 'Accurate Identification',
+        description:
+          'Filling out this form helps us ensure that we can accurately identify and communicate with you. Your full name and photo will be used to create a profile that helps us and others recognize you easily.',
+        icon: 'tabler:brand-auth0',
+      },
+      {
+        title: 'Relevant Content and Support',
+        description: `By providing information about your branch and semester/year, we can offer content and support that is specifically tailored to your academic needs and current level of study.`,
+        icon: 'tabler:copy-check-filled',
+      },
+      {
+        title: 'Academic Verification ',
+        description:
+          'Your UBTER Roll Number is crucial for verifying your academic status and maintaining accurate records. This helps us manage and track academic information effectively.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Profile Accuracy',
+        description: ` Uploading a clear, forward-facing photo allows us to maintain an accurate and identifiable student profile, which enhances interaction and engagement within our community.`,
+        icon: 'tabler:user-code',
+      },
+      {
+        title: 'Recognize Achievements ',
+        description: `Sharing your marksheet allows us to celebrate your achievements and provide better support. It helps us identify top performers and acknowledge their hard work.`,
+        icon: 'tabler:award',
+      },
+      {
+        title: 'Personalized Experience',
+        description: `The information you provide helps us customize your experience, making it more relevant and enjoyable. By understanding your academic background and achievements, we can better support and engage with you.`,
+        icon: 'tabler:user-edit',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'What information do I need to provide on the form?',
+        description:
+          'You need to provide your full name, branch, semester or year, UBTER Roll No, a clear photo of yourself, and your marksheet. This helps us accurately identify you, tailor support to your academic level, and recognize your achievements.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Why is my photo required, and how should I upload it?',
+        description: `Your photo is required to create a clear and recognizable profile. This helps in accurately identifying you and improving engagement within our community. Please upload a clear, forward-facing image with a maximum file size of 10 MB. Ensure that the photo is recent and shows you clearly.`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'How will my information be used?',
+        description:
+          'Your information will be used to personalize your experience, provide relevant support, and celebrate your achievements. We use the data to ensure accurate profiles, tailor content to your academic level, and recognize top performers. Your information is securely stored and will not be shared with third parties.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Is my data safe?',
+        description: `Yes, your data is protected. We use it solely to enhance your experience and do not share it with third parties. Your information is securely stored and managed according to our privacy policy.`,
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Reach out to us"
+    subtitle="If you have any questions or need further assistance regarding the form or your data, please feel free to contact us. We’re here to help!!"
+    callToAction={{
+      text: 'Contact us',
+      href: '/contact',
+    }}
+    items={[
+      {
+        title: 'Email us',
+        description: 'contact@offtopics.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Call us',
+        description: '+91 7465 81 4952',
+        icon: 'tabler:headset',
+      },
+      // {
+      //   title: 'Follow us',
+      //   description: '@example',
+      //   icon: 'tabler:brand-twitter',
+      // },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Stay informed with IT Off-topics blog"
+    information={`IT Off-Topics Blog offers concise, informative posts on IT tutorials, academic tips, and open-source contributions. Stay updated with practical advice and industry trends to enhance your knowledge and skills.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>

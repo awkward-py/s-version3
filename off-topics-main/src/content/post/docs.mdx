@@ -1,0 +1,733 @@
+---
+publishDate: 2024-06-02T00:00:00Z
+title: IT Off-Topics Docs
+excerpt: This documentation provides a comprehensive overview of the IT Off-Topics.
+image: https://plus.unsplash.com/premium_photo-1661313626999-90d230cabf8d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+tags:
+  - docs
+  - blog
+  - off-topics
+  - off-topics docs
+---
+
+### Content Breakdown of the IT Off-Topics Website Starting Page
+
+This page is a starting or landing page for a website dedicated to IT and CSE topics. Here's what each part of the page is about:
+
+---
+
+### 1. **Title and Favicon**
+
+- **Title**: `"IT Off-Topics"` — This is the title displayed in the browser tab, letting users know they are on the IT Off-Topics website.
+- **Favicon**: A small icon that appears in the browser tab beside the title. This icon is linked via the following code:
+
+  ```html
+  <link rel="shortcut icon" href="./assets/images/logoo.png" type="image/svg+xml" />
+  ```
+
+This gives the page a professional look with a recognizable logo on the browser tab.
+
+---
+
+### 2. **Header**
+
+The header contains the following key elements:
+
+- **Logo**: The text "IT-Off Topics" wrapped in an anchor tag (`<a>`), which can later be linked to the homepage or another section.
+- **Navigation Bar**: Placeholder list items (`<li>`) for the website's navigation links. Currently, they are empty, but you can add links such as "Home," "About," "Contact," etc.
+
+  ```html
+  <nav class="navbar" data-navbar>
+    <ul class="navbar-list">
+      <li class="navbar-item"><a href="#" class="navbar-link" data-nav-link></a></li>
+    </ul>
+  </nav>
+  ```
+
+- **Menu Toggle Button**: This button is designed for mobile devices, allowing users to open or close the navigation menu. It uses icons, but they are commented out at the moment.
+
+  ```html
+  <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler></button>
+  ```
+
+---
+
+### 3. **Hero Section**
+
+This is the most important visual part of the page, designed to grab the user's attention with a large banner and call-to-action buttons.
+
+- **Hero Image**: Displays a banner image (`coders.png`) representing IT/CSE students or the tech theme of the website.
+
+  ```html
+  <img src="./assets/images/coders.png" />
+  ```
+
+- **Hero Title**: The heading `"IT/CSE GROUP"` is prominently displayed, indicating the two different study paths or groups available on the site.
+
+- **Description Text**: A short paragraph under the title encourages the user to choose either the IT or CSE branch to learn more:
+
+  ```html
+  <p class="hero-text">Choose your branch, IT or CSE to learn more.</p>
+  ```
+
+- **Call-to-Action Buttons**:
+
+  - **IT Group Button**: A button that leads to a page dedicated to the **IT Group** content (`IT.html`).
+  - **CSE Group Button**: Another button that takes the user to a page focused on the **CSE Group** content (`working.html`).
+
+  ```html
+  <a href="./IT.html" class="btn btn-primary">IT Group</a> <a href="./cse.html" class="btn btn-primary2">CSE Group</a>
+  ```
+
+These buttons help users navigate quickly to their desired section (either IT or CSE).
+
+---
+
+### 4. **Additional Functionalities**
+
+- **Favorite Button Placeholder**: This button is meant to allow users to "favorite" certain sections or content in the future. It currently doesn't have an icon but can be expanded with JavaScript functionality later.
+
+  ```html
+  <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+    <!-- Placeholder for favorite functionality -->
+  </button>
+  ```
+
+---
+
+### 5. **Footer**
+
+The footer is at the bottom of the page and serves as the closing section, providing:
+
+- **Copyright Notice**: It states that all rights are reserved by "IT-Off Topics" and marks the year `2024`.
+
+  ```html
+  <p class="copyright">&copy; 2024 IT-Off Topics All Rights Reserved</p>
+  ```
+
+- **Social Media Links**: Icons linked to social profiles on GitHub, Twitter, Instagram, and Facebook. These are represented by Ionicons (icons library). Users can follow these links to interact with the brand or organization on various platforms.
+
+  ```html
+  <ul class="social-list">
+    <li>
+      <a href="https://github.com/awkward-py" class="social-link"><ion-icon name="logo-github"></ion-icon></a>
+    </li>
+  </ul>
+  ```
+
+---
+
+### 6. **JavaScript & External Resources**
+
+The page also includes:
+
+- **JavaScript**: Linked via a separate `script.js` file that controls interactive behavior, such as menu toggling.
+
+  ```html
+  <script src="./assets/js/script.js" defer></script>
+  ```
+
+- **Icons (Ionicons)**: Used for adding social media logos and other visual elements on the page.
+
+  ```html
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  ```
+
+---
+
+### **Overall Content and Purpose**
+
+- The content is primarily focused on dividing users between two main areas of study: **IT** (Information Technology) and **CSE** (Computer Science Engineering).
+- The **visual appeal** comes from the **hero section**, where an image and buttons guide users to the next step.
+- **Minimal content** on the landing page emphasizes a clean and easy-to-navigate user experience.
+- The page serves as the **starting point** for students or visitors interested in either IT or CSE, with navigation options to dive deeper into the respective topics.
+
+This structure makes it easy to add future content or enhance interactivity based on your project requirements.
+
+Here's a detailed documentation for the **IT Group Page**. This page appears after the user clicks on the "IT Group" button on the landing page.
+
+---
+
+## IT Group Page
+
+This page is dedicated to students in the **IT Group**, specifically focusing on 2nd- and 3rd-year IT students. Below is an explanation of each part of the page, its content, and its purpose.
+
+---
+
+### 1. **Main Heading**
+
+The main heading (`<h1>`) at the top of the page greets users with a warm welcome message, letting them know that they have entered the **IT Group** section.
+
+```html
+<h1 class="h1 hero-title3">Welcome to the IT Group!</h1>
+```
+
+- **Text**: `"Welcome to the IT Group!"`
+- **Purpose**: The heading serves as the primary identifier for the page, indicating that the content is specifically for IT Group students.
+
+- **Class (`hero-title3`)**: The class `hero-title3` is likely styled to ensure the heading is prominent and visually aligned with the site's overall design.
+
+---
+
+### 2. **Year Selection Buttons**
+
+Beneath the heading, the page offers two buttons for the user to select their respective year group. These buttons serve as **navigation links** to pages dedicated to either **2nd-year IT** students or **3rd-year IT** students.
+
+```html
+<div class="button-container">
+  <a href="/IT-2nd/index.html" class="btn-primary2">IT-2nd year</a>
+  <a href="index.html" class="btn-primary">IT-3rd year</a>
+</div>
+```
+
+- **IT-2nd Year Button**:
+
+  - **Text**: `"IT-2nd year"`
+  - **Link**: `/IT-2nd/index.html`
+  - **Class (`btn-primary2`)**: The button is styled with the class `btn-primary2`, which likely provides a distinct appearance from the 3rd-year button.
+
+- **IT-3rd Year Button**:
+
+  - **Text**: `"IT-3rd year"`
+  - **Link**: `index.html`
+  - **Class (`btn-primary`)**: This button uses `btn-primary`, which is probably the same styling used for other primary buttons across the site.
+
+- **Purpose**: These buttons act as simple, intuitive navigation points that allow students to quickly access information or resources based on their academic year.
+
+---
+
+### 3. **Informational Text**
+
+Directly below the buttons, there is a paragraph of text providing additional information about the group.
+
+```html
+<p class="info-text">This group consists of IT 2nd year and 3rd year students.</p>
+```
+
+- **Text**: `"This group consists of IT 2nd year and 3rd year students."`
+- **Purpose**: This text briefly explains that the IT Group is made up of students from both the 2nd and 3rd years. It's a small but useful piece of information to clarify the structure of the IT Group.
+
+- **Class (`info-text`)**: The class `info-text` is likely used to style the paragraph, making the text easier to read and in line with the overall design of the page.
+
+---
+
+### **Overall Page Purpose**
+
+- **Simple Navigation**: The page provides clear navigation options for IT students to choose their respective year group and proceed to a more detailed page about their year (2nd or 3rd year).
+- **User-Friendly Design**: The structure is clean and easy to follow, with just enough information to help users make a quick decision on where to go next.
+
+---
+
+### **How This Page Fits into the Website**
+
+- After selecting **IT Group** on the landing page, users are directed here.
+- From here, 2nd-year and 3rd-year students can navigate to their respective sections to access relevant content, like course details, assignments, or projects.
+
+This page functions as a **gateway** to more specific content for each year group within the IT discipline.
+
+### IT-Off Topics Main Page
+
+This page serves as the main navigation hub for students in the 3rd-year IT section. It allows students to access different sections relevant to their academic and extracurricular activities. Below is an overview of the sections and the purpose of the page.
+
+#### Page Structure
+
+1. **Hero Section (Welcome Message)**:
+
+   - This section introduces students to the 3rd-year IT group.
+   - It provides a brief welcome message:
+
+     - **Heading**: "Welcome to the 3rd-year of IT."
+     - **Description**: A motivational sentence encouraging knowledge-sharing and solving challenges: "Here to share knowledge, solve code, notices & mysteries, and unravel tech's complexities."
+
+   - A banner image is displayed next to the text.
+
+   **Code Example**:
+
+   ```html
+   <section class="section hero" aria-label="hero" data-section>
+     <div class="container">
+       <div class="hero-content">
+         <h1 class="h1 hero-title">Welcome to the 3rd-year of IT.</h1>
+         <p class="hero-text">
+           Here to share knowledge, solve code, notices & mysteries, and unravel tech's complexities.
+         </p>
+       </div>
+       <figure class="hero-banner">
+         <img src="./assets/images/banner.png" />
+       </figure>
+     </div>
+   </section>
+   ```
+
+2. **Section (Navigation)**:
+
+   - This section consists of navigation cards that link to various subsections of the website. Each card represents a specific section relevant to IT students. The card elements contain links, descriptions, and short summaries of what each section contains. The list of sections includes:
+     - **Lecturer & HOD**: This links to the **teachers page**, showcasing the IT department's lecturers and HOD.
+     - **Recent Updates**: Directs students to the **notices or updates page**, where they can find the latest news and updates.
+     - **Time Table**: Provides access to the **time table page**, where students can view their scheduled classes.
+     - **Verified by UBTER (Syllabus)**: A link to the **syllabus page** detailing the course structure for the 4th semester.
+     - **What's (Students Hub)**: Access to the **student profiles and resources page**.
+     - **Developers (Contributors)**: Links to the **contributors page**, showcasing the team behind the website.
+     - **What's (IT-Off Topics)**: A general page about the IT-off topics and related content.
+     - **Apply for Blue Tick**: A link to apply for a **verified blue tick** as a standout contributor.
+
+   **Code Example**:
+
+   ```html
+   <section class="section" aria-label="section" data-section id="explore">
+     <div class="container">
+       <div class="trend-tab">
+         <ul class="tab-content">
+           <li>
+             <div class="trend-card">
+               <div class="card-title-wrapper">
+                 <a href="teachers.html" class="card-title">Lecturer & HOD</a>
+               </div>
+               <a href="teachers.html"><data class="card-value">Teachers</data></a>
+               <div class="card-analytics">Our dedicated team of Educators.</div>
+             </div>
+           </li>
+           <!-- Repeat for other sections (e.g., Notice, Time Table, Syllabus, etc.) -->
+         </ul>
+       </div>
+     </div>
+   </section>
+   ```
+
+#### Purpose of Each Section
+
+1. **Lecturer & HOD**: This section highlights the educators and HOD of the IT department.
+2. **Recent Updates**: This section ensures students are always informed about new announcements or changes.
+3. **Time Table IT**: A helpful resource where students can keep track of class schedules.
+4. **Verified by UBTER (Syllabus)**: Detailed course content for the 4th semester for students to follow.
+5. **What's (Students Hub)**: Provides a platform for students to explore their peers' profiles and other useful resources.
+6. **Developers (Contributors)**: Highlights the team that contributed to building and maintaining the website.
+7. **Apply for Blue Tick**: Allows students to apply for recognition as a standout contributor within the student community.
+
+#### Functionality and Navigation
+
+- Each card leads to a specific section of the website, making it easy for students to access the relevant information.
+
+## Student List
+
+This table shows student information with placeholders for privacy. Each student has their **Roll Number**, **Remark**, and **Status**. The actual student names are hidden.
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Roll Number</th>
+      <th>Remark</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody id="student-tbody">
+    <!-- Data will be inserted dynamically -->
+  </tbody>
+</table>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const students = [
+      { name: 'Student Name', rollNo: '01', remark: 'Excellent', status: 'Clear' },
+      { name: 'Student Name', rollNo: '02', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '03', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '04', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '05', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '06', remark: 'Excellent', status: 'Clear' },
+      { name: 'Student Name', rollNo: '07', remark: 'Excellent', status: 'Clear' },
+      { name: 'Student Name', rollNo: '08', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '09', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '10', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '11', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '12', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '13', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '14', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '15', remark: 'Excellent', status: 'Clear' },
+      { name: 'Student Name', rollNo: '16', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '17', remark: 'Excellent', status: 'Clear' },
+      { name: 'Student Name', rollNo: '18', remark: 'Excellent', status: 'Clear' },
+      { name: 'Student Name', rollNo: '19', remark: 'Excellent', status: 'Clear' },
+      { name: 'Student Name', rollNo: '20', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '22', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '23', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '24', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '25', remark: 'Excellent', status: 'Clear' },
+      { name: 'Student Name', rollNo: '26', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '27', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '28', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '29', remark: 'Excellent', status: 'Clear' },
+      { name: 'Student Name', rollNo: '30', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '31', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '32', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '33', remark: 'Excellent', status: 'Clear' },
+      { name: 'Student Name', rollNo: '34', remark: 'Good', status: 'Clear' },
+      { name: 'Student Name', rollNo: '35', remark: 'Good', status: 'Clear' },
+    ];
+
+    const studentTableBody = document.getElementById('student-tbody');
+
+    students.forEach((student) => {
+      const row = document.createElement('tr');
+      row.innerHTML = `<td>${student.name}</td>
+         <td>${student.rollNo}</td>
+         <td>${student.remark}</td>
+         <td>${student.status}</td>
+         <td><button onclick="showConsole('${student.name}')">Console</button></td>`;
+      studentTableBody.appendChild(row);
+    });
+  });
+</script>
+```
+
+- **Student Data**: The `students` array contains each student's data, where we have replaced the actual names with "Student Name" for privacy.
+- **DOMContentLoaded Event**: This event listener ensures that the student list gets generated after the DOM has fully loaded.
+- **Dynamic Table Rows**: The `students` array is looped through, creating a new table row for each student and inserting it into the `tbody` of the table.
+- **Button Action**: Each student row has a "Console" button. Clicking this button logs the student's name to the console for debugging or further development purposes.
+
+## Teachers Section
+
+This section displays information about teachers with their roles and departments. The actual names of the teachers are hidden.
+
+### 1. **Card Container**
+
+This segment defines the container for each teacher's information. It includes the `card` class, which encapsulates the details.
+
+```html
+<div class="card">
+  <!-- Card Content Here -->
+</div>
+```
+
+**Explanation**: This is the main container for each teacher's information. It uses the `card` class for styling.
+
+### 2. **Card Title Wrapper**
+
+This segment contains the teacher's name and link.
+
+```html
+<div class="card-title-wrapper">
+  <a href="#" class="card-title">
+    <span class="name">Teacher Name</span>
+    <span class="span"></span>
+  </a>
+</div>
+```
+
+**Explanation**: The `card-title-wrapper` contains an anchor link (`a` tag) with the class `card-title`. Inside this link, the `span` with the class `name` shows the placeholder "Teacher Name", and the empty `span` with class `span` can be used for additional styling or content.
+
+### 3. **Card-name and Verification**
+
+This segment displays the teacher’s name along with a verification icon.
+
+```html
+<data class="card-name" value="1.00"
+  >Teacher Name
+  <svg
+    aria-label="Verified"
+    class="x1lliihq x1n2onr6"
+    fill="rgb(0, 149, 246)"
+    height="13"
+    role="img"
+    viewBox="0 0 40 40"
+    width="13"
+  >
+    <title>IT-Verified</title>
+    <path d="..."></path>
+  </svg>
+</data>
+```
+
+**Explanation**: The `data` tag with class `card-name` contains the placeholder "Teacher Name" and an SVG icon indicating verification. The `svg` element is used for the verification badge.
+
+### 4. **Card Analytics**
+
+This segment displays the teacher’s department and role.
+
+```html
+<div class="card-analytics">
+  <data class="data" value="36641.20">Information Technology</data>
+  <div class="badge red">HOD</div>
+</div>
+```
+
+**Explanation**: The `card-analytics` div includes:
+
+- A `data` tag with the class `data` showing the department.
+- A `div` with class `badge` indicating the teacher's role (e.g., `HOD` or `Lecturer`). The color of the badge can be customized (e.g., `red` for HOD, `green` for Lecturer).
+
+### Summary
+
+- **Card Container**: Wraps the entire content.
+- **Card Title Wrapper**: Displays the teacher's name.
+- **Card Name and Verification**: Shows the teacher's name with a verification badge.
+- **Card Analytics**: Displays additional information like department and role.
+
+Each segment is essential for structuring the teacher's information on the webpage, ensuring a clean and organized presentation.
+
+### 1. **Section Container**
+
+This segment defines the container for the entire "Notice & Updates" section.
+
+```html
+<section class="features" id="features">
+  <div class="container">
+    <!-- Content Here -->
+  </div>
+</section>
+```
+
+**Explanation**: The `section` tag with the class `features` and id `features` wraps the whole section. The `container` class is used to center and constrain the width of the content.
+
+### 2. **Section Subtitle**
+
+This segment displays a subtitle for the section.
+
+```html
+<p class="section-subtitle">Notice & Updates</p>
+```
+
+**Explanation**: The `p` tag with class `section-subtitle` provides a brief description or subtitle for the section, giving users an idea of the content.
+
+### 3. **Section Title**
+
+This segment defines the main title of the section.
+
+```html
+<h2 class="h2 section-title">Notice & Updates</h2>
+```
+
+**Explanation**: The `h2` tag with classes `h2` and `section-title` is used for the main heading of the section. It highlights the main topic of the content.
+
+### 4. **Features List**
+
+This segment defines a list of features or notices.
+
+```html
+<ul class="features-list">
+  <li>
+    <div class="features-card">
+      <!-- Card Content Here -->
+    </div>
+  </li>
+</ul>
+```
+
+**Explanation**: The `ul` tag with class `features-list` contains a list of notices or features. Each `li` element represents an individual notice, with `features-card` class encapsulating the details.
+
+### 5. **Features Card**
+
+This segment displays the details of each notice.
+
+```html
+<div class="features-card">
+  <h3 class="h3 card-title">Announcement</h3>
+  <p class="card-text">
+    We're thrilled to announce the launch of IT-OFF TOPICS, your one-stop destination for all things student-related in
+    the world of Information Technology.
+  </p>
+  <a href="about.html" class="card-link">
+    <span>Learn More</span>
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </a>
+</div>
+```
+
+**Explanation**: The `features-card` class contains:
+
+- **Card Title**: `h3` tag with class `card-title`, showing the title of the notice.
+- **Card Text**: `p` tag with class `card-text`, containing the body of the notice or announcement.
+- **Card Link**: `a` tag with class `card-link`, providing a link for more information. Inside, there's a `span` for the link text and an `ion-icon` for the arrow icon.
+
+### Summary
+
+- **Section Container**: Wraps the entire section.
+- **Section Subtitle**: Provides a brief description.
+- **Section Title**: Main heading for the section.
+- **Features List**: Contains a list of notices or features.
+- **Features Card**: Displays details of each individual notice, including title, text, and a link.
+
+Each segment contributes to structuring and presenting the notices and updates effectively on the webpage.
+
+### Timetable Section
+
+#### 1. **Page Header**
+
+```html
+<h3>IT-Time Table</h3>
+<h4>Stay on track with our college class timetable, designed to help you manage your academic schedule efficiently</h4>
+```
+
+**Explanation**:
+
+- `<h3>`: This heading provides the title for the timetable section, indicating it is related to IT.
+- `<h4>`: This subheading describes the purpose of the timetable, helping users understand its utility.
+
+#### 2. **Timetable Main Section**
+
+```html
+<main style="margin: 0;">
+  <div class="timetable active" id="timetable">
+    <div>
+      <span id="prevDay">&lt;</span>
+      <h2>Today's Timetable</h2>
+      <span id="nextDay">&gt;</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Subject</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</main>
+```
+
+**Explanation**:
+
+- `<main>`: Defines the main content area of the page. It is styled with `margin: 0` to remove default margins.
+- `<div class="timetable active" id="timetable">`: Container for the timetable, including navigation for previous and next days and the timetable table.
+- `<span id="prevDay">&lt;</span>` and `<span id="nextDay">&gt;</span>`: Navigation buttons for changing days. The symbols represent left and right arrows.
+- `<h2>`: Displays "Today's Timetable", indicating the content that will be shown.
+- `<table>`: Defines a table to display timetable data with headers for Time and Subject.
+
+#### 1. **Data for Each Day**
+
+```javascript
+const Sunday = [
+  {
+    time: 'subject name',
+    subject: 'time',
+  },
+];
+// Similar structures for Monday, Tuesday, etc.
+```
+
+**Explanation**:
+
+- `const Sunday = [...]`: Defines an array of objects for each day of the week, with `time` and `subject` placeholders. This structure will hold the actual timetable data.
+
+#### 2. **DOM Elements and Event Handlers**
+
+```javascript
+const nextDay = document.getElementById('nextDay');
+const prevDay = document.getElementById('prevDay');
+```
+
+**Explanation**:
+
+- Selects DOM elements needed for interactions: the side menu, profile button, theme toggler, and day navigation buttons.
+
+**Explanation**:
+
+- Toggles the 'active' class on the side menu when the profile button is clicked, showing or hiding the menu.
+
+#### 3. **Scroll Behavior**
+
+```javascript
+window.onscroll = () => {
+  sideMenu.classList.remove('active');
+  if (window.scrollY > 0) {
+    document.querySelector('header').classList.add('active');
+  } else {
+    document.querySelector('header').classList.remove('active');
+  }
+};
+```
+
+**Explanation**:
+
+- Removes the 'active' class from the side menu when scrolling. Adds or removes the 'active' class to the header based on the scroll position.
+
+#### 4. **Set Data Function**
+
+```javascript
+let setData = (day) => {
+  document.querySelector('table tbody').innerHTML = ' '; // Clear previous data
+  let daylist = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  document.querySelector('.timetable div h2').innerHTML = daylist[day];
+  switch (day) {
+    case 0:
+      day = Sunday;
+      break;
+    case 1:
+      day = Monday;
+      break;
+    case 2:
+      day = Tuesday;
+      break;
+    case 3:
+      day = Wednesday;
+      break;
+    case 4:
+      day = Thursday;
+      break;
+    case 5:
+      day = Friday;
+      break;
+    case 6:
+      day = Saturday;
+      break;
+  }
+
+  day.forEach((sub) => {
+    const tr = document.createElement('tr');
+    const trContent = `
+                            <td>${sub.time}</td>
+                            <td>${sub.subject}</td>
+                        `;
+    tr.innerHTML = trContent;
+    document.querySelector('table tbody').appendChild(tr);
+  });
+};
+```
+
+**Explanation**:
+
+- `setData(day)`: Updates the timetable based on the selected day. Clears existing data and populates the table with new data by iterating over the timetable array for the selected day.
+
+#### 5. **Navigation and Initialization**
+
+```javascript
+let now = new Date();
+let today = now.getDay(); // Get the current day
+let day = today; // Preserve the current day value
+
+function timeTableAll() {
+  document.getElementById('timetable').classList.toggle('active');
+  setData(today);
+  document.querySelector('.timetable div h2').innerHTML = "Today's Timetable";
+}
+nextDay.onclick = function () {
+  day <= 5 ? day++ : (day = 0); // Increment day or wrap around to Sunday
+  setData(day);
+};
+prevDay.onclick = function () {
+  day >= 1 ? day-- : (day = 6); // Decrement day or wrap around to Saturday
+  setData(day);
+};
+
+setData(day); // Set data for the initial load
+document.querySelector('.timetable div h2').innerHTML = "Today's Timetable"; // Set heading
+```
+
+**Explanation**:
+
+- `let now = new Date()`: Gets the current date.
+- `let today = now.getDay()`: Retrieves the current day as a number (0 for Sunday, 1 for Monday, etc.).
+- `timeTableAll()`: Toggles the timetable section and sets the data for the current day.
+- `nextDay.onclick` and `prevDay.onclick`: Update the timetable data to the next or previous day, respectively.
+- `setData(day)`: Initially sets the timetable data for the page load.
+
+### Summary
+
+- **HTML**: Structures the timetable page with headings, navigation, and a table.
+- **JavaScript**: Handles dynamic updates to the timetable based on user interaction and the current day, including theme toggling and side menu management.
+
+Each segment of the JavaScript code is crucial for managing the functionality of the timetable, ensuring the user can navigate between days and view the appropriate schedule.
