@@ -1,0 +1,383 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'IT Off-topics',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[{ variant: 'primary', text: 'Learn more', href: '#features' }]}
+
+  >
+    <Fragment slot="title">
+      IT<span class="hidden xl:inline"></span>
+      <span class="text-accent dark:text-white highlight"> Off-Topics</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        <span class="font-semibold">IT Off-Topics</span> your go-to platform for everything related to IT & CSE student.</span
+      >
+      <span class="block mb-1 sm:hidden font-bold text-blue-600"> Explore beyond the ordinary with us</span>
+      you'll be able to engage in discussions about IT-related topics that go beyond academic topics.
+    </Fragment>
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    tagline="Features"
+    title="What you get with IT Off-Topics"
+    subtitle=" One of the most advanced platforms for IT and CSE students, offering cutting-edge features and a user-friendly design."
+    items={[
+      {
+        title: 'IT Off-Topics Discussion',
+        description:
+          'Join the conversation about IT topics that go beyond your studies. Share and explore ideas outside of academics!',
+        icon: 'tabler:arrow-bar-right',
+      },
+      {
+        title: 'Notices and Updates Subscription',
+        description: 'Offers a subscription service for students to receive the latest notices and updates via email.',
+        icon: 'tabler:arrow-bar-right',
+      },
+      {
+        title: 'Streamlined Timetable Display',
+        description: 'Features an intuitive timetable view that presents daily schedules clearly and efficiently.',
+        icon: 'tabler:arrow-bar-right',
+      },
+      {
+        title: 'Simplified Syllabus and Notes Access',
+        description:
+          'Presents syllabi and academic notes in a user-friendly format. This feature enhances readability and accessibility.',
+        icon: 'tabler:arrow-bar-right',
+      },
+      {
+        title: ' Campus Location Finder',
+        description: 'Includes a location finder tool to help students navigate the campus efficiently. ',
+        icon: 'tabler:arrow-bar-right',
+      },
+      {
+        title: 'Student Hub',
+        description:
+          'A dedicated platform where students can view profiles, including academic performance and classifications like top performers and others. ',
+        icon: 'tabler:arrow-bar-right',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="Inside we"
+    title="Advantages and Impact of IT Off-Topics"
+    items={[
+      {
+        title: 'Lecturer & HOD Listings',
+        description:
+          'Provides a comprehensive directory of lecturers and Heads of Departments, facilitating seamless communication and support.',
+      },
+      {
+        title: 'Timetable Optimization',
+        description:
+          'Displays daily class schedules in an easily accessible format, minimizing confusion and enhancing time management.',
+      },
+      {
+        title: 'Syllabus and Notes',
+        description:
+          'Offers detailed and well-organized syllabus information and study notes, promoting effective learning and preparation.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building a modern platform</h3>
+      With its state-of-the-art features and streamlined processes
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Efficient Campus Navigation',
+        description: `Enables swift identification of campus facilities, such as shops and canteens, improving overall convenience for students.`,
+      },
+      {
+        title: 'Service Information',
+        description:
+          'Provides comprehensive details about campus services, streamlining access to essential resources and amenities.',
+      },
+      {
+        title: 'Student Hub',
+        description:
+          'Facilitates connections among students based on academic performance, supporting the formation of study groups and fostering community.',
+      },
+      {
+        title: 'Contributor Section',
+        description:
+          'Encourages active student participation in the platform, enhancing productivity and offering valuable additions to resumes.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      alt: 'Blueprint Image',
+    }}
+  >
+    <Fragment slot="content">stands out as a leading resource for enhancing academic and campus life</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: 'Innovative User Interface',
+        description:
+          'A clean, modern design that enhances usability and ensures an intuitive experience for all users.',
+      },
+      {
+        title: 'Responsive Design',
+        description: 'Optimized for all devices, offering seamless navigation whether on a desktop, tablet, or mobile.',
+      },
+      {
+        title: 'Customizable Layouts',
+        description:
+          'Flexible design options that allow for easy customization to meet specific needs and preferences.',
+      },
+      {
+        title: 'Interactive Elements',
+        description: `Engaging components such as hover effects, animations, and dynamic content to make the user experience more interactive.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Astronauts Image',
+    }}
+  >
+    <Fragment slot="content">Enhancing usability and accessibility across all devices.</Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Launch your ideal platform effortlessly with IT Off-Topics."
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Download Files</span>',
+        description:
+          'Visit the Off-Topics Open-source website and download the necessary files available for contribution.',
+        icon: 'tabler:download',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Add Features and Updates</span>',
+        description: 'Make the changes you want, such as adding new features or improving existing ones.',
+        icon: 'tabler:edit',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Compress and Upload</span>',
+        description:
+          'After making your updates, compress the modified files into a .zip folder and upload them back to the Off-Topics Open-source website.',
+        icon: 'tabler:upload',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Review and Merge</span>',
+        description:
+          'If your contributions add value to the platform, they will be reviewed and merged into the main IT Off-Topics website.',
+        icon: 'tabler:plug',
+      },
+      {
+        title: 'Successful Contribution',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Most used sections"
+    subtitle="most discussed and popular sections within the IT off-topics community."
+    tagline="Sections"
+    items={[
+      {
+        title: 'Home Section',
+        description:
+          "The entry point of IT Off-Topics, showcasing the platform's main features and it provides quick navigation to various sections.",
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Academic Section',
+        description:
+          'This section offers all essential academic resources, including past papers, detailed study guides, and other educational materials to support student success.',
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'Contribution Open Source',
+        description:
+          'An open-source section where students can contribute by adding new features, updating content, or suggesting improvements.',
+        icon: 'mdi:source-branch',
+      },
+      {
+        title: 'Varified Tick Section',
+        description:
+          'Recognizes students contributions and academic achievements with a blue tick next to their profiles.',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Pricing and Offers',
+        description:
+          'Displays details about any premium services, subscription models, and special offers available for students seeking additional features or tools on the platform.',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      {
+        title: 'Necessary Forms',
+        description:
+          'This helps the platform collect necessary information, such as course enrollment details, contact information, and other relevant academic records. ',
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Reviews',
+        description:
+          'Allows students to leave feedback on the platform’s features, usability, and performance. Reviews help guide improvements and updates to the system.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Useful Links',
+        description:
+          'A list of important external resources and tools, such as academic websites, institutional portals, and other useful online resources.',
+        icon: 'mdi:link-variant',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Find out more content related to IT Off-topics"
+    information={`IT Off-Topics Blog provides the latest updates and important notices related to IT Off-Topics. Stay informed with essential information, new feature announcements, and key changes to keep your experience current and efficient. Thanks.
+                `}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="IT Off-Topics FAQ provides concise answers to common questions about using and contributing to the IT Off-Topics platform."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'What is IT Off-Topics?',
+        description:
+          'IT Off-Topics is a comprehensive platform designed to enhance the academic and social experiences of IT and CSE students. It offers academic resources, updates, and features for easy campus navigation and student interaction.',
+      },
+      {
+        title: 'How can I contribute to IT Off-Topics?',
+        description:
+          'You can contribute by downloading the open-source files, adding new features or updates, compressing the modified files, and uploading them. If your contributions are valuable, they will be merged into the main site.',
+      },
+      {
+        title: 'What are the key features of IT Off-Topics?',
+        description:
+          'Key features include centralized academic resources, real-time updates, a campus locator tool, a student hub, and a contribution section for adding new features.',
+      },
+      {
+        title: 'How do I use the campus locator tool?',
+        description:
+          'The campus locator helps you find essential services such as shops and canteens on campus. Simply enter your location or search for the service you need.',
+      },
+      {
+        title: 'What is the Blue Tick verification?',
+        description:
+          'The Blue Tick verification highlights outstanding students based on their behavior, activity, and academic performance. It signifies recognition for valuable contributors.',
+      },
+      {
+        title: 'What should I do if I do not understand something on the platform?',
+        description:
+          "If you encounter something you don't understand, check the FAQ section or contact support for clarification. We're here to help you make the most of IT Off-Topics.",
+      },
+    ]}
+  />
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: 'Total Commits', amount: '129.8K' },
+      { title: 'Issues Resolved', amount: '32.1K' },
+      { title: 'Project Milestones', amount: '65/100' },
+      { title: 'Lines of Code', amount: '48.4K' },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'with IT Off-topics',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      You &nbsp;+&nbsp; Us<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"></span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Your support is crucial, and together, we can create something truly special. <br class="hidden md:inline" />let's
+      make a big difference together,
+    </Fragment>
+  </CallToAction>
+</Layout>
