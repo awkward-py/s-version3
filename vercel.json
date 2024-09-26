@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "off-topics-main/$1"
+      "dest": "/off-topics-main/$1"  // Adding a slash before the folder name
     }
   ]
 }
