@@ -1,0 +1,307 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Prices from '~/components/widgets/Pricing.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+
+import Stats from '~/components/widgets/Stats.astro';
+import Hero from '~/components/widgets/Hero.astro';
+
+const metadata = {
+  title: 'QuizWhiz',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+  <Hero
+  tagline="Sharpen your skills with"
+  actions={[
+    {
+      variant: 'primary',
+      target: '_blank',
+      text: 'Start Quiz',
+      href: 'https://offtopics.in/quizwhiz-3rd-Year'
+    },
+    {
+      target: '_blank',
+      text: 'Read Docs',
+      href: '#',
+    },
+     
+  ]}
+>
+  <Fragment slot="title">
+    Off-topics<span class="text-accent dark:text-white highlight"> QuizWhiz</span>
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    Have fun with quizzes on exciting IT and CSE topics. Learn and level up your skills!
+  </Fragment>
+</Hero>
+  
+
+  <!-- Pricing Widget ******************* -->
+
+  <Prices
+    id="features"
+    title="Exploring Our Question Practice"
+    subtitle="Question sets and practice opportunities for all academic levels, with many features available at no cost."
+    prices={[
+      {
+        title: 'Foundations',
+        subtitle: 'Practice for Early Academic Stages',
+        price: '1st',
+        period: 'Monthly Practice',
+        items: [
+          {
+            description: 'Multiple Choice Questions (MCQs)',
+          },
+          {
+            description: 'Basic Programming Concepts',
+          },
+          {
+            description: 'Operating Systems Questions',
+          },
+          {
+            description: 'Mathematics Multiple Choice Questions MCQs',
+          },
+          {
+            description: 'Chemical Reactions and Stoichiometry',
+          },
+          {
+            description: 'Mechanics, thermodynamics, and electromagnetism MCQs',
+          },
+          {
+            description: 'Chemistry concepts and principles MCQs',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Coming soon',
+          href: '#',
+          
+        },
+        hasRibbon: true,
+      },
+      {
+        title: 'Advancing',
+        subtitle: 'Practice for Intermediate Academic Stages',
+        price: '2nd',
+        period: 'Weekly Practice',
+        items: [
+          {
+            description: 'MCQs on Network Security Concepts.',
+          },
+          {
+            description: 'MCQs on Data Communication Concepts',
+          },
+          {
+            description: 'C Syntax and Semantics',
+          },
+          {
+            description: 'MCQs on IoT Concepts',
+          },
+          {
+            description: 'Algorithms and data structures.',
+          },
+          {
+            description: 'Debugging Exercises',
+          },
+          {
+            description: 'Complex theoretical questions',
+          },
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Coming soon',
+          href: '#',
+        },
+        hasRibbon: true,
+      
+      },
+      {
+        title: 'Mastering',
+        subtitle: 'Practice for Advanced Academic Stages ',
+        price: '3rd',
+        period: 'Weekly Practice',
+        items: [
+          {
+            description: 'Multiple Choice Questions (MCQs)',
+          },
+          {
+            description: 'Short Answer Questions',
+          },
+          {
+            description: 'Coding Challenges',
+          },
+          {
+            description: 'Debugging Exercises',
+          },
+          {
+            description: 'Industry Trends and Innovations',
+          },
+          {
+            description: 'complex IT concepts',
+          },
+
+          {
+            description: 'Project-Based Questions',
+          },
+          {
+            description: 'College Syllabus-Based Questions',
+          },
+          {
+            description: 'Theoretical knowledge to practical problems.',
+          },
+          
+          
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Get started',
+          href: 'https://offtopics.in/quizwhiz-3rd-Year',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'available',
+      },
+    ]}
+  />
+
+
+
+  <Stats
+  title="Achievements and track the progress we've made"
+  subtitle="These numbers reflect our engagement and progress!"
+  stats={[
+   { title: 'Total Quizzes', amount: '0' },
+{ title: 'Active Participants', amount: '0' },
+{ title: 'Completed Quizzes', amount: '0' },
+{ title: 'Questions Answered', amount: '0' },
+
+  ]}
+/>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="QuizWhiz-related notice"
+    subtitle="Why You Should Try IT Off-Topics QuizWhiz"
+    columns={2}
+    items={[
+      {
+        title: 'Comprehensive Learning Experience',
+        description:
+          'IT Off-Topics QuizWhiz offers quizzes on a wide range of IT and CSE topics, from fundamental programming concepts to advanced technologies like IoT and AI.',
+        icon: 'tabler:arrow-bar-to-right',
+      },
+      {
+        title: 'Tailored for All Academic Levels',
+        description: ' Whether you’re a beginner, an intermediate learner, or preparing for advanced studies, the platform provides quizzes suited to each level. ',
+        icon: 'tabler:arrow-bar-to-right',
+      },
+      {
+        title: 'Interactive & Fun Learning',
+        description:
+          'Quizzes make learning fun and interactive, providing a break from traditional study methods. ',
+        icon: 'tabler:arrow-bar-to-right',
+      },
+      {
+        title: ' Skill Enhancement for Career Growth',
+        description: `By practicing with IT Off-Topics QuizWhiz, you can enhance your technical skills, which are crucial for building a strong resume or portfolio.`,
+        icon: 'tabler:arrow-bar-to-right',
+      },
+      {
+        title: 'Stay Updated with Industry Trends',
+        description:
+          'The platform includes quizzes on the latest industry trends and emerging technologies, helping you stay current with whats happening in the tech world. ',
+        icon: 'tabler:arrow-bar-to-right',
+      },
+      {
+        title: 'Practice for Real-World Challenges',
+        description:
+          'The quizzes cover theoretical knowledge and practical problem-solving, preparing you for real-world challenges. By engaging with these quizzes, you can develop a deeper understanding of how to apply your skills in practical scenarios.',
+        icon: 'tabler:arrow-bar-to-right',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="A guided journey for successful problem solving"
+    tagline="simplified process"
+    isReversed={true}
+    items={[
+      {
+        title: 'Identify the Question Type',
+        icon: 'tabler:number-1',
+      },
+      {
+        title: 'Understand the Content',
+        icon: 'tabler:number-2',
+      },
+      {
+        title: 'Gather Relevant Knowledge',
+        icon: 'tabler:number-3',
+      },
+      {
+        title: 'Analyze the Options',
+        icon: 'tabler:number-4',
+      },
+      {
+        title: 'Choose the Best Answer',
+        icon: 'tabler:number-5',
+      },
+      {
+        title: 'Submit and Review',
+        icon: 'tabler:number-6',
+      },
+      {
+        title: 'Learn and Improve',
+        icon: 'tabler:number-7',
+      },
+    ]}
+    image={{
+      src: 'https://cdn.pixabay.com/photo/2014/08/08/07/30/success-413093_960_720.jpg',
+      alt: 'Steps image',
+    }}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="QuizWhiz FAQs"
+    subtitle="If you have queries about our QuizWhiz, you're in the right place."
+    columns={1}
+    items={[
+      {
+        title: ' What topics are covered in the "Off-Topics QuizWhiz" quizzes?',
+        description:
+          'IT and CSE topics including programming, network security, data communication, and more.',
+      },
+      {
+        title: 'How can I start practicing quizzes on the platform?',
+        description: 'Click the "Start Quiz" button on the homepage.',
+      },
+      {
+        title: 'Are there any costs associated with using the platform?',
+        description:
+          'All features on the platform are completely free. You can access a variety of question sets and practice opportunities at no cost.',
+      },
+      {
+        title: ' How often are new quizzes and questions added to the platform?',
+        description:
+          'We regularly update our question sets and quizzes to ensure they stay current with academic standards and industry trends. New questions and quizzes are added monthly.',
+      },
+      {
+        title: 'Can I track my progress on the platform?',
+        description:
+          'Yes, you can track your progress by viewing your quiz results and scores. The platform allows you to monitor your performance and see how you’re advancing with your practice.',
+      },
+    ]}
+  />
+</Layout>
