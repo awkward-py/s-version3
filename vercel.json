@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "your-folder-name/package.json",
+      "src": "off-topics-main/package.json",
       "use": "@vercel/node"
     }
   ],
