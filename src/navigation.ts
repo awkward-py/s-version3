@@ -14,7 +14,7 @@ export const headerData = {
           href: getPermalink('/homes/opensource'),
         },
         {
-          text: 'IT Off-topics Hub',
+          text: 'OT Discussion',
           href: getPermalink('/homes/hub-offtopics'),
         },
         // {
