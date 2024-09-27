@@ -68,7 +68,7 @@ Email: support@offtopics.in
 | **Details**                | **Information**                                           |
 |----------------------------|-----------------------------------------------------------|
 | **Platform Name**           | IT Off-Topics                                             |
-| **Domain**                  | offtopics.in                                              |
+| **Domain**                  | offtopics.in , ot-discussion.in                                             |
 | **Domain Provider**         | Hostinger                                                 |
 | **Domain Ownership**        | Yash Joshi                                                |
 | **Hosting Provider**        | Vercel                                                    |
