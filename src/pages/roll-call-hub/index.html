@@ -30,6 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 
   <style>
@@ -4467,6 +4468,22 @@
 
   <main>
 
+    <div class="blog-card">
+      <a href="#">
+        <video
+          id="myVideo"
+          src="https://raw.githubusercontent.com/awkward-py/Open-Source-Off-Topics/main/assets/images/B%26W%20Typography%20%5BFCD681B%5D.mp4"
+          class="blog-banner" width="200" autoplay loop muted>
+        </video>
+      </a>
+    
+      <div class="blog-content">
+        <button id="muteButton" onclick="toggleMute()" style="background: none; margin-left: 20px; margin-top: -20px; margin-bottom: 30px; border: none; cursor: pointer;">
+          <i id="muteIcon" class="fas fa-volume-mute"></i>
+        </button>
+      </div>
+    </div>
+
 
     <!--
       - BLOG
@@ -4522,8 +4539,6 @@
 
 
 
-
-
             </div>
 
           </div>
@@ -4537,6 +4552,9 @@
     <!--
       - BANNER
     -->
+
+
+   
 
     <!-- <div class="banner">
 
@@ -8679,6 +8697,21 @@
     scrollReveal();
     addEventOnElem(window, "scroll", scrollReveal);
 
+  const video = document.getElementById('myVideo');
+  const muteButton = document.getElementById('muteButton');
+  const muteIcon = document.getElementById('muteIcon');
+
+  function toggleMute() {
+    if (video.muted) {
+      video.muted = false;
+      muteIcon.classList.remove('fa-volume-mute');
+      muteIcon.classList.add('fa-volume-up');
+    } else {
+      video.muted = true;
+      muteIcon.classList.remove('fa-volume-up');
+      muteIcon.classList.add('fa-volume-mute');
+    }
+  }
 
   </script>
 
