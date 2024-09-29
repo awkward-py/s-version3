@@ -4,7 +4,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 ---
 
-**License Agreement**
+**License**
 
 **Introduction**  
 This License Agreement (“Agreement”) is a legal document between you (“User”) and IT Off-Topics (“Platform”), located at offtopics.in and ot-discussion.in, outlining the terms under which you may access and use the Platform. The Platform is operated by the owners of the offtopics.in and ot-discussion.in domains, hosted by Vercel, with domain services provided by Hostinger.
