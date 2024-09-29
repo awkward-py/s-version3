@@ -1547,14 +1547,24 @@
     }
 
     .product-featured .showcase-img {
-      width: 100%;
-      height: 100%;
-      border-radius: 100%;
-      box-shadow: 5px 5px black;
-      border: 10px solid rgb(249 251 251);
-      -o-object-fit: cover;
-      object-fit: cover;
-    }
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  box-shadow: 5px 5px black;
+  border: 10px solid rgb(249, 251, 251);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/* Media query for large screens */
+@media (min-width: 1024px) {
+  .product-featured .showcase-img {
+    width: 60%; 
+    height: auto; 
+    border-radius: 40px;
+  }
+}
+
 
     .product-featured .showcase-content {
       margin-top: 30px;
@@ -2869,21 +2879,12 @@
  * #HEADER 
  */
 
-      .header-main .container {
-        gap: 80px;
-      }
-
-      .header-search-container {
-        -webkit-box-flex: 1;
-        -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-        flex-grow: 1;
-      }
+      
 
 
 
-      .header-main {
-        display: none; /* Hide logo on larger screens */
+      /* .header-main {
+        display: none;  */
 
 
       /**
@@ -3866,48 +3867,7 @@
 
   <header>
 
-    <div class="header-top" data-section>
-
-      <div class="container">
-
-        <ul class="header-social-container">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-
-
-        </ul>
-
-        <div class="header-alert-news">
-          <p>
-            <b>Off-Topics features add-on</b>
-
-          </p>
-        </div>
-
-        <div class="header-top-actions">
-
-          <div>
-            <ion-icon name="home" class="add-icon"></ion-icon>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </div>
+    
 
     <div class="header-main">
 
@@ -3920,9 +3880,6 @@
         </a>
 
         <div class="header-user-actions">
-
-
-
 
 
         </div>
@@ -6151,13 +6108,8 @@
 
                       <a href="#">
                         <h4 class="showcase-title">
-                          22009120019 <svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="rgb(237 182 8)"
-                            height="14" role="img" viewBox="0 0 40 40" width="14">
-                            <title>IT-Verified</title>
-                            <path
-                              d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
-                              fill-rule="evenodd"></path>
-                          </svg></h4>
+                          22009120019 <svg viewBox="1 -2 22 22" width="17" height="17" aria-label="Verified account" role="img" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><linearGradient gradientUnits="userSpaceOnUse" id="12-a" x1="4.411" x2="18.083" y1="2.495" y2="21.508"><stop offset="0" stop-color="#f4e72a"></stop><stop offset=".539" stop-color="#cd8105"></stop><stop offset=".68" stop-color="#cb7b00"></stop><stop offset="1" stop-color="#f4ec26"></stop><stop offset="1" stop-color="#f4e72a"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="12-b" x1="5.355" x2="16.361" y1="3.395" y2="19.133"><stop offset="0" stop-color="#f9e87f"></stop><stop offset=".406" stop-color="#e2b719"></stop><stop offset=".989" stop-color="#e2b719"></stop></linearGradient><g clip-rule="evenodd" fill-rule="evenodd"><path d="M13.324 3.848L11 1.6 8.676 3.848l-3.201-.453-.559 3.184L2.06 8.095 3.48 11l-1.42 2.904 2.856 1.516.559 3.184 3.201-.452L11 20.4l2.324-2.248 3.201.452.559-3.184 2.856-1.516L18.52 11l1.42-2.905-2.856-1.516-.559-3.184zm-7.09 7.575l3.428 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z" fill="url(#12-a)"></path><path d="M13.101 4.533L11 2.5 8.899 4.533l-2.895-.41-.505 2.88-2.583 1.37L4.2 11l-1.284 2.627 2.583 1.37.505 2.88 2.895-.41L11 19.5l2.101-2.033 2.895.41.505-2.88 2.583-1.37L17.8 11l1.284-2.627-2.583-1.37-.505-2.88zm-6.868 6.89l3.429 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z" fill="url(#12-b)"></path><path d="M6.233 11.423l3.429 3.428 5.65-6.17.038-.033-.005 1.398-5.683 6.206-3.429-3.429-.003-1.405.005.003z" fill="#d18800"></path></g></g></svg>
+                        </h4>
                       </a>
 
                       <a href="#" class="showcase-category">Pankaj Rawat </a>
@@ -8401,13 +8353,8 @@
                 src="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/images2/logo.png?raw=true"
                 alt="call-hub" class="testimonial-banner" width="150" height="50">
 
-              <p class="testimonial-name">Roll-Call-Hub <svg aria-label="Verified" class="x1lliihq x1n2onr6"
-                  fill="rgb(237 182 8)" height="14" role="img" viewBox="0 0 40 40" width="14">
-                  <title>IT-Verified</title>
-                  <path
-                    d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
-                    fill-rule="evenodd"></path>
-                </svg></p>
+              <p class="testimonial-name">Roll-Call-Hub<svg viewBox="-2 -2 22 22" width="17" height="17" aria-label="Verified account" role="img" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><linearGradient gradientUnits="userSpaceOnUse" id="12-a" x1="4.411" x2="18.083" y1="2.495" y2="21.508"><stop offset="0" stop-color="#f4e72a"></stop><stop offset=".539" stop-color="#cd8105"></stop><stop offset=".68" stop-color="#cb7b00"></stop><stop offset="1" stop-color="#f4ec26"></stop><stop offset="1" stop-color="#f4e72a"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="12-b" x1="5.355" x2="16.361" y1="3.395" y2="19.133"><stop offset="0" stop-color="#f9e87f"></stop><stop offset=".406" stop-color="#e2b719"></stop><stop offset=".989" stop-color="#e2b719"></stop></linearGradient><g clip-rule="evenodd" fill-rule="evenodd"><path d="M13.324 3.848L11 1.6 8.676 3.848l-3.201-.453-.559 3.184L2.06 8.095 3.48 11l-1.42 2.904 2.856 1.516.559 3.184 3.201-.452L11 20.4l2.324-2.248 3.201.452.559-3.184 2.856-1.516L18.52 11l1.42-2.905-2.856-1.516-.559-3.184zm-7.09 7.575l3.428 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z" fill="url(#12-a)"></path><path d="M13.101 4.533L11 2.5 8.899 4.533l-2.895-.41-.505 2.88-2.583 1.37L4.2 11l-1.284 2.627 2.583 1.37.505 2.88 2.895-.41L11 19.5l2.101-2.033 2.895.41.505-2.88 2.583-1.37L17.8 11l1.284-2.627-2.583-1.37-.505-2.88zm-6.868 6.89l3.429 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z" fill="url(#12-b)"></path><path d="M6.233 11.423l3.429 3.428 5.65-6.17.038-.033-.005 1.398-5.683 6.206-3.429-3.429-.003-1.405.005.003z" fill="#d18800"></path></g></g></svg>
+              </p>
 
               <p class="testimonial-title" data-section>IT Off-Topics latest project</p>
 
@@ -8546,72 +8493,7 @@
 
 
 
-    <!--
-      - BLOG
-    -->
-
-    <div class="blog" data-section>
-
-      <div class="container">
-
-        <div class="blog-container has-scrollbar">
-
-          <div class="blog-card">
-
-            <a href="#">
-              <img
-                src="https://images.unsplash.com/photo-1636586108931-a8b9b8796ba6?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&h=506"
-                alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
-            </a>
-
-            <div class="blog-content">
-
-              <a href="#" class="blog-category">Posts</a>
-
-              <a href="https://offtopics.in/basic-java-topics">
-                <h3 class="blog-title">Java concepts for Beginners to Advanced</h3>
-              </a>
-
-              <p class="blog-meta">
-                <time datetime="2022-04-06">May 12, 2024</time>
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <div class="blog-card">
-
-            <a href="#">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1661313626999-90d230cabf8d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="EBT vendors: Claim Your Share of SNAP Online Revenue." class="blog-banner" width="300">
-            </a>
-
-            <div class="blog-content">
-
-              <a href="#" class="blog-category">Posts</a>
-
-              <h3>
-                <a href="https://offtopics.in/docs" class="blog-title">IT Off-Topics Docs</a>
-              </h3>
-
-              <p class="blog-meta">
-                <time datetime="2022-02-10"> Jun 2, 2024</time>
-              </p>
-
-            </div>
-
-          </div>
-
-
-
-        </div>
-
-      </div>
-
-    </div>
+   
 
   </main>
 
@@ -8619,29 +8501,126 @@
 
 
 
+ 
   <!--
     - FOOTER
   -->
 
   <footer>
 
+    <div class="footer-category">
 
+      <div class="container">
+
+        <h2 class="footer-category-title">The Hall of Fame</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Developers :</h3>
+
+          <a href="#" class="footer-category-link">Pankaj Rawat <svg viewBox="1 -2 22 22" width="17" height="17" aria-label="Verified account" role="img" class="r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><linearGradient gradientUnits="userSpaceOnUse" id="12-a" x1="4.411" x2="18.083" y1="2.495" y2="21.508"><stop offset="0" stop-color="#f4e72a"></stop><stop offset=".539" stop-color="#cd8105"></stop><stop offset=".68" stop-color="#cb7b00"></stop><stop offset="1" stop-color="#f4ec26"></stop><stop offset="1" stop-color="#f4e72a"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="12-b" x1="5.355" x2="16.361" y1="3.395" y2="19.133"><stop offset="0" stop-color="#f9e87f"></stop><stop offset=".406" stop-color="#e2b719"></stop><stop offset=".989" stop-color="#e2b719"></stop></linearGradient><g clip-rule="evenodd" fill-rule="evenodd"><path d="M13.324 3.848L11 1.6 8.676 3.848l-3.201-.453-.559 3.184L2.06 8.095 3.48 11l-1.42 2.904 2.856 1.516.559 3.184 3.201-.452L11 20.4l2.324-2.248 3.201.452.559-3.184 2.856-1.516L18.52 11l1.42-2.905-2.856-1.516-.559-3.184zm-7.09 7.575l3.428 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z" fill="url(#12-a)"></path><path d="M13.101 4.533L11 2.5 8.899 4.533l-2.895-.41-.505 2.88-2.583 1.37L4.2 11l-1.284 2.627 2.583 1.37.505 2.88 2.895-.41L11 19.5l2.101-2.033 2.895.41.505-2.88 2.583-1.37L17.8 11l1.284-2.627-2.583-1.37-.505-2.88zm-6.868 6.89l3.429 3.428 5.683-6.206-1.347-1.247-4.4 4.795-2.072-2.072z" fill="url(#12-b)"></path><path d="M6.233 11.423l3.429 3.428 5.65-6.17.038-.033-.005 1.398-5.683 6.206-3.429-3.429-.003-1.405.005.003z" fill="#d18800"></path></g></g></svg>
+        </a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Contributors :</h3>
+        
+          <a href="#" class="footer-category-link">Deepak Pokhriyal <svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="rgb(0, 149, 246)"
+            height="14" role="img" viewBox="0 0 40 40" width="14">
+            <title>IT-Verified</title>
+            <path
+              d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+              fill-rule="evenodd"></path>
+          </svg></a>
+        </div>
+
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Top Performers :</h3>
+
+          <a href="#" class="footer-category-link">Maya Rawat  <svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="#787878"
+            height="14" role="img" viewBox="0 0 40 40" width="14">
+            <title>IT-Verified</title>
+            <path
+              d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+              fill-rule="evenodd"></path>
+          </svg></a>
+        
+          <a href="#" class="footer-category-link">Bharat Singh Rawat  <svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="#787878"
+            height="14" role="img" viewBox="0 0 40 40" width="14">
+            <title>IT-Verified</title>
+            <path
+              d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+              fill-rule="evenodd"></path>
+          </svg></a>
+
+         
+
+          <a href="#" class="footer-category-link">Manish Paliwali  <svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="#787878"
+            height="14" role="img" viewBox="0 0 40 40" width="14">
+            <title>IT-Verified</title>
+            <path
+              d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+              fill-rule="evenodd"></path>
+          </svg></a>
+
+          <a href="#" class="footer-category-link">Krishna Kanhaiya Joshi  <svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="#787878"
+            height="14" role="img" viewBox="0 0 40 40" width="14">
+            <title>IT-Verified</title>
+            <path
+              d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+              fill-rule="evenodd"></path>
+          </svg></a>
+
+         
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Class Representative :</h3>
+        
+          <a href="#" class="footer-category-link">Om Patel  <svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="#787878"
+            height="14" role="img" viewBox="0 0 40 40" width="14">
+            <title>IT-Verified</title>
+            <path
+              d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </a>
+
+          <a href="#" class="footer-category-link">Khushi Diwakar  <svg aria-label="Verified" class="x1lliihq x1n2onr6" fill="#787878"
+            height="14" role="img" viewBox="0 0 40 40" width="14">
+            <title>IT-Verified</title>
+            <path
+              d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z"
+              fill-rule="evenodd"></path>
+          </svg>
+        </a>
+        </div>
+
+      
+
+      </div>
+
+    </div>
+
+    
 
     <div class="footer-bottom">
 
       <div class="container">
-        <hr>
-        <p class="copyright">
-          Copyright &copy; <a href="#">IT Off-Topics</a> all rights reserved.
-        </p>
 
+       
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Roll-Call-Hub</a> | All rights reserved.
+        </p>
 
       </div>
 
     </div>
 
   </footer>
-
 
   <!--
     - custom js link
