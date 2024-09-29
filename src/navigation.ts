@@ -163,7 +163,6 @@ export const footerData = {
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.xom/awkwardpy_' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://facebook.com/awkwardpy' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/awkward-py' },
+  
   ],
 };
