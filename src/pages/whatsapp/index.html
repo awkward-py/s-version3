@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Off-Topics - WhatsApp</title>
+  <meta name="title" content="Off-Topics - WhatsApp">
+  <meta name="description" content="Off-Topics Is Now Available on WhatsApp!">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/w-logo.png?raw=true" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+<style>
+  
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+/**
+ * colors
+ */
+
+--sefety-orange_10: #075E54;
+--sefety-orange: #25D366;
+--sonic-silver: hsl(220, 1%, 48%);
+--gunmetal_10: hsla(217, 21%, 16%, 0.1);
+--davys-gray: hsl(220, 2%, 31%);
+--light-gray: hsl(0, 0%, 80%);
+--gunmetal: #075E54;
+--cultured: hsl(0, 0%, 95%);
+--black_40: #075E54;
+--black_25: #075E54;
+--black_15: #075E54;
+--white: hsl(0, 0%, 100%);
+--snow: hsl(345, 20%, 96%);
+
+/**
+ * typography
+ */
+
+--ff-jost: 'Jost', sans-serif;
+
+--fs-1: 3.8rem;
+--fs-2: 2.2rem;
+--fs-3: 2rem;
+--fs-4: 1.8rem;
+--fs-5: 1.4rem;
+
+--fw-600: 600;
+--fw-500: 500;
+
+/**
+ * spacing
+ */
+
+--section-padding: 80px;
+
+/**
+ * shadow
+ */
+
+--shadow-1: 0px 2px 15px hsla(0, 0%, 0%, 0.05);
+--shadow-2: -10px 10px 40px -2px hsla(217, 21%, 16%, 0.05);
+
+/**
+ * border radius
+ */
+
+--radius-pill: 500px;
+--radius-circle: 50%;
+--radius-4: 4px;
+
+/**
+ * transition
+ */
+
+--transition-1: 0.25s ease;
+--transition-2: 0.5s ease;
+--cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+--cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+}
+
+
+
+
+
+/*-----------------------------------*\
+#RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+img,
+span,
+button,
+ion-icon { display: block; }
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+img { height: auto; }
+
+button {
+background: none;
+border: none;
+font: inherit;
+cursor: pointer;
+}
+
+ion-icon { pointer-events: none; }
+
+html {
+font-family: var(--ff-jost);
+font-size: 10px;
+scroll-behavior: smooth;
+}
+
+body {
+background-color: var(--white);
+color: var(--davys-gray);
+font-size: 1.6rem;
+line-height: 1.7;
+}
+
+body.active { overflow: hidden; }
+
+:focus-visible { outline-offset: 4px; }
+
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track { background-color: hsl(0, 0%, 98%); }
+
+::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
+
+::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+
+
+
+
+
+/*-----------------------------------*\
+#REUSED STYLE
+\*-----------------------------------*/
+
+.container { padding-inline: 15px; }
+
+.section { padding-block: var(--section-padding); }
+
+.h1,
+.h2,
+.h3,
+.h4 {
+color: var(--gunmetal);
+line-height: 1.3;
+}
+
+.h1,
+.h2 { font-size: var(--fs-1); }
+
+.h3 { font-size: var(--fs-2); }
+
+.h3,
+.h4 { font-weight: var(--fw-600); }
+
+.h4 { font-size: var(--fs-3); }
+
+.section-title .span {
+display: inline-block;
+color: var(--sefety-orange);
+}
+
+.section-text { font-size: var(--fs-3); }
+
+
+
+
+
+
+.btn {
+align-items: center;
+background-color: rgb(0 237 100);
+border: 1px solid #111;
+border-radius: 8px;
+box-sizing: border-box;
+color: #191818;
+cursor: pointer;
+display: flex;
+font-size: 16px;
+height: 48px;
+justify-content: center;
+line-height: 24px;
+max-width: 100%;
+padding: 0 25px;
+position: relative;
+text-align: center;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.btn:after {
+background-color: #111;
+border-radius: 8px;
+content: "";
+display: block;
+height: 48px;
+left: 0;
+width: 100%;
+position: absolute;
+top: -2px;
+transform: translate(8px, 8px);
+transition: transform .2s ease-out;
+z-index: -1;
+}
+
+.btn:hover:after {
+transform: translate(0, 0);
+}
+
+.btn:active {
+background-color: #ffdeda;
+outline: 0;
+}
+
+.btn:hover {
+outline: 0;
+}
+
+@media (min-width: 768px) {
+.btn {
+  padding: 0 40px;
+}
+}
+
+.btn-primary {
+--bg: var(--sefety-orange);
+--color: var(--white);
+--border-color: var(--sefety-orange);
+}
+
+.btn-primary:is(:hover, :focus) {
+--bg: transparent;
+--color: var(--sefety-orange);
+}
+
+.btn-secondary:is(:hover, :focus) {
+--bg: var(--sefety-orange);
+--border-color: var(--sefety-orange);
+}
+
+.btn-outline {
+--bg: transparent;
+--color: var(--sefety-orange);
+--border-color: var(--sefety-orange);
+--padding: 10px 28px;
+font-weight: var(--fw-500);
+}
+
+.btn-outline:is(:hover, :focus) {
+--color: var(--white);
+--bg: var(--sefety-orange);
+}
+
+.has-shape {
+position: relative;
+z-index: 1;
+}
+
+.shape {
+position: absolute;
+z-index: -1;
+}
+
+.w-100 { width: 100%; }
+
+.title-wrapper {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: flex-end;
+gap: 30px;
+margin-block-end: 60px;
+}
+
+.grid-list {
+display: grid;
+gap: 30px;
+}
+
+.card-text { font-size: var(--fs-4); }
+
+.btn-link {
+display: flex;
+align-items: center;
+gap: 5px;
+color: var(--gunmetal);
+font-weight: var(--fw-500);
+transition: var(--transition-1);
+}
+
+.btn-link:is(:hover, :focus) { color: var(--sefety-orange); }
+
+.img-holder {
+aspect-ratio: var(--width) / var(--height);
+background-color: var(--light-gray);
+}
+
+.img-cover {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: var(--transition-2);
+}
+
+.hover\:underline {
+display: inline;
+background-image: linear-gradient(to right, var(--gunmetal), var(--gunmetal));
+background-repeat: no-repeat;
+max-width: max-content;
+background-position-y: bottom;
+background-size: 0 2px;
+transition: var(--transition-2);
+}
+
+.hover\:underline:is(:hover, :focus) { background-size: 100% 2px; }
+
+
+
+
+
+/*-----------------------------------*\
+#HEADER
+\*-----------------------------------*/
+
+.header .btn { display: none; }
+
+.header {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding-block: 25px;
+z-index: 4;
+}
+
+.header.active {
+position: fixed;
+background-color: var(--white);
+box-shadow: var(--shadow-1);
+transform: translateY(-100%);
+animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+0% { transform: translateY(-100%); }
+100% { transform: translateY(0); }
+}
+
+.header .container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 30px;
+}
+
+.nav-open-btn {
+background-color: var(--gunmetal_10);
+color: var(--gunmetal);
+font-size: 20px;
+padding: 10px;
+border-radius: var(--radius-circle);
+transition: var(--transition-1);
+}
+
+.nav-open-btn ion-icon { --ionicon-stroke-width: 50px; }
+
+.nav-open-btn:is(:hover, :focus) {
+background-color: var(--sefety-orange);
+color: var(--white);
+}
+
+.navbar {
+position: fixed;
+top: 0;
+left: -450px;
+width: calc(100% - 70px);
+max-width: 450px;
+height: 100vh;
+background-color: var(--cultured);
+z-index: 1;
+visibility: hidden;
+transition: 0.25s var(--cubic-in);
+}
+
+.navbar.active {
+transform: translate(450px);
+visibility: visible;
+transition: 0.5s var(--cubic-out);
+}
+
+.navbar-title {
+color: var(--black_40);
+text-align: center;
+padding: 12px;
+border-block-end: 1px solid var(--black_15);
+}
+
+.navbar-item { border-block-end: 1px solid var(--black_15); }
+
+.navbar-link {
+color: var(--gunmetal);
+padding: 15px 30px;
+transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus) { color: var(--sefety-orange); }
+
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background-color: var(--black_25);
+opacity: 0;
+transition: var(--transition-1);
+pointer-events: none;
+}
+
+.overlay.active {
+pointer-events: all;
+opacity: 1;
+}
+
+
+
+
+
+/*-----------------------------------*\
+#HERO
+\*-----------------------------------*/
+
+.hero { padding-block-start: calc(var(--section-padding) + 90px); }
+
+.hero .container {
+display: grid;
+gap: 40px;
+}
+
+.hero .section-text { margin-block: 25px 40px; }
+
+.hero-banner .w-100 {
+max-width: 70%;
+margin-inline: auto;
+}
+
+.hero .shape {
+bottom: -10px;
+left: 10px;
+}
+
+.hero .section-title {
+margin-top: -70px;
+font-size: 60px; /* Default font size for larger screens */
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for small devices */
+.hero .section-title {
+  font-size: 40px; /* Font size for small devices */
+}
+
+.hero {
+  margin-top: 60px;
+}
+}
+
+
+
+
+/*-----------------------------------*\
+#SERVICE
+\*-----------------------------------*/
+
+.service { background-color: var(--snow); }
+
+.service .section-text { margin-block-end: 20px; }
+
+.service-card {
+background-color: var(--white);
+padding: 50px 30px;
+border-radius: var(--radius-4);
+box-shadow: var(--shadow-2);
+}
+
+.service-card .card-title {
+margin-block: 35px 20px;
+transition: var(--transition-1);
+}
+
+.service-card .card-title:is(:hover, :focus) { color: var(--sefety-orange); }
+
+.service .shape-2 { display: none; }
+
+.service .shape-1 {
+bottom: 0;
+left: -50px;
+}
+
+
+
+
+
+/*-----------------------------------*\
+#ABOUT
+\*-----------------------------------*/
+
+.about .container {
+display: grid;
+gap: 50px;
+}
+
+.about-banner .w-100 { max-width: 90%; }
+
+.about .shape {
+top: -25px;
+right: -5px;
+}
+
+.about .section-text {
+font-size: unset;
+margin-block: 30px 40px;
+}
+
+.about .btn { max-width: max-content; }
+
+
+
+
+
+/*-----------------------------------*\
+#PROJECT
+\*-----------------------------------*/
+
+.project { background-color: var(--snow); }
+
+.project .section-title { margin-block-end: 30px; }
+
+.project-list {
+display: flex;
+flex-wrap: wrap;
+gap: 60px;
+}
+
+.project-card .card-banner { margin-block-end: 35px; }
+
+.project-card .img-holder { overflow: hidden; }
+
+.project-card:is(:hover, :focus-within) .img-cover { transform: scale(1.2); }
+
+.project-card .card-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 25px;
+}
+
+.project-card .h3 {
+--fs-2: 2.4rem;
+margin-block-end: 4px;
+}
+
+.project-card .card-tag { font-size: var(--fs-4); }
+
+.project-card .card-link {
+color: var(--gunmetal);
+font-size: 22px;
+padding: 14px;
+border-radius: var(--radius-circle);
+transform: rotate(-45deg);
+transition: var(--transition-1);
+}
+
+.project-card .card-link:is(:hover, :focus) { 
+background-color: var(--sefety-orange_10);
+color: var(--sefety-orange);
+}
+
+
+
+
+
+/*-----------------------------------*\
+#BLOG
+\*-----------------------------------*/
+
+.blog .grid-list { gap: 50px; }
+
+.blog-card .card-banner {
+position: relative;
+overflow: hidden;
+}
+
+.blog-card .card-banner:is(:hover, :focus) .img-cover { transform: scale(1.2); }
+
+.blog-card .card-tag {
+position: absolute;
+bottom: 10px;
+right: 10px;
+background-color: var(--white);
+color: var(--gunmetal);
+font-size: var(--fs-5);
+font-weight: var(--fw-500);
+text-transform: uppercase;
+padding: 4px 10px;
+border-radius: var(--radius-pill);
+transition: var(--transition-1);
+}
+
+.blog-card .card-tag:is(:hover, :focus) {
+background-color: var(--sefety-orange);
+color: var(--white);
+}
+
+.blog-card :is(.meta-list, .meta-item) {
+display: flex;
+align-items: center;
+}
+
+.blog-card .meta-list {
+column-gap: 20px;
+flex-wrap: wrap;
+margin-block: 25px 15px;
+}
+
+.blog-card .meta-item { column-gap: 5px; }
+
+.blog-card .meta-item-text { color: var(--sonic-silver); }
+
+.blog-card .h3 { --fs-2: 2.8rem; }
+
+.blog-card .btn-link {
+font-size: var(--fs-4);
+margin-block-start: 20px;
+}
+
+
+
+
+
+/*-----------------------------------*\
+#FOOTER
+\*-----------------------------------*/
+
+.footer { color: var(--gunmetal); }
+
+.footer-top {
+display: grid;
+gap: 30px;
+border-block: 1px solid var(--light-gray);
+}
+
+.footer-link {
+font-size: var(--fs-4);
+transition: var(--transition-1);
+}
+
+.footer-link:is(:hover, :focus) { color: var(--sefety-orange); }
+
+.footer-brand .footer-link:not(:last-of-type) { margin-block: 30px 15px; }
+
+.social-list {
+display: flex;
+gap: 15px;
+margin-block-start: 25px;
+}
+
+.social-link {
+font-size: 20px;
+transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus) { color: var(--sefety-orange); }
+
+.footer-list .footer-link { padding-block: 5px; }
+
+.footer-list-title { margin-block-end: 20px; }
+
+.copyright {
+padding-block: 35px;
+text-align: center;
+}
+
+
+
+
+
+/*-----------------------------------*\
+#MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+* responsive for large than 575px screen
+*/
+
+@media (min-width: 575px) {
+
+/**
+ * CUSTOM PROPERTY
+ */
+
+:root {
+
+  /**
+   * typography
+   */
+
+  --fs-1: 5rem;
+
+}
+
+
+
+/**
+ * REUSED STYLE
+ */
+
+.container {
+  max-width: 540px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+
+
+/**
+ * HERO
+ */
+
+.hero-banner .w-100 { max-width: 100%; }
+
+.hero .shape {
+  bottom: 0;
+  left: -50px;
+}
+
+
+
+
+/**
+ * SERVICE
+ */
+
+.service .grid-list {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+}
+
+
+
+/**
+ * PROJECT
+ */
+
+.project-list > * { min-width: 100%; }
+
+
+
+/**
+ * FOOTER
+ */
+
+.footer-top { grid-template-columns: 1fr 1fr; }
+
+}
+
+
+
+
+
+/**
+* responsive for large than 768px screen
+*/
+
+@media (min-width: 768px) {
+
+/**
+ * REUSED STYLE
+ */
+
+.container { max-width: 720px; }
+
+.grid-list { grid-template-columns: 1fr 1fr; }
+
+
+
+/**
+ * HERO
+ */
+
+.hero .container {
+  grid-template-columns: 1fr 0.8fr;
+  align-items: center;
+}
+
+
+
+/**
+ * SERVICE
+ */
+
+.service .title-wrapper > * {
+  max-width: calc(50% - 30px);
+  align-items: flex-start;
+}
+
+.service .section-text { margin-block: 0; }
+
+
+
+/**
+ * ABOUT
+ */
+
+.about .container {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+
+
+/**
+ * PROJECT
+ */
+
+.project-list > * {
+  min-width: calc(50% - 30px);
+  width: calc(50% - 30px);
+}
+
+}
+
+
+
+
+
+/**
+* responsive for large than 992px screen
+*/
+
+@media (min-width: 992px) {
+
+/**
+ * CUSTOM PROPERTY
+ */
+
+:root {
+
+  /**
+   * typography
+   */
+
+  --fs-1: 6.5rem;
+
+  /**
+   * spacing
+   */
+
+  --section-padding: 120px;
+
+}
+
+
+
+/**
+ * REUSED STYLE
+ */
+
+.container { max-width: 960px; }
+
+.h2 { --fs-1: 5.5rem; }
+
+.section-text { --fs-3: 2.4rem; }
+
+.btn {
+  --padding: 10px 32px;
+  font-weight: var(--fw-500);
+}
+
+.btn-secondary { --padding: 14px 32px; }
+
+
+
+/**
+ * FOOTER
+ */
+
+.footer-top { grid-template-columns: 1fr 0.7fr 0.7fr 0.7fr; }
+
+}
+
+
+
+
+
+/**
+* responsive for large than 1200px screen
+*/
+
+@media (min-width: 1200px) {
+
+/**
+ * CUSTOM PROPERTY
+ */
+
+:root {
+
+  /**
+   * typography
+   */
+
+  --fs-1: 8rem;
+
+}
+
+
+
+/**
+ * REUSED STYLE
+ */
+
+.container { max-width: 1140px; }
+
+.h2 { --fs-1: 7.2rem; }
+
+.grid-list { grid-template-columns: repeat(3, 1fr); }
+
+
+
+/**
+ * HEADER
+ */
+
+.nav-open-btn,
+.navbar-title { display: none; }
+
+.header .btn { display: block; }
+
+.navbar,
+.navbar.active {
+  all: unset;
+  margin-inline-start: auto;
+}
+
+.navbar-list { display: flex; }
+
+.navbar-item { border: none; }
+
+.navbar-link {
+  text-transform: uppercase;
+  font-weight: var(--fw-500);
+}
+
+
+
+/**
+ * SERVICE
+ */
+
+.service .grid-list { grid-template-columns: repeat(4, 1fr); }
+
+
+
+/**
+ * PROJECT
+ */
+
+.project .title-wrapper > div { width: 75%; }
+
+.project-list > * {
+  min-width: calc(33.33% - 40px);
+  width: calc(33.33% - 40px);
+}
+
+.project-list > *:is(:first-child, :nth-child(2)) {
+  width: calc(50% - 30px);
+}
+
+}
+</style>
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/w-logo.png?raw=true">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/w-logo.png?raw=true" width="60" height="52" alt="Off-Topics logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <p class="navbar-title">Main Menu</p>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>OT-Discussion</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-nav-link>Roll-Call-HUb</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              Get OT Updates & News on <span class="span">whatsapp</span>
+            </h1>
+
+            <p class="section-text">
+              Stay updated with the latest news and updates on WhatsApp from Off-Topics. Join our WhatsApp group to stay informed!
+            </p>
+
+            <button class="btn btn-secondary">Join WhatsApp</button>
+
+          </div>
+
+          <figure class="hero-banner has-shape">
+
+            <img src="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/w-logo.png?raw=true" width="521" height="675" alt="hero banner" class="w-100">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICES
+      -->
+
+      <section class="section service has-shape" id="services" aria-label="service">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              Benefits You Will <span class="span">Receive</span>.
+            </h2>
+
+            <p class="section-text">
+              Receive the latest updates, discussion notifications, new features, and important service alerts directly on WhatsApp from Off-Topics.
+            </p>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="https://www.svgrepo.com/show/476435/news-paper.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Latest News</a>
+                </h3>
+
+                <p class="card-text">
+                  Stay informed with the most recent updates.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="https://www.svgrepo.com/show/526715/users-group-rounded.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Discussion Updates</a>
+                </h3>
+
+                <p class="card-text">
+                  Receive updates from OT-Discussion, questions and more.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="https://www.svgrepo.com/show/450862/file-code.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">New Features</a>
+                </h3>
+
+                <p class="card-text">
+                  Be the first to know about exciting new features and enhancements.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="https://www.svgrepo.com/show/503450/notification-log.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Service Notifications</a>
+                </h3>
+
+                <p class="card-text">
+                  Get important notifications related to our services directly on WhatsApp.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/circle-shape.svg" width="158" height="158" loading="lazy" alt=""
+            class="shape shape-1">
+
+          <img src="./assets/images/triangle-shape-1.svg" width="158" height="158" loading="lazy" alt=""
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner has-shape">
+            <img src="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/logoo.png?raw=true" width="500" height="611" loading="lazy" alt="about banner"
+              class="w-100">
+
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              Something is  <span class="span">Discussed</span>  Now!
+            </h2>
+
+            <p class="section-text">
+              Join OT-Discussion to share your thoughts, ask questions, and engage in discussions about any topic that interests you!
+            </p>
+
+            <a href="https://ot-discussion.in/" class="btn btn-outline">Join Today</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-label="project">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <h2 class="h2 section-title">
+                The Hall of  <span class="span">Fame</span>.
+              </h2>
+
+              <p class="section-text">
+                Visit our Hall of Fame to celebrate the achievements of our Off-Topics team!
+              </p>
+            </div>
+
+            <a href="https://offtopics.in/roll-call-hub#footer" class="btn-link">
+              <span class="span">View Hall of Fame</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              Our inside <span class="span">blogs</span>.
+            </h2>
+
+            <a href="https://offtopics.in/blog" class="btn-link">
+              <span class="span">Check Our All Blogs</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="https://plus.unsplash.com/premium_photo-1684341008385-31d2eb4f3afe?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                  <button class="card-tag">OT Blogs</button>
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/logoo.png?raw=true" width="18" height="18" loading="lazy" alt="Alice Williams"
+                        class="author-img">
+
+                      <p class="meta-item-text">Off-Topics</p>
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">March 12, 2024</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="https://offtopics.in/who-qualifies-or-and-how-can-i-earn-the-checkmark-or-bluetick" class="card-title hover:underline">
+                      Who qualifies for and how can I earn the Checkmark or Blue Tick
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="https://plus.unsplash.com/premium_photo-1661313626999-90d230cabf8d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                  <button class="card-tag">OT Blogs</button>
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/logoo.png?raw=true" width="18" height="18" loading="lazy" alt="Alice Williams"
+                        class="author-img">
+
+                      <p class="meta-item-text">Off-Topics</p>
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">June 02, 2024</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="https://offtopics.in/docs" class="card-title hover:underline">
+                      IT Off-Topics Docs
+                    </a>
+                  </h3>
+
+                  <a href="https://offtopics.in/docs" class="btn-link">
+                    <span class="span">Read more</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="https://github.com/awkward-py/Open-Source-Off-Topics/blob/main/assets/images/w-logo.png?raw=true" width="70" height="52" alt="dprod logo">
+          </a>
+
+          <a href="https://offtopics.in" class="footer-link">www.offtopics.in</a>
+          <a href="https://ot-discussion.in" class="footer-link">www.ot-discussion.in</a>
+
+         
+
+         
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h4 footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="https://offtopics.in/blog" class="footer-link">Articles</a>
+          </li>
+
+          <li>
+            <a href="https://offtopics.in/docs" class="footer-link">Docs</a>
+          </li>
+
+          <li>
+            <a href="https://offtopics.in/Student-Hub-Policy" class="footer-link">Student Policy</a>
+          </li>
+
+          <li>
+            <a href="https://offtopics.in/career-resources" class="footer-link">Career Resources</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h4 footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="https://offtopics.in" class="footer-link">Off-Topics</a>
+          </li>
+
+          <li>
+            <a href="https://ot-discussion.in/" class="footer-link">OT-Discussion</a>
+          </li>
+
+          <li>
+            <a href="https://offtopics.in/homes/opensource" class="footer-link">Open Source</a>
+          </li>
+
+          <li>
+            <a href="https://offtopics.in/roll-call-hub" class="footer-link">Roll-Call-Hub</a>
+          </li>
+
+          
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h4 footer-list-title">Other</p>
+          </li>
+
+          <li>
+            <a href="https://offtopics.in/license" class="footer-link">License</a>
+          </li>
+
+          <li>
+            <a href="https://offtopics.in/terms" class="footer-link">Terms</a>
+          </li>
+
+          <li>
+            <a href="https://offtopics.in/privacy" class="footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          Copyright 2024. All rights reserved by IT Off-Topics, including the protection of personal data, privacy, contact information, and other sensitive details.
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script>
+    'use strict';
+
+
+
+/**
+ * add event on element
+ */
+
+const addEventOnElem = function (elem, type, callback) {
+  if (elem.length > 1) {
+    for (let i = 0; i < elem.length; i++) {
+      elem[i].addEventListener(type, callback);
+    }
+  } else {
+    elem.addEventListener(type, callback);
+  }
+}
+
+
+
+/**
+ * navbar toggle
+ */
+
+const navbar = document.querySelector("[data-navbar]");
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
+const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+const overlay = document.querySelector("[data-overlay]");
+
+const toggleNavbar = function () {
+  navbar.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.classList.toggle("active");
+}
+
+addEventOnElem(navTogglers, "click", toggleNavbar);
+
+const closeNavbar = function () {
+  navbar.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.classList.remove("active");
+}
+
+addEventOnElem(navbarLinks, "click", closeNavbar);
+
+
+
+/**
+ * header active when window scroll down to 100px
+ */
+
+const header = document.querySelector("[data-header]");
+
+const activeElemOnScroll = function () {
+  if (window.scrollY > 100) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+}
+
+addEventOnElem(window, "scroll", activeElemOnScroll);
+  </script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
