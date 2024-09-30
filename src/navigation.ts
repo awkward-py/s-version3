@@ -36,8 +36,8 @@ export const headerData = {
         // },
 
         {
-          text: 'QuizWhiz',
-          href: getPermalink('/quizwhiz'),
+          text: 'WhatsApp',
+          href: getPermalink('https://offtopics.in/whatsapp'),
         },
 
         {
