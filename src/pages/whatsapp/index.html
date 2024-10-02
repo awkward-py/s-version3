@@ -1014,6 +1014,32 @@ text-align: center;
 }
 
 }
+
+
+.button-container {
+  display: flex;
+  gap: 40px; 
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #ff0090; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #cd0b73; 
+}
+
+
 </style>
 
   <!-- 
@@ -1050,7 +1076,7 @@ text-align: center;
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="https://offtopics.in/" class="navbar-link" data-nav-link>Home</a>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
           </li>
 
           <li class="navbar-item">
@@ -1075,10 +1101,7 @@ text-align: center;
     </div>
   </header>
 
-
-
-
-
+  
   <main>
     <article>
 
@@ -1099,9 +1122,15 @@ text-align: center;
               Stay updated with the latest news and updates on WhatsApp from Off-Topics. Join our WhatsApp group to stay informed!
             </p>
 
-            <a href="https://chat.whatsapp.com/DS92YDFq8VRHm6gKU66cFC" target="_blank">
-              <button class="btn btn-secondary">Join WhatsApp</button>
-          </a>
+            <div class="button-container">
+              <a href="https://chat.whatsapp.com/DS92YDFq8VRHm6gKU66cFC" target="_blank">
+                <button class="btn btn-secondary1">Join WhatsApp</button>
+              </a>
+              <a href="#" target="_blank">
+                <button class="btn btn-secondary">Launch Soon</button>
+              </a>
+            </div>
+            
           
 
           </div>
