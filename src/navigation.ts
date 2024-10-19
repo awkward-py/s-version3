@@ -35,6 +35,11 @@ export const headerData = {
         //   href: getPermalink('/#features'),
         // },
 
+          {
+          text: 'Hackathon 2024',
+          href: getPermalink('https://offtopics.in/Hackathon'),
+        },
+
         {
           text: 'WhatsApp',
           href: getPermalink('https://offtopics.in/whatsapp'),
