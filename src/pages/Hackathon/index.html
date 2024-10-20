@@ -54,7 +54,7 @@
 --gradient-2: linear-gradient(90deg, transparent 0%, #9841ff 50%, transparent 100%);
 
 /* text color */
---text-white: hsla(0, 0%, 100%, 1);
+--text-white: rgba(26, 25, 25, 0.884);
 --text-gainsboro: hsla(0, 0%, 87%, 1);
 --text-champagne-pink: hsla(23, 61%, 86%, 1);
 --text-purple: hsla(267, 100%, 63%, 1);
@@ -187,10 +187,20 @@ scroll-behavior: smooth;
 }
 
 body {
-background-color: var(--bg-dark-purple);
-background-image: url("https://cdn.pixabay.com/photo/2016/10/22/01/54/wood-1759566_1280.jpg");
-background-repeat: repeat;
-color: var(--text-gainsboro);
+ /* img size is 50x50 */
+ background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.2s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
 font-family: var(--fontFamily-oxanium);
 font-size: var(--fontSize-4);
 font-weight: var(--weight-regular);
@@ -207,6 +217,51 @@ overflow-x: hidden;
 
 
 
+
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
 
 /*-----------------------------------*\
 #REUSED STYLE
@@ -396,6 +451,7 @@ transition: var(--transition-1);
 .nav-toggle-btn.active .line-3 { transform: rotate(45deg) translate(-3px, -1px); }
 
 .navbar {
+  
 position: absolute;
 top: calc(100% - 1px);
 right: 12px;
@@ -417,7 +473,7 @@ padding: 12px 25px;
 text-transform: uppercase;
 font-size: var(--fontSize-7);
 font-weight: var(--weight-semiBold);
-color: var(--text-white);
+color: white;
 }
 
 .navbar-item { border-block-start: 1px solid var(--border-space-cadet); }
@@ -438,6 +494,7 @@ color: var(--text-white);
 .hero {
 padding-block-start: 170px;
 text-align: center;
+
 }
 
 .hero .section-subtitle { letter-spacing: 5px; }
@@ -469,6 +526,9 @@ margin-block-start: 50px;
   color: rgb(255, 153, 0);
 
 }
+
+
+
 
 
 /*-----------------------------------*\
@@ -588,6 +648,7 @@ gap: 30px;
 .news-card {
 background-color: var(--bg-oxford-blue-alpha-90);
 box-shadow: var(--shadow);
+color: rgba(255, 255, 255, 0.902);
 }
 
 .news-card .card-content {
@@ -749,6 +810,7 @@ outline: none;
 .footer-bottom {
 clip-path: var(--clip-path-9);
 background-color: var(--bg-oxford-blue-alpha-80);
+color: white;
 }
 
 .copyright { padding: 30px 20px; }
@@ -1137,6 +1199,12 @@ body .cursor.hovered {
 .footer .logo img { width: 205px; }
 
 }
+
+
+
+
+
+
 </style>
 
   <!-- 
@@ -1216,7 +1284,7 @@ body .cursor.hovered {
         <div class="container">
         
 
-          <p class="section-subtitle"style="font-size: 13px;" >GP Kashipur Presents</p>
+          <p class="section-subtitle"style="font-size: 13px; letter-spacing: 3.7px;" >GP Kashipur in Collaboration with IT Off-Topics</p>
 
           <h1 class="h1 title hero-title" style="display: inline-block;">Get Ready for the </h1>
           <h1 class="h1 title hero-title2" style="display: inline-block;">&nbsp;Grand Hackathon!</h1>
@@ -1664,12 +1732,7 @@ Winners will receive a beautiful trophy along with certificates for each group m
             </li>
            
            
-          
-          
-        
-          
-
-            
+   
 
           </ol>
 
