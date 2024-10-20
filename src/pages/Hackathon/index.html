@@ -1265,9 +1265,9 @@ body .cursor.hovered {
               <div class="card-meta">Day 1 - </div>
 
               <div class="upcoming-time" data-reveal="bottom">
-                <time class="time" datetime="10:00">Date</time>
+                <time class="time" datetime="10:00" style="font-size: 28px !important;">Date</time>
               </br>
-                <time class="time" datetime="10:00">Coming soon</time>
+                <time class="time" datetime="10:00">26 Nov 2024</time>
 
                
               </div>
@@ -1282,9 +1282,9 @@ body .cursor.hovered {
               <div class="card-meta">Day 2 - </div>
 
               <div class="upcoming-time" data-reveal="bottom">
-                <time class="time" datetime="10:00">Date</time>
+                <time class="time" datetime="10:00" style="font-size: 28px !important;">Date</time>
               </br>
-              <time class="time" datetime="10:00">Coming Soon</time>
+              <time class="time" datetime="10:00">27 Nov 2024</time>
 
                
               </div>
@@ -1296,11 +1296,12 @@ body .cursor.hovered {
               <h3 class="h3 card-title">Hackathon</h3>
               <div class="card-meta">Every moment counts -</div>
               <div class="upcoming-time" data-reveal="bottom">
-                  <time class="time" datetime="10:00">[Start soon]</time>
+                  <time class="time" datetime="10:00" style="font-size: 28px !important; ">Event begins at</time>
                   <br />
-                  <time class="countdown-timer" datetime="10:00">01:23:59:59</time>
+                  <time id="countdown-timer" class="countdown-timer" datetime="10:00" style="color: rgb(255, 149, 0);">00:00:00:00</time> 
               </div>
           </li>
+          
           
         
           
@@ -1445,10 +1446,74 @@ body .cursor.hovered {
               </div>
             </li>
 
+            
             <li data-reveal="bottom">
               <div class="news-card">
                 <div class="card-content">
-                  <a   class="card-tag">Rule 3</a>
+                  <a  class="card-tag">Rule 3</a>
+                  <h3 class="h3">
+                    <a  class="card-title">Team Composition Rule</a>
+                  </h3>
+                  <p class="card-text">
+                    Each group should ideally consist of 5 members. Every group must have unique members, meaning no individual can be part of more than one group during the hackathon.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+           
+
+           
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+                <div class="card-content">
+                  <a  class="card-tag">Rule 4</a>
+                  <h3 class="h3">
+                    <a  class="card-title">College Participation Rule</a>
+                  </h3>
+                  <p class="card-text">
+                    Each group must consist only of students from your own college. Group members from different colleges are not allowed to participate together in the same group. 
+                  </p>
+                </div>
+              </div>
+            </li>
+
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+                <div class="card-content">
+                  <a  class="card-tag">Rule 5</a>
+                  <h3 class="h3">
+                    <a  class="card-title">Mixed Year Groups</a>
+                  </h3>
+                  <p class="card-text">
+                    Groups can have a mix of students from different academic years (1st, 2nd, and 3rd), but all members must be from the same college.
+  </p>
+                </div>
+              </div>
+            </li>
+
+
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+                <div class="card-content">
+                  <a  class="card-tag">Rule 6</a>
+                  <h3 class="h3">
+                    <a  class="card-title">Group Name Rule</a>
+                  </h3>
+                  <p class="card-text">
+                    Each group must have a unique group name, as it will be your identity throughout the hackathon. All activities, submissions, and evaluations will be associated with your group name, so choose wisely!
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+                <div class="card-content">
+                  <a   class="card-tag">Rule 7</a>
                   <h3 class="h3">
                     <a   class="card-title">48-Hour Time Frame</a>
                   </h3>
@@ -1463,7 +1528,7 @@ body .cursor.hovered {
             <li data-reveal="bottom">
               <div class="news-card">
                 <div class="card-content">
-                  <a   class="card-tag">Rule 4</a>
+                  <a   class="card-tag">Rule 8</a>
                   <h3 class="h3">
                     <a   class="card-title">Original Work</a>
                   </h3>
@@ -1477,7 +1542,7 @@ body .cursor.hovered {
             <li data-reveal="bottom">
               <div class="news-card">
                 <div class="card-content">
-                  <a   class="card-tag">Rule 5</a>
+                  <a   class="card-tag">Rule 9</a>
                   <h3 class="h3">
                     <a   class="card-title">Project Demo</a>
                   </h3>
@@ -1491,7 +1556,7 @@ body .cursor.hovered {
             <li data-reveal="bottom">
               <div class="news-card">
                 <div class="card-content">
-                  <a   class="card-tag">Rule 6</a>
+                  <a   class="card-tag">Rule 10</a>
                   <h3 class="h3">
                     <a   class="card-title">Evaluation Criteria</a>
                   </h3>
@@ -1502,10 +1567,25 @@ body .cursor.hovered {
               </div>
             </li>
 
+
             <li data-reveal="bottom">
               <div class="news-card">
                 <div class="card-content">
-                  <a   class="card-tag">Rule 7</a>
+                  <a   class="card-tag">Rule 11</a>
+                  <h3 class="h3">
+                    <a   class="card-title">Disqualification Rule</a>
+                  </h3>
+                  <p class="card-text">
+                    If your project is found to be copied or purchased from the internet, or if any team member absent on the submission day, the entire team will be disqualified,  no matter how super or great your project is. 
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+                <div class="card-content">
+                  <a   class="card-tag">Rule 12</a>
                   <h3 class="h3">
                     <a   class="card-title">Stay Professional</a>
                   </h3>
@@ -1516,19 +1596,7 @@ body .cursor.hovered {
               </div>
             </li>
 
-            <li data-reveal="bottom">
-              <div class="news-card">
-                <div class="card-content">
-                  <a   class="card-tag">Rule 8</a>
-                  <h3 class="h3">
-                    <a   class="card-title">Disqualification Rule</a>
-                  </h3>
-                  <p class="card-text">
-                    If your project is found to be copied or purchased from the internet, or if any team member absent on the submission day, the entire team will be disqualified,  no matter how super or great your project is. 
-                  </p>
-                </div>
-              </div>
-            </li>
+         
 
 
 
@@ -1804,6 +1872,50 @@ addEventOnElements(hoverElements, "mouseover", function () {
 addEventOnElements(hoverElements, "mouseout", function () {
   cursor.classList.remove("hovered");
 });
+
+
+
+// Function to set the event date if it's not already stored in localStorage
+function setEventDate() {
+    const storedEventDate = localStorage.getItem("eventDate");
+
+    // If no event date is set in localStorage, set the event to 26th November 2024 at 10:00 AM UTC
+    if (!storedEventDate) {
+        const eventDate = new Date("November 26, 2024 10:00:00").getTime();
+        localStorage.setItem("eventDate", eventDate);
+        return eventDate;
+    }
+
+    // If the event date is already stored, return it
+    return parseInt(storedEventDate);
+}
+
+// Retrieve or set the event date
+const eventDate = setEventDate();
+
+// Function to update the countdown
+function updateCountdown() {
+    const now = new Date().getTime(); // Get the current time
+    const timeLeft = eventDate - now; // Calculate the remaining time
+
+    // Calculate the time components (days, hours, minutes, seconds)
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    // Display the countdown in the specified format
+    document.getElementById("countdown-timer").innerHTML =
+        days + ":" + ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
+
+    // If the countdown is finished, display a message
+    if (timeLeft < 0) {
+        document.getElementById("countdown-timer").innerHTML = "The event has started!";
+    }
+}
+
+// Update the countdown every second
+setInterval(updateCountdown, 1000);
 
 
 
