@@ -1,7 +1,7 @@
 {
-  "name": "@onwidget/astrowind",
+  "name": "@offtopics/ITofftopics",
   "version": "1.0.0-beta.43",
-  "description": "AstroWind: A free template using Astro 4.0 and Tailwind CSS. Astro starter theme.",
+  "description": "One of the most advanced platforms for IT and CSE students, offering cutting-edge features and a user-friendly design.",
   "type": "module",
   "private": true,
   "engines": {
