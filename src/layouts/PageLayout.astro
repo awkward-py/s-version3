@@ -13,6 +13,9 @@ export interface Props {
 }
 
 const { metadata } = Astro.props;
+
+// Check if it's a single post page (adjust this condition based on your setup)
+const isSinglePost = metadata && metadata.isSinglePost; // or use a condition based on your project setup
 ---
 
 <Layout metadata={metadata}>
@@ -25,7 +28,10 @@ const { metadata } = Astro.props;
   <main>
     <slot />
   </main>
-  <slot name="footer">
-    <Footer {...footerData} />
-  </slot>
+
+  {!isSinglePost && (
+    <slot name="footer">
+      <Footer {...footerData} />
+    </slot>
+  )}
 </Layout>
