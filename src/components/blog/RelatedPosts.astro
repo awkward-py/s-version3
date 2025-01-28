@@ -1,6 +1,6 @@
 ---
+// Import necessary components and functions
 import { APP_BLOG } from 'astrowind:config';
-
 import { getRelatedPosts } from '~/utils/blog';
 import BlogHighlightedPosts from '../widgets/BlogHighlightedPosts.astro';
 import type { Post } from '~/types';
@@ -12,17 +12,20 @@ export interface Props {
 
 const { post } = Astro.props;
 
+// Get related posts only if the post has tags
 const relatedPosts = post.tags ? await getRelatedPosts(post, 4) : [];
+
+// Check if it's a single post page (You can adjust this depending on how your site is structured)
+const isSinglePostPage = true; // Set this to `true` for the single post page
 ---
 
-{
-  APP_BLOG.isRelatedPostsEnabled ? (
-    <BlogHighlightedPosts
-      classes={{ container: 'pt-0 lg:pt-0 md:pt-0' }}
-      title="Related Posts"
-      linkText="View All Posts"
-      linkUrl={getBlogPermalink()}
-      postIds={relatedPosts.map((post) => post.id)}
-    />
-  ) : null
-}
+<!-- Render related posts only if it's not a single post page -->
+{!isSinglePostPage && APP_BLOG.isRelatedPostsEnabled ? (
+  <BlogHighlightedPosts
+    classes={{ container: 'pt-0 lg:pt-0 md:pt-0' }}
+    title="Related Posts"
+    linkText="View All Posts"
+    linkUrl={getBlogPermalink()}
+    postIds={relatedPosts.map((post) => post.id)}
+  />
+) : null}
