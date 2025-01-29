@@ -1,3 +1,9 @@
+---
+publishDate: 2024-06-02T00:00:00Z
+title: "Engineering First Year Syllabus"
+description: "Detailed syllabus for the first year of engineering."
+---
+
 # EVALUATION SCHEME
 
 | Subject            | L | T | P | T/O | T |
