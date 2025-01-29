@@ -1,6 +1,6 @@
 ---
 publishDate: 2025-01-29T00:00:00Z
-title:  IT 6th Sem Syllabus
+
 
 ---
 
