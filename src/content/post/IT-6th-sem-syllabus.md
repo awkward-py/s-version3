@@ -433,3 +433,256 @@ Data Mining and Warehousing enables middle and top managers to analyze data and 
 | 4. Data Mining Techniques                    | 18                   |
 | 5. Data Mining Applications                  | 10                   |
 | **Total**                                    | **70**               |
+
+
+# Advance Web Programming
+
+## Rationale
+The main aim of this subject is to enable the students to know the basic concepts of open source software and tools. The students will learn about the principles of open source software, web servers, databases, operating systems, programming languages, and application development.
+
+## Objectives
+On completion of the following units of syllabus contents, the students must be able to:
+- Understand the need, advantages, and disadvantages of Open Source software.
+- Understand the general concepts and modes of Linux Operating System.
+- Understand advanced concepts like Scheduling, Time Accounting, Personalities, and coning.
+- Know the basic concepts of Open Source Database.
+- Know how to connect to MySQL database and close connections.
+- Write simple MySQL programs.
+- Create databases and tables in MySQL.
+- Manipulate database tables in MySQL.
+- Understand the concepts of Record Selection technologies.
+- Install and Configure PHP on Windows.
+- Understand the basic concepts of PHP.
+- Understand the String and Array concepts in PHP.
+- List the advanced features of PHP.
+- Discuss Memory Management, Parameter Handling, and Variables in PHP.
+- Understand how to access a database using PHP.
+- Discuss advanced database techniques.
+- Discuss the Apache Web Server and configuring the server.
+- Explain the history and architecture of the Eclipse IDE platform.
+- Understand the basics of Python.
+- Know the building blocks of Python language.
+- Understand the development process of a Python program.
+- Understand file handling using Python.
+
+## Units & Detailed Contents
+
+### 1. Open Source Software (10 Periods)
+- Introduction: Need of Open Sources, Advantages of Open Sources, Applications, Application of Open Source.
+
+### 2. PHP (15 Periods)
+- What is PHP?
+- Basic Syntax of PHP
+- Programming in a web environment
+- Common PHP Script Elements
+- Using Variables, Constants, Data types
+- Operators, Statements
+- Working with Arrays
+- Using Functions
+- OOP (Object-Oriented Programming)
+- String Manipulation and Regular Expressions
+- File and Directory Handling
+- Including Files
+- File Access
+- Working with Forms, Processing Forms, Form Validation
+- Simple programs using PHP
+
+### 3. Database Accessing (15 Periods)
+- Introduction to MySQL
+- Setting up an account
+- Starting, Terminating, and Writing your own MySQL Programs
+- Record Selection Technology
+- Working with Strings, Date and Time
+- Sorting Query Results Module
+- Generating Summary
+- Working with Metadata
+- Using Sequences
+- PHP and MySQL Database Connectivity
+- Sending and Receiving Emails
+
+### 4. Basic Features of Python (20 Periods)
+- Overview – Installing – Running in Windows/Linux
+- Variables and Strings: Data types, Operators, Decision Control, Conditional Statements, Loops
+- Example Programs
+- Sequences: Lists, Fixed-size lists and arrays, Lists and Loops, Assignment and references, Identity and equality
+- Tuples: Tuples and string formatting, String functions
+- Sets: Unordered Collections, Simple Programs
+- Dictionaries, Sets, Using Modules
+- File Handling, Exception Handling
+
+### 5. Web Server (4 Periods)
+- Apache Web Server
+- Working with Web Server
+- Configuring and Using Apache Web Server (WAMP and XAMP Server)
+
+## Text Books
+1. **Programming PHP** by Rasmus Lerdorf and Levin Tatroe, O’Reilly Publications, 2002
+2. **Web Programming** by Chris Bates, Wiley India, New Delhi, Third Edition, Reprint, 2011
+3. **MySQL Bible** by Steve Suchring, John Wiley & Sons, 2002
+
+## List of Experiments
+
+### PHP:
+1. Write a program to create a Student registration form.
+2. Write a program to perform EB bill calculation.
+3. Write a program to perform Student grade manipulation.
+4. Write a program to perform String operations in PHP.
+5. Write a program to create Book master form.
+6. Write a program to perform Form validation – Railway ticket reservation.
+7. Write a program to perform Date and time operations in PHP.
+8. Write a program to Identify the web browser.
+9. Demonstrate the Database – Insert operation.
+10. Demonstrate the Database – Delete operation.
+11. Demonstrate the Database – Update operation.
+
+### MySQL:
+12. Demonstrate the Queries Record selection operation.
+13. Write the queries to demonstrate working with date and time functions.
+
+### Python:
+14. Demonstrate Simple Programming and File handling operation.
+
+## Scheme of Valuation
+
+| Evaluation Criteria       | Marks |
+|---------------------------|-------|
+| Aim                       | 5     |
+| Procedure / Program       | 20    |
+| Execution                 | 20    |
+| Result & Printout         | 10    |
+| Viva                      | 5     |
+| **Total**                 | **60** |
+
+## Hardware Requirement
+- Desktop Computers – 40 No
+- Printer – 2 No
+
+## Software Requirements
+- Apache server (or) WAMP server (or) XAMP server
+- Any text editor
+- Browser with JavaScript support
+
+## Suggested Distribution of Marks
+
+| Topic                       | Marks Allocation |
+|-----------------------------|------------------|
+| Open Source Software         | 10               |
+| PHP                          | 15               |
+| Database Accessing           | 20               |
+| Basic Features of Python     | 20               |
+| Web Server                   | 5                |
+| **Total**                    | **70**           |
+
+---
+
+# Project Work
+
+## Rationale
+Project Work aims at developing innovative skills in the students whereby they apply the knowledge and skills gained through the course by undertaking a project. The individual students have different aptitudes and strengths. Project work should match the strengths of students.
+
+The primary emphasis of the project work is to understand and gain the knowledge of the principles of software engineering practices, so as to participate and manage a large software engineering project in the future.
+
+## Objectives:
+- Implement theoretical and practical knowledge gained through the curriculum into an application suitable for a real practical working environment.
+- Develop software packages or applications to implement the actual needs of the community.
+- Get exposure to industrial environments and their work ethics.
+- Understand entrepreneurship and how to become an entrepreneur.
+- Learn and understand the gap between technological knowledge acquired through the curriculum and actual industrial needs.
+- Carry out cooperative learning through synchronous guided discussions, asynchronous document sharing, and collaborative editing of the final project report.
+- Expose students to the field of computing and gain experience in software design.
+- Understand and gain knowledge about disaster management.
+
+## Major Project
+
+### Guidelines for Project Formulation:
+- Batch Size: Maximum 6 students per batch
+- The project should have direct relevance to day-to-day activities in the student’s institution.
+- Students are encouraged to work in fields like DBMS, OOPS, Networking, Multimedia, Artificial Intelligence, Expert Systems, and more.
+
+### Project Proposal (Synopsis):
+The project proposal should include the following:
+1. Title of the Project
+2. Introduction and Objectives
+3. Project Category (DBMS/OOPS/Networking/Multimedia/AI, etc.)
+4. Tools/Platform, Hardware and Software Requirements
+5. Analysis (DFDs, ER Diagrams, Class Diagrams, Database Design, etc.)
+6. Project structure: Modules, Data Structures, Process Logic, Testing, Reports Generation
+7. Industry/Client involvement
+8. Future scope and limitations of the project.
+
+### Scheme of Valuation
+
+| Evaluation Criteria       | Marks |
+|---------------------------|-------|
+| First Review              | 30    |
+| Second Review             | 30    |
+| Attendance                | 20    |
+| **Total**                 | **80** |
+
+---
+
+## Employability Skills
+
+### Rationale:
+This subject is included to develop employability skills among students. Diploma holders are required not only to possess subject-related knowledge but also soft skills to get good jobs and rise steadily in their workplace.
+
+### Detailed Contents:
+
+#### Unit I: (06 periods)
+- Technical Education & Industrial Scenario.
+- Competency required of an engineer.
+
+#### Unit II: (06 periods)
+- Professional Engineer Values, Ethics, and Development.
+- Relationship between engineering profession, society, and environment.
+
+#### Unit III: (12 periods)
+- Effective Communication: Reading & Active Listening Skills, Speaking, Writing, Presentation, Group discussion.
+
+#### Unit IV: (12 periods)
+- Managing Projects: Leadership, Motivation, Time Management, Resource Management, Interpersonal Relationships.
+
+#### Unit V: (10 periods)
+- Preparing for Employment: Searching for a Job, Resume Writing, Interview Techniques.
+
+#### Unit VI: (08 periods)
+- Self-Management: Self-Awareness, Stress Management, Conflict Resolution.
+
+#### Unit VII: (06 periods)
+- Creativity, Innovation, and Intellectual Property Rights.
+
+#### Unit VIII: (04 periods)
+- Rules & Ethics for Engineers.
+
+### Suggested Distribution of Marks
+
+| Unit                        | Marks |
+|-----------------------------|-------|
+| Unit 1: Technical Education  | 10    |
+| Unit 2: Professional Values  | 10    |
+| Unit 3: Effective Communication | 18   |
+| Unit 4: Managing Projects    | 18    |
+| Unit 5: Preparing for Employment | 16 |
+| Unit 6: Self-Management      | 12    |
+| Unit 7: Creativity & IPR     | 10    |
+| Unit 8: Rules & Ethics       | 6     |
+| **Total**                    | **100** |
+
+### Practical Exercises:
+- Steps to write different types of letters.
+- Creating a PowerPoint Presentation.
+- Creating an effective resume.
+- Conducting a telephonic/online interview.
+- Study of stress management techniques.
+- Study of workplace rules and ethical practices.
+
+## Suggested Books:
+- **Employability Skills** by Kapil Dev, Vishnu P. Singh, Asian Pub, New Delhi.
+- **Employability Skills for Diploma Students** by Dr. S.K. Singh, Vayu Education, New Delhi.
+
+---
+
+## Implementation and Learning Outcomes
+
+Assignments, PowerPoint presentations, class tests, individual and group activities, case studies, etc. will ensure learning outcomes based on the aforementioned modules and topics.
+
