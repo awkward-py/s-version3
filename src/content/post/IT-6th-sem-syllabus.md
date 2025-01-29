@@ -361,3 +361,75 @@ On completion of the following exercises, the students must be able to:
 | 4     | 20               | 16                     |
 | 5     | 12               | 16                     |
 | **Total** | **70**          | **80**                 |
+
+
+# Data Mining & Data Warehousing
+
+## Rationale
+
+Data Mining and Warehousing enables middle and top managers to analyze data and explore relationships among the data items which helps them to make informed decisions at the right time. After completing this course, students will understand the concepts, functions, and various techniques of data mining and warehousing, and appreciate their importance in decision-making processes.
+
+## Detailed Contents
+
+### 1. **Introduction to Data Mining** (16 Periods)
+
+1.1 What is data mining?  
+1.2 Data mining background, Inductive learning, statistics, machine learning.  
+1.3 Difference between data mining and machine learning, data mining models, verification model, discovery model.  
+1.4 Data mining problems/issues.
+
+### 2. **Introduction to Data Warehousing** (20 Periods)
+
+2.1 Concept and benefits of data warehousing, types of data, characteristics of a data warehouse, processes in data warehousing.  
+2.2 Data warehousing and OLTP systems.  
+2.3 The data warehouse architecture.  
+2.4 Problems with data warehousing, criteria for a data warehouse.
+
+### 3. **Data Mining Functions** (25 Periods)
+
+3.1 Classification, Associations, Sequential/temporal patterns, Clustering/segmentation.
+
+### 4. **Data Mining Techniques** (25 Periods)
+
+4.1 Cluster analysis, Induction, decision trees, rule induction, Neural networks.  
+4.2 On-line analytical processing (OLAP). Examples and comparison of OLAP and OLTP (Online Transaction Processing).  
+4.3 Data visualization.
+
+### 5. **Data Mining Applications** (10 Periods)
+
+5.1 Data Mining Applications and recent trends in data mining.
+
+## Text Books
+
+1. Data Mining Concepts and Techniques. Han, M Kamber, Morgan Kaufmann, 2001, ISBN 1-55860-489-8, 2010.  
+2. Introduction to Data Mining, Hand, Mannila, and Smyth, MIT Press, Cambridge, MA, 2000.
+
+## Reference Book
+
+1. OLAP Solutions, Erik Thomsen, John Wiley & Sons, Inc., 1997 (ISBN 0471014931-4), 1997.
+
+---
+
+## Marks Allocation and Time Allotted
+
+| **Topic**                                    | **Marks** | **Time Allotted (Hrs)** |
+|----------------------------------------------|-----------|-------------------------|
+| 1. Introduction to Data Mining               | 12        | 16                      |
+| 2. Introduction to Data Warehousing          | 12        | 20                      |
+| 3. Data Mining Functions                     | 18        | 25                      |
+| 4. Data Mining Techniques                    | 18        | 25                      |
+| 5. Data Mining Applications                  | 10        | 10                      |
+| **Total**                                    | **70**    | **96**                  |
+
+---
+
+## Suggested Distribution of Marks
+
+| **Topic**                                    | **Marks Allocation** |
+|----------------------------------------------|----------------------|
+| 1. Introduction to Data Mining               | 12                   |
+| 2. Introduction to Data Warehousing          | 12                   |
+| 3. Data Mining Functions                     | 18                   |
+| 4. Data Mining Techniques                    | 18                   |
+| 5. Data Mining Applications                  | 10                   |
+| **Total**                                    | **70**               |
