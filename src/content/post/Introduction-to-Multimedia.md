@@ -3,7 +3,7 @@ publishDate: 2025-01-29T00:00:00Z
 
 title: Introduction to Multimedia
 ---
-# **📌 1. Introduction to Multimedia**  
+
 
 *The word multimedia is made up of two parts: **"multi"** meaning **"many"** and **"media"** meaning **"ways to communicate."** So, multimedia refers to using many different ways, like text, pictures, sound, and video, to share information. It helps in transferring or presenting information easily from one place to another.*
 
