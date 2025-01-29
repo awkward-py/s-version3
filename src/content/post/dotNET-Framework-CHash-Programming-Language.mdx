@@ -227,3 +227,302 @@ public class MyForm : Form {
 
 The .NET Framework is a comprehensive platform that simplifies the development of robust and scalable applications. With tools like Visual Studio, rich libraries in the FCL, and support for multiple programming languages, the .NET Framework enables developers to build applications that run on various devices and platforms, from desktop to web services. Understanding its architecture, libraries, and tools such as ASP.NET and Windows Forms is essential for effective .NET development.
 
+---
+
+
+# Introduction to C# (16 Periods)
+
+## 2.1 Elements: Variables, Constants, Data Types, Declaration
+
+### Variables and Constants
+
+#### **Variables**:
+A **variable** is a storage location in memory used to hold data. Variables can change their values throughout the program.
+
+**Syntax**:
+```csharp
+int age; // Declaring an integer variable
+age = 25; // Assigning a value
+```
+
+- **Declaration**: A variable is declared by specifying its data type, followed by its name.
+  - **Example**: `int age;`
+
+#### **Constants**:
+A **constant** is a variable whose value cannot be modified after it's assigned. They are declared using the `const` keyword.
+
+**Syntax**:
+```csharp
+const double pi = 3.14; // Declaring a constant
+```
+
+Constants help ensure that certain values remain unchanged throughout the program, improving reliability and readability.
+
+#### **Why use variables and constants?**
+- **Variables**: Allow you to store and modify data during runtime.
+- **Constants**: Ensure that certain values remain constant, reducing errors caused by accidental modifications.
+
+### Data Types
+
+#### **Primitive Data Types**:
+In C#, data types specify the type of data a variable can hold. The most common primitive data types are:
+- **int**: Used for integers.
+- **double**: For floating-point numbers (decimals).
+- **char**: For storing a single character.
+- **bool**: For true/false values.
+- **string**: For text.
+
+#### **Type Declaration**:
+- **Syntax**:
+```csharp
+int number = 100;  // Integer
+double price = 19.99; // Decimal number
+bool isValid = true;  // Boolean value
+char grade = 'A';  // Single character
+string name = "John";  // Text string
+```
+
+#### **Why is knowing data types important?**
+Knowing the data type ensures that variables are used correctly and helps in efficient memory management.
+
+### Operators
+
+C# supports various operators that are used to perform operations on variables and values. These include:
+
+- **Arithmetic Operators**: Used for mathematical calculations.
+  - Example: `+`, `-`, `*`, `/`
+- **Comparison Operators**: Used to compare values.
+  - Example: `==`, `!=`, `>`, `<`
+- **Logical Operators**: Used for logical operations.
+  - Example: `&&` (AND), `||` (OR), `!` (NOT)
+
+**Operator Precedence**: Determines the order in which operations are evaluated in an expression.
+- **Example**:
+```csharp
+int result = 5 + 10 * 2;  // 5 + 20 = 25, as multiplication has higher precedence than addition
+```
+
+### Expressions
+
+An **expression** is a combination of variables, constants, operators, and function calls that are evaluated to produce a value.
+
+**Example**:
+```csharp
+int sum = 5 + 10; // Expression results in 15
+```
+
+### Program Flow: Decision Statements
+
+Decision-making allows the program to take different actions based on conditions.
+
+#### **if..then**:
+Used to execute a block of code if a condition is true.
+```csharp
+if (age >= 18)
+{
+    Console.WriteLine("Adult");
+}
+```
+
+#### **if..then..else**:
+Allows an alternative block of code to be executed when the condition is false.
+```csharp
+if (age >= 18)
+{
+    Console.WriteLine("Adult");
+}
+else
+{
+    Console.WriteLine("Minor");
+}
+```
+
+#### **switch..case**:
+Used when there are multiple possible conditions. It's a cleaner way to handle multiple `if..else` conditions.
+```csharp
+switch (day)
+{
+    case 1:
+        Console.WriteLine("Monday");
+        break;
+    case 2:
+        Console.WriteLine("Tuesday");
+        break;
+    default:
+        Console.WriteLine("Invalid day");
+        break;
+}
+```
+
+## 2.2 Loop Statements
+
+Loops are used to execute a block of code repeatedly, as long as a condition is true.
+
+#### **while..end while**:
+The `while` loop continues to execute as long as the condition is true.
+```csharp
+int i = 0;
+while (i < 5)
+{
+    Console.WriteLine(i);
+    i++;
+}
+```
+
+#### **do..loop**:
+The `do..while` loop executes at least once and then repeats based on the condition.
+```csharp
+int j = 0;
+do
+{
+    Console.WriteLine(j);
+    j++;
+} while (j < 5);
+```
+
+#### **for..next**:
+The `for` loop is useful when you know the number of iterations beforehand.
+```csharp
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine(i);
+}
+```
+
+#### **for..each..next**:
+The `foreach` loop is used to iterate over collections like arrays or lists.
+```csharp
+int[] numbers = { 1, 2, 3, 4, 5 };
+foreach (int number in numbers)
+{
+    Console.WriteLine(number);
+}
+```
+
+## 2.3 Types
+
+### Value Data Types
+
+- **Structures (Structs)**: A structure is a data type that can hold multiple values of different types. It's value-based and passed by value.
+```csharp
+struct Point
+{
+    public int X;
+    public int Y;
+}
+
+Point p = new Point();
+p.X = 10;
+p.Y = 20;
+```
+
+- **Enumerations (Enums)**: An `enum` is a distinct type that defines a set of named constants.
+```csharp
+enum Day { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
+Day today = Day.Monday;
+```
+
+### Reference Data Types
+
+- **Arrays**: Arrays are collections of elements of the same type. They can be single-dimensional, multi-dimensional, or jagged.
+  - **Single-Dimensional**: A basic array.
+  ```csharp
+  int[] numbers = { 1, 2, 3, 4, 5 };
+  ```
+  - **Multi-Dimensional**: Arrays with more than one dimension.
+  ```csharp
+  int[,] matrix = new int[2, 2] { {1, 2}, {3, 4} };
+  ```
+  - **Jagged Arrays**: Arrays of arrays.
+  ```csharp
+  int[][] jaggedArray = new int[2][];
+  jaggedArray[0] = new int[] { 1, 2 };
+  jaggedArray[1] = new int[] { 3, 4, 5 };
+  ```
+  - **Dynamic Arrays**: Arrays whose size can be changed during runtime.
+  ```csharp
+  List<int> dynamicList = new List<int>();
+  dynamicList.Add(1);
+  dynamicList.Add(2);
+  ```
+
+## 2.4 Classes & Objects, Object-Oriented Concepts
+
+### **Classes & Objects**:
+
+- **Class**: A class is a blueprint for creating objects. It defines properties, methods, and behaviors.
+```csharp
+class Car
+{
+    public string Make;
+    public string Model;
+
+    public void StartEngine()
+    {
+        Console.WriteLine("Engine started");
+    }
+}
+```
+
+- **Object**: An instance of a class.
+```csharp
+Car myCar = new Car();
+myCar.Make = "Toyota";
+myCar.Model = "Corolla";
+myCar.StartEngine();
+```
+
+### Object-Oriented Concepts:
+
+#### **Abstraction**:
+Abstraction hides the implementation details and shows only the necessary features of the object.
+```csharp
+abstract class Animal
+{
+    public abstract void MakeSound();
+}
+
+class Dog : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Bark");
+    }
+}
+```
+
+#### **Inheritance**:
+Inheritance allows a class to inherit methods and properties from another class.
+```csharp
+class Vehicle
+{
+    public string Brand = "Toyota";
+}
+
+class Car : Vehicle
+{
+    public string Model = "Corolla";
+}
+```
+
+#### **Polymorphism**:
+Polymorphism allows methods to do different things based on the object it is acting upon.
+```csharp
+class Animal
+{
+    public virtual void MakeSound() { Console.WriteLine("Animal sound"); }
+}
+
+class Dog : Animal
+{
+    public override void MakeSound() { Console.WriteLine("Bark"); }
+}
+```
+
+#### **Debugging**:
+Debugging is the process of finding and fixing errors in the program. It can be done using Visual Studio’s built-in debugging tools like breakpoints, watches, and step-through debugging.
+
+---
+
+This is a comprehensive breakdown of the **C#** language elements, with definitions, examples, and deep explanations. By studying these concepts, you will gain a strong understanding of C# programming, which is essential for creating robust and efficient applications.
+
