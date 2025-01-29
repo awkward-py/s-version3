@@ -239,3 +239,125 @@ After completing this lab, students should be able to:
 | Viva                                    | 5         |
 | **Total**                               | **60**    |
 
+
+
+# .NET PROGRAMMING
+
+## RATIONALE
+
+.NET Framework is changing the way developers write applications. .NET Framework provides a number of components to create many types of applications including those for consoles, Windows, mobile units, and the web. Using the .NET framework, the data can be made available anytime, anywhere, and on any device. This subject introduces the basics of .NET Framework. Writing applications on C#.Net is covered in this course. Concepts of developing Window applications using C#.NET are discussed. This course helps to use ADO.NET to write the applications to connect with the back-end database. The subject also enables the users to know the concepts of XML and the XML web services.
+
+## OBJECTIVES
+
+On completion of the following units of syllabus contents, the students must be able to:
+- List the major elements of the .NET Framework.
+- Describe some of the major enhancements to the new version of C#.
+- Describe the basic structure of a C#.NET project and use the main features of the integrated development environment (IDE).
+- Use the new language features and syntax in C#.NET.
+- Explain the basic concepts and terminology of object-oriented design specifically for C#.NET.
+- Explain and use the basic concepts and terminology of object-oriented programming in C# .NET.
+- Create applications by using Microsoft Windows Forms.
+- Create applications that use ADO .NET.
+- Create components in C#.NET.
+- Set up and deploy various types of C# .NET-based applications.
+- Develop Window applications using XML as a back-end database.
+
+## DETAILED CONTENTS
+
+### 1. Introduction To .NET Framework (16 Periods)
+
+1.1 Introduction to .NET framework: Dot Net Architecture – Managed Code and the CLR – Intermediate Language, Metadata and JIT Compilation– Automatic Memory Management.  
+1.2 Common Language Specification (CLS) – Assembly – Namespace.  
+1.3 Visual Studio .NET– Using the .NET Framework. Exploring the Visual Studio Integrated Development Environment – System requirement – Versions.  
+1.4 The Framework Class Library- .NET objects – ASP.NET-.NET web services– Windows Forms.
+
+### 2. INTRODUCTION TO C# (16 Periods)
+
+2.1 Elements: Variables and constants–data types–declaration. Operators–types–precedence – Expressions – Program flow – Decision statements – if..then, if..then..else, select..case.  
+2.2 Loop statements– while..end while, do..loop, for..next, for.. each.. next.  
+2.3 Types: Value data types – Structures, Enumerations. Reference data types – Single dimensional– Multi-dimensional arrays–Jagged arrays– Dynamic arrays.  
+2.4 Classes & objects – Abstract & override methods object-oriented concepts: abstraction, Inheritance, Polymorphism, Classes, collections, Debugging.
+
+### 3. Window Application Using Window Forms (16 Periods)
+
+3.1 Windows programming – Creating windows Forms–Working with Toolbox Controls– Button, Check Box, Combo Box, Label, List Box, Radio Button, Text Box, Group Boxes, Picture Box.  
+3.2 Advanced Controls & Events: Timer, Progress Bar, Month Calendar, Tool Tips, Tab Controls, Panels - Events–Click, Close, Deactivate, Load, Mouse Move, Mouse Down, Mouse Up, Key press, Key Down, Key Up.  
+3.3 Multiple Document Interface (MDI) Forms – Creating MDI Applications– Creating MDI Child Windows – Arranging MDI Child Windows.  
+3.4 Multithreading: Thread States, Life cycle of a Thread, Thread Priorities and scheduling, creating and executing Thread, Synchronization and Class Monitor, Exception Handling.
+
+### 4. Database Connectivity (16 Periods)
+
+4.1 Features of ADO .NET. Architecture of ADO. NET–ADO. NET providers– connection–Command–Data Adapter–Data set.  
+4.2 Database Programming with ADO .NET: ADO .NET, Database: Connections, Data access techniques, XML Language, SQL, ADO.NET object Model, LINQ to SQL, ADO.NET and LINQ, LINQ to XML.
+
+### 5. XML AND WEB SERVICES (16 Periods)
+
+5.1 Introduction: Advantages –HTML Vs XML–Browsing and parsing XML– Creating a XML file– Details and–Well formed XML document–XML components-elements– Entities–Comments– Processing instructions– Attributes.  
+5.2 Creating web services, Web forms, ASP.NET, Request, Response, Server objects creating web reports using ASP.NET using ADO.NET with SQL Server and System .XML.
+
+## TEXT BOOKS
+
+1. Programming In C#, 3E E. Balagurusamy Tata McGraw - Hill Education, 2010.  
+2. Applications of .NET Technology ISRD Group TMGH Education Pvt Ltd., New Delhi 2011.
+
+## REFERENCE BOOK
+
+1. Introducing Microsoft .NET David S. Platt Microsoft Press Saarc Edition, 2001.
+
+## OBJECTIVES
+
+On completion of the following exercises, the students must be able to:
+- Develop and execute simple programs using C#.NET.
+- Understand the concepts of event handlers.
+- Know the usage of various C#.Net controls.
+- Create C#.NET applications using menus.
+- Access SQL database by using ADO.NET.
+- Use Form controls.
+- Create Window applications using C#.NET form controls.
+- Develop XML database handling methodologies.
+
+## LIST OF EXPERIMENTS
+
+1. Accept a character from console and check the case of the character.  
+2. Write a program to accept any character from keyboard and display whether it is vowel or not.  
+3. Write a program to accept a string and convert the case of the characters.  
+4. Develop a menu-based application to implement a text editor with cut, copy, paste, save, and close operations.  
+5. Write a program to implement a calculator with memory and recall operations.  
+6. Develop a form to pick a date from Calendar control and display the day, month, year details in separate text boxes.  
+7. Develop an application to perform timer-based quiz of 10 questions.  
+8. Develop a database application to store the details of students using ADO.NET.  
+9. Develop a database application using ADO.NET to insert, modify, update and delete operations.  
+10. Develop an application using Data grid to display records.  
+11. Develop an application using Data grid to add, edit, and modify records.  
+12. Develop a Window application to read an XML document containing subject, mark scored, year of passing into a Dataset.
+
+## SCHEME OF VALUATION
+
+- Writing answer for any one program from PART -A: 10 Marks  
+- Writing answer for any one program from PART - B: 15 Marks  
+- Executing program (PART –A): 10 Marks  
+- Executing program (PART –B): 10 Marks  
+- Result with printout (PART – A): 5 Marks  
+- Result with printout (PART – B): 5 Marks  
+- VIVA - VOCE: 5 Marks  
+- **Total**: 60 Marks
+
+## HARDWARE REQUIREMENT
+
+1. Network computer Lab.
+
+## SOFTWARE REQUIREMENT
+
+1. MS Visual Studio .NET / 2005/2008/2012/2013/2015  
+2. Microsoft SQL Server 2005/2008 or above.
+
+## SUGGESTED DISTRIBUTION OF MARKS
+
+| Topic | Marks Allocation | Time Allotted (Period) |
+|-------|------------------|------------------------|
+| 1     | 10               | 16                     |
+| 2     | 14               | 16                     |
+| 3     | 14               | 16                     |
+| 4     | 20               | 16                     |
+| 5     | 12               | 16                     |
+| **Total** | **70**          | **80**                 |
