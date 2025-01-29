@@ -4,31 +4,33 @@ title:  IT 6th Sem Syllabus
 
 ---
 
-# EVALUATION SCHEME
+# UTTARAKHAND BOARD OF TECHNICAL EDUCATION  
+**JOINT ENTRANCE EXAMINATION AND TRAINING, RESEARCH DEVELOPMENT CELL, DEHRADUN**  
 
-| Subject            | L | T | P | T/O | T |
-|--------------------|---|---|---|-----|---|
-| **Theory Period/Weeks** | **Max Marks** | **Max Marks** | **Theory Max Marks** | **Practical Max Marks** | **Practical Max Marks Hrs.** |
-| 4                  | 4 | 6 | 4---22 | 4 | 4-4 |
-| 10-4               | 26 | 8 | 8 | 6 | 8 |
-| 10-4               | 48 | 30 | 30 | 30 | 30 |
-| 30-30              | 80 | 25 | 25 | 220 | 70 |
-| 70                 | 70 | 70 | 70 | 330 | 2.5 |
-| 2.5                | 2.5 | 2.5 | 2.5 | 6060-60 | 125--305 |
-| 3.0                | 3.0 | 3.0 | 3.0 | --- | ,o |
+### STUDY AND EVALUATION SCHEME FOR DIPLOMA PROGRAMME  
+**Branch Name**: Information Technology  
+**Semester**: VI  
+
+| Subject Code | Subject                                      | L  | T  | P | Evaluation Scheme       | Internal | External | Total Marks | Credit Point |
+|--------------|----------------------------------------------|----|----|---|-------------------------|----------|----------|-------------|--------------|
+| 126003       | Multimedia Application                       | 4  | 4  | 8 | Theory Practical        | 30       | 70       | 190         | 2.5          |
+| 126001       | Net Programming                              | 5  | 4  | 6 | Theory Practical        | 30       | 70       | 190         | 3.0          |
+| 056002       | Data Mining & Warehousing*                   | 6  | 6  | 6 | Theory Practical        | 30       | 70       | 100         | 2.5          |
+| 126002       | Advance Web Programming                      | 5  | 4  | 4 | Theory Practical        | 30       | 70       | 190         | 3.0          |
+| 126004       | Major Project                                | 6  | 10 | 10| Theory Practical        | 80       | 125      | 205         | 3.0          |
+| 066052       | Industrial Exposure (Assessment at)          | 8  | 25 | 25| -                       | 3        | 4        | 25          | 1            |
+| 126054       | General Proficiency#                         | 4  | 4  | 25| -                       | 25       | 25       | 50          | 2.5          |
+| 016055       | Employability Skills                         | 4  | 4  | 25| -                       | 25       | 50       | 75          | 1            |
+
+### Total Marks: 1000  
+### Total Credit Points: 35  
 
 ---
 
-### Study and Evaluation Scheme for Diploma Programme
+### Additional Information:
 
-#### **Branch Name**: Information Technology
-
-**Internal External Evaluation**  
-**Semester**: VI  
-*Common with diploma programme in Chemical Technology (Paint) and Chemical Technology (Rubber & Plastic).*
-
-#### General Proficiency:
-- Comprises of various co-curricular activities like:
+- **Common with diploma programme in Chemical Technology (Paint) and Chemical Technology (Rubber & Plastic).**
+- **General Proficiency** will comprise of various Co-curricular activities like:
   - Games
   - Hobby Clubs
   - Seminars
@@ -38,18 +40,14 @@ title:  IT 6th Sem Syllabus
   - NCC
   - NSS
   - Cultural Activities
-  - G.K. (General Knowledge)
-  - General Study
-  - Elementary Math
-  - Discipline
+  - G.K., General Study, Elementary Math, and Discipline
+- **Industrial Visit**: Compulsory at a minimum of two industries or departments.
 
-#### Industrial Visit:
-- Compulsory industrial visit at a minimum of two industries or departments.
+---
 
-#### Note:
+### Notes:
 1. Each period will be of 50 minutes.
 2. Session will be of 16 weeks.
 3. Effective teaching will be of at least 12.5 weeks.
 
-**UTTARAKHAND BOARD OF TECHNICAL EDUCATION**  
-*JOINT ENTRANCE EXAMINATION AND TRAINING, RESEARCH DEVELOPMENT CELL, DEHRADUN*
+**Branch Code**: 12
