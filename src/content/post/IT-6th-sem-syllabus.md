@@ -1,7 +1,7 @@
 ---
 publishDate: 2025-01-29T00:00:00Z
 
-
+title: Information Technology Syllabus 6th-Sem
 ---
 
 # UTTARAKHAND BOARD OF TECHNICAL EDUCATION  
