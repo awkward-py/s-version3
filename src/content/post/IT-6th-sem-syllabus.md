@@ -1,7 +1,7 @@
 ---
-publishDate: 2024-06-02T00:00:00Z
-title: "Engineering First Year Syllabus"
-description: "Detailed syllabus for the first year of engineering."
+publishDate: 2025-01-29T00:00:00Z
+title:  IT 6th Sem Syllabus
+
 ---
 
 # EVALUATION SCHEME
