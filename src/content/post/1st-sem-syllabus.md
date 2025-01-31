@@ -1,3 +1,8 @@
+---
+publishDate: 2025-01-30T00:00:00Z
+
+title: 1st-Sem Syllabus
+---
 # EVALUATION SCHEME
 ## DETAIL SYLLABUS
 ### FIRST & SECOND SEMESTER (ENGINEERING)
