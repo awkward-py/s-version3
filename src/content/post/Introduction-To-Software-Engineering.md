@@ -159,6 +159,8 @@ SDLC is a process followed for software building within an organization. It invo
 
 # Waterfall Model 🌊
 
+<img src="https://www.ntaskmanager.com/wp-content/uploads/2019/08/waterfall-project-management-imperial-model.jpg" alt="Waterfall Model" width="400"/>
+
 The Waterfall Model is a linear and sequential software development model where each phase flows downwards like a waterfall. It follows a step-by-step approach, meaning that a phase must be fully completed before moving to the next.
 
 ## Phases of the Waterfall Model:
