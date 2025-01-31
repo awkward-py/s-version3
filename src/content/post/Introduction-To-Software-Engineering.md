@@ -114,7 +114,8 @@ The customer can be the direct users of the software, the technical team, market
 
 ## Software Development Life Cycle Models 🌀🔁
 
-![Software Development Life Cycle](https://th.bing.com/th/id/R.7de2206ea94c4c9af3c1a7b30ab0d982?rik=5ebMOcECTSm4%2bg&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f1%2f19%2fSDLC_-_Software_Development_Life_Cycle.jpg&ehk=E79%2bwzF4DE3v%2f6afEbvKxMYl4AdX37mnqWFsg6v6HFk%3d&risl=&pid=ImgRaw&r=0)
+<img src="https://th.bing.com/th/id/R.7de2206ea94c4c9af3c1a7b30ab0d982?rik=5ebMOcECTSm4%2bg&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f1%2f19%2fSDLC_-_Software_Development_Life_Cycle.jpg&ehk=E79%2bwzF4DE3v%2f6afEbvKxMYl4AdX37mnqWFsg6v6HFk%3d&risl=&pid=ImgRaw&r=0" alt="Software Development Life Cycle" width="500"/>
+
 
 
 SDLC is a process followed for software building within an organization. It involves a plan to develop, maintain, replace, and enhance specific software to improve quality.
