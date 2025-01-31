@@ -208,6 +208,8 @@ The Waterfall Model is a linear and sequential software development model where 
 
 # Prototype Model 🤖
 
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*ZDlW4YN2UVQqD3-_l69dSw.png" alt="Prototype Model" width="400"/>
+
 The Prototype Model is a software development approach where a working model (prototype) of the software is built before the final product. It helps in gathering user feedback early and refining requirements before actual development.
 
 ## Phases of the Prototype Model:
@@ -253,6 +255,8 @@ The Prototype Model is a software development approach where a working model (pr
 - ❌ Prototype may be inefficient compared to the final optimized software.
 
 # Spiral Model 🌀
+
+<img src="https://www.vtestcorp.com/secure/wp-content/uploads/2020/11/Spiral-Model.jpg" alt="Spiral Model" width="400"/>
 
 The Spiral Model is a risk-driven and iterative software development model that combines elements of the Waterfall Model and Prototyping. It focuses on continuous risk assessment and refinement through multiple iterations (spirals).
 
@@ -368,6 +372,8 @@ The Rapid Application Development (RAD) Model is an iterative and fast-paced sof
 ---
 
 ## Software Requirement Analysis (SRS):
+
+<img src="https://th.bing.com/th/id/OIP.59zswfuPh0DXJcAKcOu0aQHaGL?rs=1&pid=ImgDetMain" alt="New Image" width="300"/>
 
 Software Requirement Analysis (SRS) is a critical phase in software engineering where the requirements of a software system are gathered, analyzed, documented, and validated to ensure the final product meets user expectations.
 
