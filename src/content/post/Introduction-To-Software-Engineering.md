@@ -2,11 +2,8 @@
 publishDate: 2025-01-30T00:00:00Z
 title: Unit 1 - Introduction To Software Engineering
 ---
-## Basics of Software Engineering:
-
-Software Engineering is the process of designing, developing, testing, and maintaining software. It is a systematic and disciplined approach to software development that aims to create high-quality, reliable, and maintainable software. It follows the engineering principles to create reliable, scalable, and maintainable software.
-
-[Waterfall Model 🌊](#waterfall-model-)
+## Table of Content
+- [Waterfall Model 🌊](#waterfall-model-)
   - [Phases of the Waterfall Model:](#phases-of-the-waterfall-model)
     - [1. Requirement Analysis 📋](#1-requirement-analysis-)
     - [2. System Design 🎨](#2-system-design-)
@@ -61,6 +58,12 @@ Software Engineering is the process of designing, developing, testing, and maint
   - [Components of a Software Requirement Specification (SRS)](#components-of-a-software-requirement-specification-srs)
   - [Structure of a Requirements Document](#structure-of-a-requirements-document)
   - [Problems in SRS 😶🌫️👾](#problems-in-srs-️)
+
+
+
+## Basics of Software Engineering:
+
+Software Engineering is the process of designing, developing, testing, and maintaining software. It is a systematic and disciplined approach to software development that aims to create high-quality, reliable, and maintainable software. It follows the engineering principles to create reliable, scalable, and maintainable software.
 
 There are key principles like modularity, security, reusability, and testing that help in reducing development time, improving software performance, and making future updates easier. Software engineering is not just about coding—it involves proper planning, designing, testing, and maintaining software to meet user requirements effectively.
 
