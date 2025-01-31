@@ -3,8 +3,6 @@ publishDate: 2025-01-30T00:00:00Z
 
 title: Unit 1: Introduction To Software Engineering
 ---
-
-
 ## Basics of Software Engineering:
 
 Software Engineering is the process of designing, developing, testing, and maintaining software. It is a systematic and disciplined approach to software development that aims to create high-quality, reliable, and maintainable software. It follows the engineering principles to create reliable, scalable, and maintainable software.
