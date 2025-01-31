@@ -1,6 +1,5 @@
 ---
 publishDate: 2025-01-30T00:00:00Z
-
 title: Unit 1: Introduction To Software Engineering
 ---
 ## Basics of Software Engineering:
