@@ -3,7 +3,12 @@ publishDate: 2025-01-30T00:00:00Z
 title: Unit 1 - Introduction To Software Engineering
 ---
 ## Table of Content
-- [Waterfall Model 🌊](#waterfall-model-)
+
+- [Basics of Software Engineering](#Basics-of-Software-Engineering)
+- [What is Software and its characteristics](#What-is-Software-and-its-characteristics)
+- [Software-related myths](#software-myths-️)
+- [Program versus Software Product](#program-versus-software-product)
+- [Waterfall Model 🌊](#waterfall-model)
   - [Phases of the Waterfall Model:](#phases-of-the-waterfall-model)
     - [1. Requirement Analysis 📋](#1-requirement-analysis-)
     - [2. System Design 🎨](#2-system-design-)
@@ -96,7 +101,7 @@ Software engineering is essential for developing secure, efficient, and scalable
 
 ---
 
-## What is Software and its characteristics 🤔🤔❔
+## What is Software and its characteristics
 
 Software is defined as a collection of computer programs, procedures, rules, and data.
 
