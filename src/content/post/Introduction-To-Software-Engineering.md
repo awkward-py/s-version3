@@ -152,3 +152,194 @@ SDLC is a process followed for software building within an organization. It invo
 - **Agile Model** – Iterative, flexible, and user-centric.
 - **Spiral Model** – Risk-driven, combining iterative and waterfall methods.
 - **V-Model (Verification & Validation)** – Testing happens at every stage.
+
+# Waterfall Model 🌊
+
+The Waterfall Model is a linear and sequential software development model where each phase flows downwards like a waterfall. It follows a step-by-step approach, meaning that a phase must be fully completed before moving to the next.
+
+## Phases of the Waterfall Model:
+
+### 1. Requirement Analysis 📋
+- Gather and document user needs.
+- No changes allowed once finalized.
+
+### 2. System Design 🎨
+- Design system architecture, database, and UI.
+- Blueprint for implementation.
+
+### 3. Implementation (Coding) 💻
+- Developers write the code based on design.
+- No major changes after development starts.
+
+### 4. Testing ✅
+- Identify and fix bugs in the software.
+- Ensures quality before deployment.
+
+### 5. Deployment 🚀
+- Software is delivered to users.
+- Ready for real-world use.
+
+### 6. Maintenance 🔧
+- Fixes issues and provides updates if needed.
+- Ensures long-term usability.
+
+## When to Use the Waterfall Model?
+- ✅ Small projects with clear requirements.
+- ✅ Projects where changes are unlikely.
+- ✅ Government or banking projects that require strict documentation.
+
+## Advantages of Waterfall Model
+- ✔ Simple and easy to follow.
+- ✔ Clearly defined phases.
+- ✔ Good for small and well-defined projects.
+- ✔ Documentation is strong and detailed.
+
+## Disadvantages of Waterfall Model
+- ❌ Not flexible for changing requirements.
+- ❌ High risk if errors are found late.
+- ❌ Not suitable for complex or evolving projects.
+- ❌ Testing happens only after development, which may lead to costly fixes.
+
+# Prototype Model 🤖
+
+The Prototype Model is a software development approach where a working model (prototype) of the software is built before the final product. It helps in gathering user feedback early and refining requirements before actual development.
+
+## Phases of the Prototype Model:
+### 1. Requirement Gathering 📋
+- Collect initial user requirements.
+- Identify key features and functionalities.
+
+### 2. Quick Design 🎨
+- Create a rough design for the prototype.
+- Focuses on UI/UX and basic functionality.
+
+### 3. Prototype Development 💻
+- Build a basic working model with limited features.
+- Demonstrates how the final software will function.
+
+### 4. User Feedback & Refinement 🔄
+- Users test the prototype and provide feedback.
+- Developers modify and improve the design.
+
+### 5. Final System Development 🚀
+- Once the prototype is approved, the actual software is developed.
+- Follows SDLC phases like coding, testing, and deployment.
+
+### 6. Maintenance & Updates 🔧
+- Fix bugs and make enhancements as needed.
+
+## When to Use the Prototype Model?
+- ✅ When user feedback is critical.
+- ✅ For complex projects where requirements are unclear.
+- ✅ In UI/UX-heavy applications like web and mobile apps.
+- ✅ For innovative software where trial versions help in decision-making.
+
+## Advantages of the Prototype Model
+- ✔ Reduces misunderstandings by involving users early.
+- ✔ Helps detect issues before full development.
+- ✔ Improves user satisfaction with a refined final product.
+- ✔ Saves cost and effort by reducing changes in later stages.
+
+## Disadvantages of the Prototype Model
+- ❌ Can increase development time if too many iterations occur.
+- ❌ Users may have unrealistic expectations.
+- ❌ Not suitable for projects with clear and fixed requirements.
+- ❌ Prototype may be inefficient compared to the final optimized software.
+
+# Spiral Model 🌀
+
+The Spiral Model is a risk-driven and iterative software development model that combines elements of the Waterfall Model and Prototyping. It focuses on continuous risk assessment and refinement through multiple iterations (spirals).
+
+## Phases of the Spiral Model
+Each iteration (spiral) consists of four phases:
+### 1. Planning 📋
+- Gather requirements.
+- Estimate cost, time, and resources.
+
+### 2. Risk Analysis & Prototyping ⚠️
+- Identify and assess risks.
+- Develop a prototype for user feedback.
+
+### 3. Engineering (Development & Testing) 💻
+- Design, code, and test the software.
+- Improve based on previous cycle feedback.
+
+### 4. Evaluation & Refinement 🔄
+- Review with users and stakeholders.
+- Plan the next spiral iteration.
+
+This cycle repeats until the final product is ready.
+
+## When to Use the Spiral Model?
+- ✅ For large-scale and high-risk projects.
+- ✅ When requirements are unclear or changing.
+- ✅ For mission-critical applications (e.g., aerospace, banking).
+- ✅ When continuous risk assessment is necessary.
+
+## Advantages of the Spiral Model
+- ✔ Best for large and complex projects with evolving requirements.
+- ✔ Early risk detection and management.
+- ✔ Continuous user feedback ensures a refined product.
+- ✔ Flexible to requirement changes.
+
+## Disadvantages of the Spiral Model
+- ❌ Expensive due to multiple iterations.
+- ❌ Time-consuming, especially for small projects.
+- ❌ Requires experienced risk management.
+- ❌ Not suitable for simple or short-duration projects.
+
+# R.A.D (Rapid Application Development model)
+
+The Rapid Application Development (RAD) Model is an iterative and fast-paced software development approach that focuses on quick prototyping and user feedback instead of extensive planning. It aims to deliver high-quality software in less time with continuous user involvement.
+
+## Phases of the RAD Model
+### 1. Requirement Planning 📋
+- Gather business requirements.
+- Identify the project scope and constraints.
+
+### 2. User Design 🎨 (Prototype Development)
+- Create prototypes with user involvement.
+- Users give feedback, and refinements are made.
+
+### 3. Construction (Development & Testing) 💻
+- Convert the refined prototype into a functional system.
+- Use reusable components and automated tools for faster development.
+
+### 4. Deployment & Cutover 🚀
+- Implement the final product.
+- Provide user training and ongoing maintenance.
+
+## When to Use the RAD Model?
+- ✅ For small to medium-sized projects that need quick delivery.
+- ✅ When user feedback is essential during development.
+- ✅ For UI/UX-focused applications like mobile apps and web apps.
+- ✅ When time-to-market is a priority.
+
+## Advantages of the RAD Model
+- ✔ Faster development compared to traditional models.
+- ✔ Improved flexibility due to continuous feedback.
+- ✔ Reduces development cost and effort.
+- ✔ Focuses on user experience and satisfaction.
+
+## Disadvantages of the RAD Model
+- ❌ Not suitable for complex or large projects.
+- ❌ Requires continuous user involvement.
+- ❌ Needs skilled developers for rapid prototyping.
+- ❌ Difficult to manage if requirements are unclear.
+
+# Comparison of Various Models
+
+## Difference between the Prototype Model and Waterfall Model
+
+| Features                          | Prototype Model 🛠️                          | Waterfall Model 💧                         |
+|------------------------------------|----------------------------------------------|--------------------------------------------|
+| **Definition**                     | A model where a working prototype is built before the final software. | A linear and sequential model where each phase is completed before moving to the next. |
+| **Approach**                        | Iterative – Prototypes are refined based on user feedback. | Sequential – Each phase follows a strict order. |
+| **User Involvement**               | High – Users review and refine the prototype. | Low – Users provide requirements at the beginning, with little involvement later. |
+| **Flexibility**                    | High – Changes can be made easily based on feedback. | Low – Changes are difficult once a phase is completed. |
+| **Development Time**               | Faster initial development but longer refinement time. | Slower, as all planning and design must be completed first. |
+| **Cost**                           | Can be high due to multiple iterations. | Generally lower for small projects but expensive for large ones. |
+| **Testing Phase**                  | Happens during each prototype iteration. | Happens after the coding phase is completed. |
+| **Best Suited For**                | Projects with unclear or evolving requirements | Projects with clear and fixed requirements. |
+| **Examples**                       | Web applications, UI/UX-heavy apps, innovative projects. | Government projects, banking systems, military applications. |
+
