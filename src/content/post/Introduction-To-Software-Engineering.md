@@ -108,13 +108,21 @@ Software is defined as a collection of computer programs, procedures, rules, and
 ### Characteristics of Software:
 
 1. **Functionality**: The software meets the requirements and specifications that it was designed for, and it behaves as expected when it is used in its intended environment.
+
 2. **Usability**: The software is easy to use and understand, and it provides a positive user experience.
+
 3. **Reliability**: The software is free of defects and it performs consistently and accurately under different conditions and scenarios.
+
 4. **Performance**: The software runs efficiently and quickly, and it can handle large amounts of data or traffic.
+
 5. **Security**: The software is protected against unauthorized access and it keeps the data and functions safe from malicious attacks.
+
 6. **Maintainability**: The software is easy to change and update, and it is well-documented, so that it can be understood and modified by other developers.
+
 7. **Reusability**: The software can be reused in other projects or applications, and it is designed in a way that promotes code reuse.
+
 8. **Scalability**: The software can handle an increasing workload and it can be easily extended to meet the changing requirements.
+
 9. **Testability**: The software is designed in a way that makes it easy to test and validate, and it has a comprehensive test coverage.
 
 ---
